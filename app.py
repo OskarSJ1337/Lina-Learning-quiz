@@ -9,7 +9,9 @@ import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
 
 BASE = Path(getattr(sys, '_MEIPASS', Path(__file__).resolve().parent))
-BG, INK, MUTED, ACCENT = '#f4f6fb', '#202b40', '#48566b', '#4f46bb'
+BG, INK, ACCENT = '#E3E3E3', '#4C5A65', '#8E9DA9'
+TRUE, FALSE, BUTTON_TEXT = '#92A493', '#E9806F', '#263238'
+MUTED = INK
 
 
 def validate(questions):
@@ -111,6 +113,14 @@ class App(tk.Tk):
         self.geometry('960x820')
         self.minsize(720, 640)
         self.configure(bg=BG)
+        style = ttk.Style(self)
+        style.theme_use('clam')
+        style.configure('TProgressbar', background=ACCENT, troughcolor=BG,
+                        bordercolor=BG, lightcolor=ACCENT, darkcolor=ACCENT)
+        style.configure('TScrollbar', background=ACCENT, troughcolor=BG,
+                        bordercolor=BG, arrowcolor=BUTTON_TEXT,
+                        lightcolor=ACCENT, darkcolor=ACCENT)
+        style.map('TScrollbar', background=[('active', INK)])
         self.option_add('*Font', ('Segoe UI', 13))
         self.bank = validate(json.loads((BASE / 'questions.json').read_text(encoding='utf-8')))
         self.session = None
@@ -118,7 +128,7 @@ class App(tk.Tk):
         self.header = tk.Frame(self, bg=BG)
         self.header.pack(fill='x', padx=32, pady=(24, 10))
         tk.Label(self.header, text='Lina / självtest', font=('Segoe UI', 18, 'bold'), bg=BG, fg=INK).pack(side='left')
-        self.counter = tk.Label(self.header, text='Rätt: 0', bg=BG, fg=ACCENT, font=('Segoe UI', 14, 'bold'))
+        self.counter = tk.Label(self.header, text='Rätt: 0', bg=BG, fg=INK, font=('Segoe UI', 14, 'bold'))
         self.counter.pack(side='right')
         self.canvas = tk.Canvas(self, bg=BG, highlightthickness=0)
         scroll = ttk.Scrollbar(self, orient='vertical', command=self.canvas.yview)
@@ -152,8 +162,10 @@ class App(tk.Tk):
         return w
 
     def button(self, text, command, primary=False):
-        b = tk.Button(self.body, text=text, command=command, bg=ACCENT if primary else 'white',
-                      fg='white' if primary else INK, relief='flat', bd=0, padx=18, pady=14,
+        b = tk.Button(self.body, text=text, command=command, bg=ACCENT,
+                      fg=BUTTON_TEXT, activebackground=BG, activeforeground=BUTTON_TEXT,
+                      font=('Segoe UI', 13, 'bold' if primary else 'normal'),
+                      highlightcolor=INK, relief='flat', bd=0, padx=18, pady=14,
                       cursor='hand2', anchor='w', justify='left', wraplength=max(400, self.canvas.winfo_width()-48))
         b.pack(fill='x', pady=5)
         return b
@@ -199,10 +211,11 @@ class App(tk.Tk):
             return
         q = self.session.current
         for i, button in enumerate(self.options):
-            color = '#d9f2e2' if i == q['answer'] else '#fce0e2' if i == index else '#e9edf3'
-            button.configure(state='disabled', bg=color, disabledforeground=INK)
+            color = TRUE if i == q['answer'] else FALSE if i == index else BG
+            button.configure(state='disabled', bg=color, disabledforeground=BUTTON_TEXT)
         self.counter.configure(text=f'Rätt: {self.session.score}')
-        self.label('●  Rätt svar' if result else '●  Fel svar', 17, '#16713c' if result else '#b32b3a')
+        feedback = self.label('●  Rätt svar' if result else '●  Fel svar', 17, BUTTON_TEXT)
+        feedback.configure(bg=TRUE if result else FALSE, padx=12, pady=8)
         if not result:
             self.label('Rätt svar: ' + q['options'][q['answer']], 13)
         self.label(q['explanation'])
@@ -228,7 +241,7 @@ class App(tk.Tk):
         self.clear()
         s = self.session
         self.label('Resultat', 25)
-        self.label(f'{s.score} rätt av {len(s.questions)}  ·  {s.score / len(s.questions):.0%}', 22, ACCENT)
+        self.label(f'{s.score} rätt av {len(s.questions)}  ·  {s.score / len(s.questions):.0%}', 22, INK)
         if s.missed:
             missed = s.missed[:]
             self.button(f'Öva på missade frågor ({len(missed)})', lambda: self.start(missed, review=True), True)
