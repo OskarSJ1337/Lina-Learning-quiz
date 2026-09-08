@@ -978,5 +978,173 @@
     ],
     "answer": 0,
     "explanation": "Ansvar omfattar forskningsprocessen, ledning, utbildning och handledning samt forskningens vidare konsekvenser."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 144,
+    "category": "Forskningsmetod",
+    "question": "Rektorn har gett tillstånd att genomföra intervjuer på skolan. Vad betyder det för lärarnas deltagande?",
+    "options": [
+      "Varje lärare behöver fortfarande själv få välja om hen vill delta",
+      "Rektorns tillstånd innebär att alla lärare har samtyckt",
+      "Lärarna kan bara avstå om rektorn godkänner det",
+      "Tillståndet ersätter informationen till deltagarna"
+    ],
+    "answer": 0,
+    "explanation": "Tillträde till verksamheten och individens frivilliga deltagande är skilda frågor. En dörröppnare ersätter inte deltagarens eget beslut."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 144,
+    "category": "Forskningsmetod",
+    "question": "Vad innebär det att informerat samtycke är en process?",
+    "options": [
+      "Deltagaren behöver förstå villkoren och fortsatt kunna välja om hen vill delta",
+      "En underskrift gör fortsatt information onödig",
+      "Forskaren kan ändra deltagandets villkor utan att berätta det",
+      "Samtycket handlar enbart om hur blanketten arkiveras"
+    ],
+    "answer": 0,
+    "explanation": "Samtycke bygger på begriplig information och frivillighet. I långvariga eller föränderliga studier kan forskaren behöva försäkra sig om att deltagandet fortfarande är frivilligt."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 146,
+    "category": "Forskningsmetod",
+    "question": "Namn tas bort ur en intervju från en liten skola. Varför kan personen ändå bli igenkänd?",
+    "options": [
+      "Kombinationer av yrkesroll, händelser och citat kan avslöja vem det är",
+      "Personer kan bara identifieras genom sitt fullständiga namn",
+      "En kod gör alla övriga detaljer ofarliga att publicera",
+      "Igenkänning beror enbart på om intervjun spelades in"
+    ],
+    "answer": 0,
+    "explanation": "Borttagna namn räcker inte alltid. Även indirekta uppgifter behöver granskas och begränsas till det som behövs."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 146,
+    "category": "Forskningsmetod",
+    "question": "En intervjuad lärare berättar om en elevs familjesituation. Eleven deltar inte i studien. Vilken etisk fråga uppstår?",
+    "options": [
+      "Hur uppgifter om tredje person ska begränsas och hanteras",
+      "Om lärarens deltagande automatiskt gör elevuppgifterna fria att använda",
+      "Om elevens uppgifter måste tas med för att intervjun ska vara fullständig",
+      "Om ansvar för uppgifterna enbart ligger hos den intervjuade läraren"
+    ],
+    "answer": 0,
+    "explanation": "Även personer som inte själva deltar kan beröras. Intervjuguide och materialhantering behöver ta hänsyn till sådana uppgifter."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 147,
+    "category": "Forskningsmetod",
+    "question": "En student intervjuar sina egna kollegor. Hur kan den dubbla rollen påverka kunskapen i studien?",
+    "options": [
+      "Relationen kan påverka vad kollegorna berättar och hur studenten tolkar det",
+      "Kollegornas utsagor blir automatiskt mer objektiva",
+      "Yrkeserfarenheten gör reflektion över tolkningen överflödig",
+      "Relationen påverkar bara schemaläggningen av intervjuer"
+    ],
+    "answer": 0,
+    "explanation": "Den egna positionen kan påverka både materialets tillkomst och analysen. Därför är detta också en kunskapsteoretisk fråga."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 148,
+    "category": "Forskningsmetod",
+    "question": "Vilken plan följer bäst principen att inte samla in mer än studien behöver?",
+    "options": [
+      "Motivera vilka uppgifter som behövs och planera åtkomst och förvaring före insamlingen",
+      "Samla in alla tillgängliga uppgifter för eventuella framtida frågor",
+      "Be deltagarna lämna extra personuppgifter för säkerhets skull",
+      "Vänta med att bestämma åtkomst tills materialet har delats"
+    ],
+    "answer": 0,
+    "explanation": "Materialhanteringen behöver vara konkret planerad. Uppgifterna ska begränsas till vad studien behöver."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 145,
+    "category": "Forskningsmetod",
+    "question": "Vad behöver särskilt beaktas när barn får information om en studie?",
+    "options": [
+      "Informationen behöver anpassas så att barnet kan förstå och uttrycka sin egen vilja",
+      "Samma vuxentext är tillräcklig oavsett barnets förutsättningar",
+      "Barnets egen vilja saknar betydelse när vuxna är positiva",
+      "Informationen bör ges först när datainsamlingen är avslutad"
+    ],
+    "answer": 0,
+    "explanation": "Barn har olika förutsättningar och kan behöva anpassad information eller stöd. Deras egen vilja behöver respekteras och andra samtyckesfrågor också hanteras."
+  },
+  {
+    "source": "Serder_och_Jober_2021_kapitel_1.pdf",
+    "page": 8,
+    "category": "Teori och vetenskap",
+    "question": "Vad betyder falsifierbarhet i Poppers resonemang om vetenskapliga teorier?",
+    "options": [
+      "Teorin är formulerad så att den skulle kunna motbevisas",
+      "Teorin har redan bevisats vara falsk",
+      "Teorin måste stämma med varje tänkbart resultat",
+      "Teorin är vetenskaplig endast om ingen kan kritisera den"
+    ],
+    "answer": 0,
+    "explanation": "Falsifierbarhet är möjligheten att motbevisa en teori. Det betyder inte att teorin faktiskt har motbevisats."
+  },
+  {
+    "source": "Serder_och_Jober_2021_kapitel_1.pdf",
+    "page": 9,
+    "category": "Teori och vetenskap",
+    "question": "Vad innebär det att teoretisera enligt kapitlets beskrivning av begreppsapparater?",
+    "options": [
+      "Att skapa nya begreppsapparater eller utveckla befintliga",
+      "Att endast räkna hur ofta ett vardagsord förekommer",
+      "Att ersätta studiens analys med en lista över författarnamn",
+      "Att utgå från att teoretiska begrepp aldrig kan förändras"
+    ],
+    "answer": 0,
+    "explanation": "Teoretiserande kan utveckla de begrepp och antaganden genom vilka ett fenomen förstås och analyseras."
+  },
+  {
+    "source": "God_forskningssed_VR_2024.pdf",
+    "page": 41,
+    "category": "Forskningsetik",
+    "question": "En forskare ska granska ett manuskript men har en intressekonflikt som innebär risk för otillbörlig påverkan. Vad anger materialet?",
+    "options": [
+      "Redovisa konflikten och avstå från att delta i processen och beslutet vid sådan risk",
+      "Dölja konflikten och göra granskningen snabbare",
+      "Delta så länge författaren inte känner till konflikten",
+      "Låta den egna relationen till författaren avgöra bedömningen"
+    ],
+    "answer": 0,
+    "explanation": "Granskningen ska vara välgrundad och ärlig. Intressekonflikter ska redovisas, och risk för otillbörlig påverkan kräver att forskaren avstår."
+  },
+  {
+    "source": "God_forskningssed_VR_2024.pdf",
+    "page": 79,
+    "category": "Forskningsetik",
+    "question": "En forskare upptäcker ett betydelsefullt fel i en publicerad artikel. Vad bör forskaren göra enligt materialet?",
+    "options": [
+      "Hantera felet öppet och medverka till rättelse eller tillbakadragande om det behövs",
+      "Låta artikeln stå oförändrad eftersom den redan är publicerad",
+      "Rätta sin privata kopia utan att informera utgivaren",
+      "Vänta med att agera tills någon annan upptäcker felet"
+    ],
+    "answer": 0,
+    "explanation": "Forskarna och utgivaren har ansvar för att fel hanteras öppet. Rättelser eller tillbakadraganden ska förklaras tydligt."
+  },
+  {
+    "source": "God_forskningssed_VR_2024.pdf",
+    "page": 95,
+    "category": "Forskningsetik",
+    "question": "Vilken uppsättning avser de fyra etiska principerna för forskning som involverar människor, snarare än ALLEA-kodexens fyra grundprinciper?",
+    "options": [
+      "Göra gott, inte skada, respektera självbestämmande och upprätthålla rättvisa",
+      "Tillförlitlighet, ärlighet, respekt och ansvar",
+      "Forskningsintresse, skyddsintresse, öppenhetsintresse och förtroendeintresse",
+      "Urval, datainsamling, analys och rapportering"
+    ],
+    "answer": 0,
+    "explanation": "Materialet skiljer mellan flera etiska ramverk. Dessa fyra principer ska inte förväxlas med ALLEA-kodexens principer eller med de olika intressen som diskuteras."
   }
 ]

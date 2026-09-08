@@ -10,7 +10,7 @@ Dubbelklicka på `dist/Lina-Sjalvtest.exe`. Ingen Python-installation, interneta
 
 Startsidan har **Starta quiz** för alla frågor samt ett separat alternativ för varje PDF. Antalet frågor visas vid varje val. **Nytt test** behåller vald grupp, även efter repetition av missade frågor. Under testet visas frågan, fyra svar och antal rätt. Efter svaret visas återkoppling, förklaring, en kort källhänvisning och **Nästa**. Texten är större och har tydligare kontrast.
 
-PDF-import visas inte längre i gränssnittet. Alla 70 frågor ingår. Sidhänvisningar räknas från PDF-filens första sida.
+PDF-import visas inte längre i gränssnittet. Alla 82 frågor ingår. Sidhänvisningar räknas från PDF-filens första sida.
 
 ## Utveckling
 
@@ -27,6 +27,8 @@ python build_exe.py
 
 ## Dela appen
 
-Skicka endast `dist/Lina-Sjalvtest.exe` (cirka 11 MB) till mottagaren. Appen ?r byggd f?r 64-bitars Windows och beh?ver inte installeras. De 70 fr?gorna ing?r; PDF-filer beh?vs bara f?r att importera fler fr?gor. Bygget beh?ller PDF-import och anv?nder optimerad Python-kod utan oanv?nda OpenSSL-bibliotek. Den f?rdiga EXE-filen har testats fr?n en separat tillf?llig mapp, inklusive r?tt/fel, resultat och import av samtliga tre PDF-filer.
+Skicka endast `dist/Lina-Sjalvtest.exe` (cirka 11 MB) till mottagaren. Appen ?r byggd f?r 64-bitars Windows och beh?ver inte installeras. De 82 fr?gorna ing?r; PDF-filer beh?vs bara f?r att importera fler fr?gor. Bygget beh?ller PDF-import och anv?nder optimerad Python-kod utan oanv?nda OpenSSL-bibliotek. Den f?rdiga EXE-filen har testats fr?n en separat tillf?llig mapp, inklusive r?tt/fel, resultat och import av samtliga tre PDF-filer.
 
-Fr?gebanken omfattar nu 70 fr?gor. De 40 tillagda fr?gorna i `additional_questions.py` t?cker bland annat urval, bortfall, enk?ter, m?tningskvalitet, statistik, analys, teorifunktioner och etiska avv?gningar. Alla har fyra alternativ, f?rklaring och h?nvisning till PDF-sida.
+Fr?gebanken omfattar nu 82 fr?gor. De 40 tillagda fr?gorna i `additional_questions.py` t?cker bland annat urval, bortfall, enk?ter, m?tningskvalitet, statistik, analys, teorifunktioner och etiska avv?gningar. Alla har fyra alternativ, f?rklaring och h?nvisning till PDF-sida.
+
+Efter granskning av ämnestäckning, överlapp och källtext tillkom 12 frågor om samtycke, indirekt identifiering, tredje person, dubbla roller, dataminimering, barn, falsifierbarhet, teoretiserande, intressekonflikter, rättelser och etiska ramverk.
