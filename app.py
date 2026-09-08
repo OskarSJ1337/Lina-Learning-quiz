@@ -9,9 +9,10 @@ import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
 
 BASE = Path(getattr(sys, '_MEIPASS', Path(__file__).resolve().parent))
-BG, INK, ACCENT = '#E3E3E3', '#4C5A65', '#8E9DA9'
-TRUE, FALSE, BUTTON_TEXT = '#92A493', '#E9806F', '#263238'
-MUTED = INK
+BG, INK, ACCENT = '#F4F6FB', '#202B40', '#6554C0'
+SURFACE, HOVER, ACCENT_HOVER = '#FFFFFF', '#EDE7FF', '#5141A6'
+TRUE, FALSE, BUTTON_TEXT = '#D0F2DE', '#FFDDD8', INK
+MUTED = '#48566B'
 
 
 def validate(questions):
@@ -117,10 +118,10 @@ class App(tk.Tk):
         style.theme_use('clam')
         style.configure('TProgressbar', background=ACCENT, troughcolor=BG,
                         bordercolor=BG, lightcolor=ACCENT, darkcolor=ACCENT)
-        style.configure('TScrollbar', background=ACCENT, troughcolor=BG,
+        style.configure('TScrollbar', background=HOVER, troughcolor=BG,
                         bordercolor=BG, arrowcolor=BUTTON_TEXT,
                         lightcolor=ACCENT, darkcolor=ACCENT)
-        style.map('TScrollbar', background=[('active', INK)])
+        style.map('TScrollbar', background=[('active', ACCENT)])
         self.option_add('*Font', ('Segoe UI', 13))
         self.bank = validate(json.loads((BASE / 'questions.json').read_text(encoding='utf-8')))
         self.session = None
@@ -128,7 +129,7 @@ class App(tk.Tk):
         self.header = tk.Frame(self, bg=BG)
         self.header.pack(fill='x', padx=32, pady=(24, 10))
         tk.Label(self.header, text='Lina / självtest', font=('Segoe UI', 18, 'bold'), bg=BG, fg=INK).pack(side='left')
-        self.counter = tk.Label(self.header, text='Rätt: 0', bg=BG, fg=INK, font=('Segoe UI', 14, 'bold'))
+        self.counter = tk.Label(self.header, text='Rätt: 0', bg=HOVER, fg=ACCENT, padx=14, pady=8, font=('Segoe UI', 14, 'bold'))
         self.counter.pack(side='right')
         self.canvas = tk.Canvas(self, bg=BG, highlightthickness=0)
         scroll = ttk.Scrollbar(self, orient='vertical', command=self.canvas.yview)
@@ -162,12 +163,16 @@ class App(tk.Tk):
         return w
 
     def button(self, text, command, primary=False):
-        b = tk.Button(self.body, text=text, command=command, bg=ACCENT,
-                      fg=BUTTON_TEXT, activebackground=BG, activeforeground=BUTTON_TEXT,
+        b = tk.Button(self.body, text=text, command=command, bg=ACCENT if primary else SURFACE,
+                      fg='white' if primary else BUTTON_TEXT,
+                      activebackground=ACCENT_HOVER if primary else HOVER,
+                      activeforeground='white' if primary else BUTTON_TEXT,
                       font=('Segoe UI', 13, 'bold' if primary else 'normal'),
                       highlightcolor=INK, relief='flat', bd=0, padx=18, pady=14,
                       cursor='hand2', anchor='w', justify='left', wraplength=max(400, self.canvas.winfo_width()-48))
         b.pack(fill='x', pady=5)
+        b.bind('<Enter>', lambda event: b.configure(bg=ACCENT_HOVER if primary else HOVER) if str(b['state']) == 'normal' else None)
+        b.bind('<Leave>', lambda event: b.configure(bg=ACCENT if primary else SURFACE) if str(b['state']) == 'normal' else None)
         return b
 
     def home(self):
