@@ -37,8 +37,12 @@ class Session:
             self.questions.append(q)
         rng.shuffle(self.questions)
         self.index = self.score = 0
-        self.answered = False
+        self.choices = {}
         self.missed = []
+
+    @property
+    def answered(self):
+        return self.index in self.choices
 
     @property
     def current(self):
@@ -49,7 +53,7 @@ class Session:
             return None
         if choice not in range(4):
             raise ValueError('Ogiltigt svarsalternativ.')
-        self.answered = True
+        self.choices[self.index] = choice
         correct = choice == self.current['answer']
         self.score += int(correct)
         if not correct:
@@ -60,8 +64,13 @@ class Session:
         if not self.answered:
             return False
         self.index += 1
-        self.answered = False
         return self.index < len(self.questions)
+
+    def previous(self):
+        if self.index == 0:
+            return False
+        self.index -= 1
+        return True
 
 
 # Begrepp i samma grupp ger jämförbara alternativ. En mening måste innehålla
@@ -128,14 +137,22 @@ class App(tk.Tk):
         self.importing = False
         self.header = tk.Frame(self, bg=BG)
         self.header.pack(fill='x', padx=32, pady=(24, 10))
-        tk.Label(self.header, text='Lina / självtest', font=('Segoe UI', 18, 'bold'), bg=BG, fg=INK).pack(side='left')
+        tk.Label(self.header, text='Linas coola quiz', font=('Segoe UI', 18, 'bold'), bg=BG, fg=INK).pack(side='left')
         self.counter = tk.Label(self.header, text='Rätt: 0', bg=HOVER, fg=ACCENT, padx=14, pady=8, font=('Segoe UI', 14, 'bold'))
         self.counter.pack(side='right')
-        self.back_button = tk.Button(self.header, text='← Tillbaka', command=self.home,
+        self.back_button = tk.Button(self.header, text='Till startsidan', command=self.home,
                                      bg=HOVER, fg=INK, activebackground=ACCENT,
                                      activeforeground='white', relief='flat', bd=0,
                                      padx=12, pady=8, cursor='hand2')
         self.back_button.pack(side='right', padx=16)
+        self.navigation = tk.Frame(self, bg=BG)
+        self.navigation.pack(side='bottom', fill='x', padx=32, pady=(0, 16))
+        self.previous_button = tk.Button(self.navigation, text='← Föregående fråga',
+            command=self.previous_question, bg=HOVER, fg=INK, relief='flat', padx=16, pady=12)
+        self.previous_button.pack(side='left')
+        self.next_button = tk.Button(self.navigation, text='Nästa fråga →',
+            command=self.next_question, bg=ACCENT, fg='white', relief='flat', padx=16, pady=12)
+        self.next_button.pack(side='right')
         self.canvas = tk.Canvas(self, bg=BG, highlightthickness=0)
         scroll = ttk.Scrollbar(self, orient='vertical', command=self.canvas.yview)
         scroll.pack(side='right', fill='y')
@@ -167,20 +184,24 @@ class App(tk.Tk):
         w.pack(fill='x', pady=8)
         return w
 
-    def button(self, text, command, primary=False):
-        b = tk.Button(self.body, text=text, command=command, bg=ACCENT if primary else SURFACE,
+    def button(self, text, command, primary=False, color=None):
+        normal = color or (ACCENT if primary else SURFACE)
+        hover = color or (ACCENT_HOVER if primary else HOVER)
+        b = tk.Button(self.body, text=text, command=command, bg=normal,
                       fg='white' if primary else BUTTON_TEXT,
-                      activebackground=ACCENT_HOVER if primary else HOVER,
+                      activebackground=hover,
                       activeforeground='white' if primary else BUTTON_TEXT,
                       font=('Segoe UI', 13, 'bold' if primary else 'normal'),
                       highlightcolor=INK, relief='flat', bd=0, padx=18, pady=14,
                       cursor='hand2', anchor='w', justify='left', wraplength=max(400, self.canvas.winfo_width()-48))
         b.pack(fill='x', pady=5)
-        b.bind('<Enter>', lambda event: b.configure(bg=ACCENT_HOVER if primary else HOVER) if str(b['state']) == 'normal' else None)
-        b.bind('<Leave>', lambda event: b.configure(bg=ACCENT if primary else SURFACE) if str(b['state']) == 'normal' else None)
+        b.bind('<Enter>', lambda event: b.configure(bg=hover) if str(b['state']) == 'normal' else None)
+        b.bind('<Leave>', lambda event: b.configure(bg=normal) if str(b['state']) == 'normal' else None)
         return b
 
     def home(self):
+        self.previous_button.configure(state='disabled')
+        self.next_button.configure(state='disabled')
         self.back_button.configure(state='disabled')
         self.session = None
         self.clear()
@@ -189,15 +210,15 @@ class App(tk.Tk):
         self.label(f'{len(self.bank)} frågor · Fyra svarsalternativ', 14, MUTED)
         self.button(f'Starta quiz – Alla frågor ({len(self.bank)})', lambda: self.start(self.bank), True)
         sources = [
-            ('God_forskningssed_VR_2024.pdf', 'God forskningssed'),
-            ('Serder_och_Jober_2021_kapitel_1.pdf', 'Serder & Jobér, kapitel 1'),
-            ('Undervisningsunderlag_bilder_och_text.pdf', 'Undervisningsunderlag'),
+            ('God_forskningssed_VR_2024.pdf', 'God forskningssed', '#D0F2DE'),
+            ('Serder_och_Jober_2021_kapitel_1.pdf', 'Serder & Jobér, kapitel 1', '#D8EAFF'),
+            ('Undervisningsunderlag_bilder_och_text.pdf', 'Undervisningsunderlag', '#FFE4C7'),
         ]
-        for source, title in sources:
+        for source, title, color in sources:
             questions = [q for q in self.bank if q['source'] == source]
             if questions:
                 self.button(f'Starta quiz – {title} ({len(questions)})',
-                            lambda questions=questions: self.start(questions))
+                            lambda questions=questions: self.start(questions), color=color)
 
     def start(self, questions, review=False):
         self.back_button.configure(state='normal')
@@ -214,6 +235,13 @@ class App(tk.Tk):
         ttk.Progressbar(self.body, maximum=len(s.questions), value=s.index).pack(fill='x', pady=(0, 18))
         self.label(q['question'], 20)
         self.options = [self.button(f'{i + 1}.  {option}', lambda i=i: self.choose(i)) for i, option in enumerate(q['options'])]
+        self.previous_button.configure(state='normal' if s.index > 0 else 'disabled')
+        self.next_button.configure(text='Visa resultat' if s.index == len(s.questions)-1 else 'Nästa fråga →',
+                                   state='normal' if s.answered else 'disabled')
+        if s.answered:
+            self.show_feedback(s.choices[s.index])
+        self.update_idletasks()
+        self.canvas.yview_moveto(0)
 
     def choose(self, index):
         if not self.session or self.session.index >= len(self.session.questions):
@@ -221,6 +249,10 @@ class App(tk.Tk):
         result = self.session.answer(index)
         if result is None:
             return
+        self.show_feedback(index)
+
+    def show_feedback(self, index):
+        result = index == self.session.current['answer']
         self.update_idletasks()
         viewport_top = self.canvas.canvasy(0)
         q = self.session.current
@@ -240,21 +272,28 @@ class App(tk.Tk):
         }
         source = source_names.get(q['source'], q['source'])
         self.label(f'{source} · PDF-sida {q["page"]}', 12, MUTED)
-        self.next_button = self.button('Visa resultat' if self.session.index == len(self.session.questions)-1 else 'Nästa', self.next_question, True)
-        self.next_button.focus_set()
+        self.next_button.configure(state='normal')
         self.update_idletasks()
         # Keep the same pixel offset as feedback increases the scroll region.
         bounds = self.canvas.bbox('all')
         if bounds and bounds[3] > bounds[1]:
             self.canvas.yview_moveto((viewport_top - bounds[1]) / (bounds[3] - bounds[1]))
 
+    def previous_question(self):
+        if self.session and self.session.previous():
+            self.show_question()
+
     def next_question(self):
+        if not self.session or not self.session.answered:
+            return
         if self.session.advance():
             self.show_question()
         else:
             self.finish()
 
     def finish(self):
+        self.previous_button.configure(state='normal')
+        self.next_button.configure(state='disabled')
         self.clear()
         s = self.session
         self.label('Resultat', 25)
