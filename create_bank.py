@@ -41,5 +41,8 @@ V(55,'Vilken beskrivning av risker i forskning stämmer bäst med materialet?','
 V(7,'Vilken roll har etisk reflektion i forskningsarbetet?','Forskare behöver tillsammans med andra söka svar på de etiska frågor som uppstår','En skrift kan ge färdiga svar på alla etiska frågor','Etik behövs bara när resultatet är oväntat','Etik är enbart finansiärens ansvar','God forskningssed ger vägledning, men ersätter inte forskarens och forskarsamhällets eget etiska arbete.')
 from additional_questions import extend_bank
 extend_bank(U, S, V)
+help_map = json.loads(Path('question_help.json').read_text(encoding='utf-8'))
+for question in questions:
+ question['help'] = help_map[question['question']]
 Path('questions.json').write_text(json.dumps(questions,ensure_ascii=False,indent=2),encoding='utf-8')
 print(f'Skapade {len(questions)} frågor')

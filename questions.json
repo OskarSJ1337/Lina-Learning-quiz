@@ -11,7 +11,8 @@
       "En lista över de rubriker som ska ingå i rapporten"
     ],
     "answer": 0,
-    "explanation": "Kunskapsproblemet preciserar vad vi behöver veta, med stöd i vad tidigare forskning redan visar."
+    "explanation": "Kunskapsproblemet preciserar vad vi behöver veta, med stöd i vad tidigare forskning redan visar.",
+    "help": "Vad är det forskaren vill ta reda på när hen formulerar ett forskningsproblem?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -25,7 +26,8 @@
       "Studien saknar automatiskt en teori"
     ],
     "answer": 0,
-    "explanation": "Lärare kan beskriva sitt perspektiv. Elevernas egna beskrivningar behöver material där eleverna själva kommer till tals."
+    "explanation": "Lärare kan beskriva sitt perspektiv. Elevernas egna beskrivningar behöver material där eleverna själva kommer till tals.",
+    "help": "Studenten vill veta hur elever upplever stödet, men frågar bara lärare. Vad blir problemet med det upplägget?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -39,7 +41,8 @@
       "Teorin som väljs efteråt"
     ],
     "answer": 0,
-    "explanation": "Skilj mellan informationskälla och material: lärarna ger information, medan intervjutexterna utgör analysmaterial."
+    "explanation": "Skilj mellan informationskälla och material: lärarna ger information, medan intervjutexterna utgör analysmaterial.",
+    "help": "Att transkribera betyder att skriva ned det som sägs i intervjun. Vad är det sedan forskaren arbetar med i analysen?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -53,7 +56,8 @@
       "Samla in fler data innan frågorna ses över"
     ],
     "answer": 0,
-    "explanation": "Forskningskedjans delar hänger samman. En förändring i syftet kan därför kräva förändringar i resten av upplägget."
+    "explanation": "Forskningskedjans delar hänger samman. En förändring i syftet kan därför kräva förändringar i resten av upplägget.",
+    "help": "Studiens mål ändras. Vad behöver forskaren då se över i resten av undersökningen?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -67,7 +71,8 @@
       "De anger bara i vilken ordning intervjuer ska hållas"
     ],
     "answer": 0,
-    "explanation": "Frågeställningarna konkretiserar syftet och ska hålla studien samman."
+    "explanation": "Frågeställningarna konkretiserar syftet och ska hålla studien samman.",
+    "help": "Hur ska studiens frågor hänga ihop med det övergripande målet?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -81,7 +86,8 @@
       "Enbart vilket program rapporten skrivs i"
     ],
     "answer": 0,
-    "explanation": "Analysen behöver beskrivas som arbete med materialet, exempelvis jämförelse, kategorisering eller tolkning."
+    "explanation": "Analysen behöver beskrivas som arbete med materialet, exempelvis jämförelse, kategorisering eller tolkning.",
+    "help": "Vad behöver forskaren berätta om hur svaren eller uppgifterna ska undersökas?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -95,7 +101,8 @@
       "Ett löfte om att teorin inte påverkar analysen"
     ],
     "answer": 0,
-    "explanation": "Teorins funktion ska framgå, inklusive eventuell betydelse för frågor, datainsamling och analys."
+    "explanation": "Teorins funktion ska framgå, inklusive eventuell betydelse för frågor, datainsamling och analys.",
+    "help": "Studenten nämner en teori men förklarar inte hur den används. Vilken information saknas?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -109,7 +116,8 @@
       "Genom att enbart ange antalet sidor i rapporten"
     ],
     "answer": 0,
-    "explanation": "Kvalitetsresonemang ska visa vad som stärker och begränsar just den planerade studien."
+    "explanation": "Kvalitetsresonemang ska visa vad som stärker och begränsar just den planerade studien.",
+    "help": "Hur ska forskaren bedöma vad den egna undersökningen fungerar bra för och vad den inte kan visa?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -123,7 +131,8 @@
       "Mallen avgör om slutsatserna är sanna"
     ],
     "answer": 0,
-    "explanation": "Forskningskedjan synliggör sambanden mellan studiens delar. Mallen visar var delarna ska beskrivas."
+    "explanation": "Forskningskedjan synliggör sambanden mellan studiens delar. Mallen visar var delarna ska beskrivas.",
+    "help": "Vad är skillnaden mellan hur undersökningen hänger ihop och hur rapporten är uppdelad?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -137,7 +146,8 @@
       "Att garantera ett visst resultat"
     ],
     "answer": 0,
-    "explanation": "Tidigare forskning ska jämföras och användas för att motivera vad som fortfarande behöver undersökas."
+    "explanation": "Tidigare forskning ska jämföras och användas för att motivera vad som fortfarande behöver undersökas.",
+    "help": "Varför läser forskaren tidigare studier när en ny undersökning planeras?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -151,7 +161,8 @@
       "Att alla forskningsfrågor automatiskt blir ogiltiga"
     ],
     "answer": 0,
-    "explanation": "Etiska och metodologiska val hänger samman. Etisk reflektion kan kräva ändringar i upplägget."
+    "explanation": "Etiska och metodologiska val hänger samman. Etisk reflektion kan kräva ändringar i upplägget.",
+    "help": "Forskaren upptäcker att sättet att bjuda in deltagare kan skapa problem för dem. Vad kan behöva göras?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -165,7 +176,8 @@
       "Att låta valet av analysprogram ersätta etikavsnittet"
     ],
     "answer": 0,
-    "explanation": "Etik behöver knytas till faktiska situationer och till vad åtgärderna kan och inte kan lösa."
+    "explanation": "Etik behöver knytas till faktiska situationer och till vad åtgärderna kan och inte kan lösa.",
+    "help": "Vilket slags resonemang visar att forskaren har tänkt igenom riskerna i just sin studie?"
   },
   {
     "source": "Serder_och_Jober_2021_kapitel_1.pdf",
@@ -179,7 +191,8 @@
       "Som privata åsikter som inte behöver diskuteras"
     ],
     "answer": 0,
-    "explanation": "Teori ger begrepp och perspektiv som kan användas för förståelse, analys och handling."
+    "explanation": "Teori ger begrepp och perspektiv som kan användas för förståelse, analys och handling.",
+    "help": "Vad menas med liknelsen att teorier är verktyg för tanken?"
   },
   {
     "source": "Serder_och_Jober_2021_kapitel_1.pdf",
@@ -193,7 +206,8 @@
       "Att forskaren kan ersätta material med åsikter"
     ],
     "answer": 0,
-    "explanation": "Ett teoretiskt perspektiv riktar uppmärksamheten mot vissa aspekter av det som undersöks."
+    "explanation": "Ett teoretiskt perspektiv riktar uppmärksamheten mot vissa aspekter av det som undersöks.",
+    "help": "Vad vill man förklara genom att jämföra en teori med ett par glasögon?"
   },
   {
     "source": "Serder_och_Jober_2021_kapitel_1.pdf",
@@ -207,7 +221,8 @@
       "Planera, finansiera och betygsätta"
     ],
     "answer": 0,
-    "explanation": "Kapitlet beskriver teoriers förklarande, förstående och frigörande funktioner."
+    "explanation": "Kapitlet beskriver teoriers förklarande, förstående och frigörande funktioner.",
+    "help": "Vilka tre olika uppgifter kan en teori ha enligt kapitlet?"
   },
   {
     "source": "Serder_och_Jober_2021_kapitel_1.pdf",
@@ -221,7 +236,8 @@
       "Arkiverande"
     ],
     "answer": 0,
-    "explanation": "Den förklarande funktionen gäller relationer mellan fenomen, exempelvis orsak och verkan."
+    "explanation": "Den förklarande funktionen gäller relationer mellan fenomen, exempelvis orsak och verkan.",
+    "help": "Forskaren använder teorin för att undersöka varför något händer. Vilket namn har den funktionen?"
   },
   {
     "source": "Serder_och_Jober_2021_kapitel_1.pdf",
@@ -235,7 +251,8 @@
       "Teknisk lagring"
     ],
     "answer": 0,
-    "explanation": "Den frigörande funktionen förknippas med kritisk teori och med att blottlägga makt och underliggande antaganden."
+    "explanation": "Den frigörande funktionen förknippas med kritisk teori och med att blottlägga makt och underliggande antaganden.",
+    "help": "Forskaren undersöker hur makt och bakomliggande mönster påverkar skolan. Vilken funktion har teorin här?"
   },
   {
     "source": "Serder_och_Jober_2021_kapitel_1.pdf",
@@ -249,7 +266,8 @@
       "Hur många deltagare en enkät alltid måste ha"
     ],
     "answer": 0,
-    "explanation": "Ontologiska utgångspunkter gäller vad världen är och hur den är beskaffad."
+    "explanation": "Ontologiska utgångspunkter gäller vad världen är och hur den är beskaffad.",
+    "help": "Vilken sorts grundfrågor hör till begreppet ontologi?"
   },
   {
     "source": "Serder_och_Jober_2021_kapitel_1.pdf",
@@ -263,7 +281,8 @@
       "Hur en budget fördelas"
     ],
     "answer": 0,
-    "explanation": "Epistemologi är kunskapsteori och berör kunskapens möjligheter och grunder."
+    "explanation": "Epistemologi är kunskapsteori och berör kunskapens möjligheter och grunder.",
+    "help": "Vilken sorts grundfrågor hör till begreppet epistemologi?"
   },
   {
     "source": "Serder_och_Jober_2021_kapitel_1.pdf",
@@ -277,7 +296,8 @@
       "Epistemologi handlar bara om rapportens disposition"
     ],
     "answer": 0,
-    "explanation": "Synen på verkligheten hänger samman med vad vi anser att vi kan veta om den."
+    "explanation": "Synen på verkligheten hänger samman med vad vi anser att vi kan veta om den.",
+    "help": "Hur kan synen på verkligheten hänga ihop med synen på kunskap?"
   },
   {
     "source": "Serder_och_Jober_2021_kapitel_1.pdf",
@@ -291,7 +311,8 @@
       "För att välja den teori som har flest begrepp"
     ],
     "answer": 0,
-    "explanation": "Författarna framhåller betydelsen av att förstå teoriernas användningsområden och begränsningar."
+    "explanation": "Författarna framhåller betydelsen av att förstå teoriernas användningsområden och begränsningar.",
+    "help": "Varför behöver man förstå var gränserna går för en teori?"
   },
   {
     "source": "God_forskningssed_VR_2024.pdf",
@@ -305,7 +326,8 @@
       "Sekretess, statistik, teori och publicitet"
     ],
     "answer": 0,
-    "explanation": "Dessa fyra principer utgör en grund för god forskningssed och vägleder både individer och organisationer."
+    "explanation": "Dessa fyra principer utgör en grund för god forskningssed och vägleder både individer och organisationer.",
+    "help": "ALLEA-kodexen är riktlinjer för god forskning. Vilka fyra grundprinciper anges där?"
   },
   {
     "source": "God_forskningssed_VR_2024.pdf",
@@ -319,7 +341,8 @@
       "Exklusivitet"
     ],
     "answer": 0,
-    "explanation": "Tillförlitlighet gäller att säkerställa kvaliteten i hur forskning planeras och genomförs."
+    "explanation": "Tillförlitlighet gäller att säkerställa kvaliteten i hur forskning planeras och genomförs.",
+    "help": "Vilken grundprincip handlar om att undersökningen är väl planerad och genomförd?"
   },
   {
     "source": "God_forskningssed_VR_2024.pdf",
@@ -333,7 +356,8 @@
       "Att låta finansiären välja vilka resultat som är sanna"
     ],
     "answer": 0,
-    "explanation": "Ärlighet gäller hela forskningsarbetet, inklusive granskning, rapportering och information."
+    "explanation": "Ärlighet gäller hela forskningsarbetet, inklusive granskning, rapportering och information.",
+    "help": "Vad innebär det att arbeta ärligt som forskare?"
   },
   {
     "source": "God_forskningssed_VR_2024.pdf",
@@ -347,7 +371,8 @@
       "Teoretisering"
     ],
     "answer": 0,
-    "explanation": "Fabricering innebär att resultat hittas på och presenteras som verkliga."
+    "explanation": "Fabricering innebär att resultat hittas på och presenteras som verkliga.",
+    "help": "Forskaren skriver att intervjuer har gett vissa resultat, trots att resultaten är påhittade. Vad kallas det?"
   },
   {
     "source": "God_forskningssed_VR_2024.pdf",
@@ -361,7 +386,8 @@
       "Begreppsanalys"
     ],
     "answer": 0,
-    "explanation": "Förfalskning kan innebära otillbörlig manipulation eller omotiverad ändring och undanhållande av data."
+    "explanation": "Förfalskning kan innebära otillbörlig manipulation eller omotiverad ändring och undanhållande av data.",
+    "help": "Forskaren ändrar eller tar bort uppgifter för att få ett önskat resultat. Vad kallas det?"
   },
   {
     "source": "God_forskningssed_VR_2024.pdf",
@@ -375,7 +401,8 @@
       "Operationalisering"
     ],
     "answer": 0,
-    "explanation": "Plagiering gäller användning av andras arbete eller idéer utan tillbörligt erkännande."
+    "explanation": "Plagiering gäller användning av andras arbete eller idéer utan tillbörligt erkännande.",
+    "help": "Forskaren använder andras idéer utan att ange varifrån de kommer. Vad kallas det?"
   },
   {
     "source": "God_forskningssed_VR_2024.pdf",
@@ -389,7 +416,8 @@
       "Finansiärens marknadsföring"
     ],
     "answer": 0,
-    "explanation": "Skyddsintresset gäller omsorg om dem som deltar i eller berörs av forskningen och att begränsa skador."
+    "explanation": "Skyddsintresset gäller omsorg om dem som deltar i eller berörs av forskningen och att begränsa skador.",
+    "help": "Vilket intresse väger tyngst när olika mål för forskningen krockar?"
   },
   {
     "source": "God_forskningssed_VR_2024.pdf",
@@ -403,7 +431,8 @@
       "Risker uppstår endast efter publicering"
     ],
     "answer": 0,
-    "explanation": "Risker behöver övervägas i olika skeden och kan även omfatta indirekta följder, exempelvis stigmatisering."
+    "explanation": "Risker behöver övervägas i olika skeden och kan även omfatta indirekta följder, exempelvis stigmatisering.",
+    "help": "Vilka slags negativa följder kan forskning få för dem som berörs?"
   },
   {
     "source": "God_forskningssed_VR_2024.pdf",
@@ -417,7 +446,8 @@
       "Etik är enbart finansiärens ansvar"
     ],
     "answer": 0,
-    "explanation": "God forskningssed ger vägledning, men ersätter inte forskarens och forskarsamhällets eget etiska arbete."
+    "explanation": "God forskningssed ger vägledning, men ersätter inte forskarens och forskarsamhällets eget etiska arbete.",
+    "help": "Varför behöver forskare fundera och samtala om vad som är etiskt rimligt?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -431,7 +461,8 @@
       "Att ersätta begreppet med studiens slutsats"
     ],
     "answer": 0,
-    "explanation": "Operationalisering förbinder ett abstrakt begrepp med konkreta observationer eller mått. Valet behöver motiveras."
+    "explanation": "Operationalisering förbinder ett abstrakt begrepp med konkreta observationer eller mått. Valet behöver motiveras.",
+    "help": "Begreppet tillgång till stöd behöver kunna undersökas. Vad innebär det att operationalisera det?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -445,7 +476,8 @@
       "Instrumentet behöver bara användas på fler personer"
     ],
     "answer": 0,
-    "explanation": "Konsekvens i mätningen räcker inte. Validitet gäller stödet för tolkningen och användningen av mätresultaten."
+    "explanation": "Konsekvens i mätningen räcker inte. Validitet gäller stödet för tolkningen och användningen av mätresultaten.",
+    "help": "Ett test ger stabila svar, men undersöker inte det man ville veta. Hur bedömer man då mätningens kvalitet?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -459,7 +491,8 @@
       "Populationen är alltid alla invånare i ett land"
     ],
     "answer": 0,
-    "explanation": "Populationen behöver avgränsas utifrån forskningsfrågan. Stickprovet är en del av denna definierade population."
+    "explanation": "Populationen behöver avgränsas utifrån forskningsfrågan. Stickprovet är en del av denna definierade population.",
+    "help": "Vad skiljer hela gruppen som studien handlar om från den grupp som faktiskt undersöks?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -473,7 +506,8 @@
       "Om resultatdelen kommer före diskussionen"
     ],
     "answer": 0,
-    "explanation": "Ett stort stickprov kan fortfarande vara snedvridet. Storleken garanterar inte representativitet."
+    "explanation": "Ett stort stickprov kan fortfarande vara snedvridet. Storleken garanterar inte representativitet.",
+    "help": "Många har svarat på enkäten. Vad behöver man veta innan man säger att svaren gäller en större grupp?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -487,7 +521,8 @@
       "Urval av dokumentversioner"
     ],
     "answer": 0,
-    "explanation": "Bekvämlighetsurval utgår från vilka deltagare som är lättast att nå. Slutsatser om en större population behöver avgränsas."
+    "explanation": "Bekvämlighetsurval utgår från vilka deltagare som är lättast att nå. Slutsatser om en större population behöver avgränsas.",
+    "help": "Studenten väljer personer som är lätta att få tag på. Vilket namn har det sättet att välja deltagare?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -501,7 +536,8 @@
       "Bekvämlighetsurval enbart utifrån restid"
     ],
     "answer": 0,
-    "explanation": "Ett strategiskt urval väljer deltagare utifrån egenskaper eller erfarenheter som är relevanta för studiens fråga."
+    "explanation": "Ett strategiskt urval väljer deltagare utifrån egenskaper eller erfarenheter som är relevanta för studiens fråga.",
+    "help": "Studenten väljer personer för att de har erfarenheter som passar studiens fråga. Vilket slags urval är det?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -515,7 +551,8 @@
       "En förändrad population"
     ],
     "answer": 0,
-    "explanation": "Internt bortfall gäller obesvarade frågor hos deltagare. Externt bortfall innebär att utvalda personer inte deltar alls."
+    "explanation": "Internt bortfall gäller obesvarade frågor hos deltagare. Externt bortfall innebär att utvalda personer inte deltar alls.",
+    "help": "Personen svarar på en del av enkäten men lämnar några frågor tomma. Vad kallas den typen av bortfall?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -529,7 +566,8 @@
       "Att hela populationen därmed har undersökts"
     ],
     "answer": 0,
-    "explanation": "Bortfallets sammansättning och samband med det som undersöks är viktigt, inte bara dess procentuella storlek."
+    "explanation": "Bortfallets sammansättning och samband med det som undersöks är viktigt, inte bara dess procentuella storlek.",
+    "help": "Få personer avstår, men de kommer nästan alla från samma grupp. Varför kan det spela roll för resultatet?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -543,7 +581,8 @@
       "Det måste ersättas med en fråga om deltagarens ålder"
     ],
     "answer": 0,
-    "explanation": "Stöd kan vara snabbt men irrelevant, eller långsamt men relevant. Bedömningarna bör därför hållas isär."
+    "explanation": "Stöd kan vara snabbt men irrelevant, eller långsamt men relevant. Bedömningarna bör därför hållas isär.",
+    "help": "Deltagaren ska ta ställning till formuleringen snabbt och relevant stöd. Vad kan göra den svår att besvara?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -557,7 +596,8 @@
       "Har du deltagit i ett stödsamtal under september?"
     ],
     "answer": 0,
-    "explanation": "Ordet välfungerande förutsätter en positiv bedömning av det som deltagaren ska värdera."
+    "explanation": "Ordet välfungerande förutsätter en positiv bedömning av det som deltagaren ska värdera.",
+    "help": "Vilken fråga är formulerad så att den styr deltagaren mot en viss bedömning?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -571,7 +611,8 @@
       "För att bestämma vilka resultat som ska publiceras"
     ],
     "answer": 0,
-    "explanation": "En provundersökning kan visa om frågor och svarsalternativ fungerar för den tänkta målgruppen."
+    "explanation": "En provundersökning kan visa om frågor och svarsalternativ fungerar för den tänkta målgruppen.",
+    "help": "Varför testa frågorna på några liknande personer innan den riktiga enkäten skickas ut?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -585,7 +626,8 @@
       "Som att medelvärdet alltid beskriver en genomsnittlig yrkesroll"
     ],
     "answer": 0,
-    "explanation": "Sifferkoder gör inte en nominalvariabel numerisk i meningsfull matematisk bemärkelse. Frekvenser och andelar kan användas."
+    "explanation": "Sifferkoder gör inte en nominalvariabel numerisk i meningsfull matematisk bemärkelse. Frekvenser och andelar kan användas.",
+    "help": "Siffrorna 1 och 2 används för olika yrken. Vad betyder siffrorna i det sammanhanget?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -599,7 +641,8 @@
       "Värdet har alltid en absolut nollpunkt"
     ],
     "answer": 0,
-    "explanation": "Ordinala svar anger ordning. Skillnaden mellan två intilliggande alternativ behöver inte upplevas lika stor över hela skalan."
+    "explanation": "Ordinala svar anger ordning. Skillnaden mellan två intilliggande alternativ behöver inte upplevas lika stor över hela skalan.",
+    "help": "Tänk på svar som går från instämmer inte till instämmer helt. Vad säger en sådan svarsskala om värdena?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -613,7 +656,8 @@
       "Genomföra t-testet först och granska kodningen bara om resultatet blir signifikant"
     ],
     "answer": 0,
-    "explanation": "Felkodade saknade värden kan kraftigt påverka sammanfattningar och testresultat. Datakontroll ska föregå analysen."
+    "explanation": "Felkodade saknade värden kan kraftigt påverka sammanfattningar och testresultat. Datakontroll ska föregå analysen.",
+    "help": "Talet 999 betyder inget svar, men ligger bland testpoängen. Hur bör forskaren hantera det innan beräkningarna görs?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -627,7 +671,8 @@
       "Summan av frånvarodagarna"
     ],
     "answer": 0,
-    "explanation": "Ett extremt värde kan dra upp medelvärdet kraftigt. Medianen kan då bättre beskriva en typisk observation."
+    "explanation": "Ett extremt värde kan dra upp medelvärdet kraftigt. Medianen kan då bättre beskriva en typisk observation.",
+    "help": "En elev har mycket fler frånvarodagar än alla andra. Vilket mått på ett typiskt värde påverkas minst av det?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -641,7 +686,8 @@
       "De måste ha undersökts med samma urvalsmetod"
     ],
     "answer": 0,
-    "explanation": "Samma medelvärde kan förekomma i grupper med mycket olika variation. Redovisa därför även spridning."
+    "explanation": "Samma medelvärde kan förekomma i grupper med mycket olika variation. Redovisa därför även spridning.",
+    "help": "Grupperna har samma genomsnitt. Vilken annan egenskap hos resultaten kan ändå vara olika?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -655,7 +701,8 @@
       "Att den ena undervisningsmetoden är bättre"
     ],
     "answer": 0,
-    "explanation": "Nollhypotesen gäller här frånvaro av en populationsskillnad i medelvärde, inte identiska observationer."
+    "explanation": "Nollhypotesen gäller här frånvaro av en populationsskillnad i medelvärde, inte identiska observationer.",
+    "help": "Forskaren testar om två grupper skiljer sig i genomsnitt. Vilket påstående utgår nollhypotesen från?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -669,7 +716,8 @@
       "Storleken på skillnaden mellan grupperna"
     ],
     "answer": 0,
-    "explanation": "P-värdet är villkorat av nollhypotesen och testets antaganden. Det anger varken hypotesens sannolikhet eller effektens storlek."
+    "explanation": "P-värdet är villkorat av nollhypotesen och testets antaganden. Det anger varken hypotesens sannolikhet eller effektens storlek.",
+    "help": "Vad säger ett p-värde egentligen? Välj beskrivningen som anger vad sannolikheten gäller."
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -683,7 +731,8 @@
       "Om signifikansen kan ersätta redovisningen av mätningen"
     ],
     "answer": 0,
-    "explanation": "Statistisk signifikans innebär inte automatiskt att skillnaden är praktiskt viktig."
+    "explanation": "Statistisk signifikans innebär inte automatiskt att skillnaden är praktiskt viktig.",
+    "help": "En skillnad klarar testets statistiska gräns, men är liten. Vad behövs för att bedöma om den spelar roll i praktiken?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -697,7 +746,8 @@
       "Nollhypotesen har därmed blivit en säker sanning"
     ],
     "answer": 0,
-    "explanation": "Ett litet stickprov eller osäker mätning kan göra det svårt att upptäcka en skillnad. Icke-signifikans är inte ett bevis för likhet."
+    "explanation": "Ett litet stickprov eller osäker mätning kan göra det svårt att upptäcka en skillnad. Icke-signifikans är inte ett bevis för likhet.",
+    "help": "Testet ger inte ett statistiskt signifikant resultat. Vad kan forskaren då säga om en möjlig skillnad?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -711,7 +761,8 @@
       "Skillnaden är en halv poäng oavsett mätinstrument"
     ],
     "answer": 0,
-    "explanation": "Cohen’s d uttrycker en standardiserad medelvärdesskillnad. Den praktiska betydelsen behöver bedömas i sammanhanget."
+    "explanation": "Cohen’s d uttrycker en standardiserad medelvärdesskillnad. Den praktiska betydelsen behöver bedömas i sammanhanget.",
+    "help": "Cohen’s d används för att beskriva skillnadens storlek. Hur ska värdet 0,50 förstås?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -725,7 +776,8 @@
       "Ett test av nominala gruppnamns medelvärden"
     ],
     "answer": 0,
-    "explanation": "Före- och eftervärden från samma elev hör ihop. De ska inte behandlas som två oberoende grupper."
+    "explanation": "Före- och eftervärden från samma elev hör ihop. De ska inte behandlas som två oberoende grupper.",
+    "help": "Man jämför varje elevs resultat före och efter en insats. Vilket t-test passar den typen av jämförelse?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -739,7 +791,8 @@
       "Tolkning av innebörden i ett policydokument"
     ],
     "answer": 0,
-    "explanation": "Ett oberoende t-test jämför medelvärden mellan två oberoende grupper och kräver en lämplig numerisk resultatvariabel."
+    "explanation": "Ett oberoende t-test jämför medelvärden mellan två oberoende grupper och kräver en lämplig numerisk resultatvariabel.",
+    "help": "I vilken situation passar ett t-test som jämför två oberoende grupper?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -753,7 +806,8 @@
       "Kausala slutsatser avgörs enbart av antalet decimaler i p-värdet"
     ],
     "answer": 0,
-    "explanation": "Den kausala tolkningen beror på designen och hanteringen av alternativa förklaringar, inte bara på det statistiska testet."
+    "explanation": "Den kausala tolkningen beror på designen och hanteringen av alternativa förklaringar, inte bara på det statistiska testet.",
+    "help": "Klasserna får olika resultat efter olika undervisning. Varför räcker det inte för att veta att undervisningsmetoden är orsaken?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -767,7 +821,8 @@
       "Tematisk analys"
     ],
     "answer": 0,
-    "explanation": "En fallstudie avser studiens övergripande upplägg. De andra alternativen gäller urval, material respektive analys."
+    "explanation": "En fallstudie avser studiens övergripande upplägg. De andra alternativen gäller urval, material respektive analys.",
+    "help": "Vilket alternativ beskriver hur hela undersökningen är upplagd?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -781,7 +836,8 @@
       "Transkriberad intervju"
     ],
     "answer": 0,
-    "explanation": "Tematisk analys är ett sätt att analysera material. Intervju gäller datainsamling, strategiskt urval gäller vilka som ingår och transkriptionen är material."
+    "explanation": "Tematisk analys är ett sätt att analysera material. Intervju gäller datainsamling, strategiskt urval gäller vilka som ingår och transkriptionen är material.",
+    "help": "Vilket alternativ beskriver ett sätt att bearbeta och undersöka det insamlade materialet?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -795,7 +851,8 @@
       "Att ersätta utsagorna med teorins definitioner"
     ],
     "answer": 0,
-    "explanation": "Analysen behöver göra något med materialet utifrån frågeställningen, utöver att återge intervjupersonernas berättelser."
+    "explanation": "Analysen behöver göra något med materialet utifrån frågeställningen, utöver att återge intervjupersonernas berättelser.",
+    "help": "Forskaren vill hitta mönster i flera intervjuer. Vad behöver hen göra med berättelserna?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -809,7 +866,8 @@
       "Hur samtliga elever upplever stödinsatserna"
     ],
     "answer": 0,
-    "explanation": "Dokument kan visa hur ansvar formuleras. Påståenden om faktisk praktik eller effekter kräver ytterligare relevant material."
+    "explanation": "Dokument kan visa hur ansvar formuleras. Påståenden om faktisk praktik eller effekter kräver ytterligare relevant material.",
+    "help": "Forskaren läser vad skolans dokument säger om ansvar. Vilken sorts slutsats kan just dokumenten stödja?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -823,7 +881,8 @@
       "Databasens användargränssnitt"
     ],
     "answer": 0,
-    "explanation": "I en forskningskartläggning är tidigare publikationer analysmaterial. Sökning och urval behöver därför vara systematiska och beskrivna."
+    "explanation": "I en forskningskartläggning är tidigare publikationer analysmaterial. Sökning och urval behöver därför vara systematiska och beskrivna.",
+    "help": "Forskaren gör en systematisk översikt av tidigare studier. Vad är det som undersöks i analysen?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -837,7 +896,8 @@
       "Att urval och databaser kan påverka vad som hittades"
     ],
     "answer": 0,
-    "explanation": "Antalet identifierade studier beror även på sökning och urval. Det mäter inte direkt fenomenets förekomst eller betydelse."
+    "explanation": "Antalet identifierade studier beror även på sökning och urval. Det mäter inte direkt fenomenets förekomst eller betydelse.",
+    "help": "Sökningen hittar få studier. Vilken slutsats går det inte att dra enbart utifrån det?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -851,7 +911,8 @@
       "Forskaren anser att alla tolkningar är lika rimliga"
     ],
     "answer": 0,
-    "explanation": "Datainsamlingsmetod bestämmer inte automatiskt vetenskapsteoretisk position. Intervjusvar kan också kategoriseras och räknas."
+    "explanation": "Datainsamlingsmetod bestämmer inte automatiskt vetenskapsteoretisk position. Intervjusvar kan också kategoriseras och räknas.",
+    "help": "Man vet bara att forskaren använder intervjuer. Hur mycket säger det om forskarens syn på vetenskap och kunskap?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -865,7 +926,8 @@
       "Utgå från att deltagaren måste ha svarat fel"
     ],
     "answer": 0,
-    "explanation": "Motsägande fall kan visa att teorin behöver avgränsas eller användas annorlunda. Att bara söka bekräftelse riskerar en cirkulär analys."
+    "explanation": "Motsägande fall kan visa att teorin behöver avgränsas eller användas annorlunda. Att bara söka bekräftelse riskerar en cirkulär analys.",
+    "help": "Något i materialet passar inte med teorin. Hur kan forskaren arbeta vidare med det?"
   },
   {
     "source": "Serder_och_Jober_2021_kapitel_1.pdf",
@@ -879,7 +941,8 @@
       "Administrativ genom resursfördelning"
     ],
     "answer": 0,
-    "explanation": "Den förstående funktionen handlar om att göra det okända begripligt. Frågan betonar denna funktion snarare än kausal förklaring eller maktkritik."
+    "explanation": "Den förstående funktionen handlar om att göra det okända begripligt. Frågan betonar denna funktion snarare än kausal förklaring eller maktkritik.",
+    "help": "Teorin hjälper läraren att förstå något som tidigare var svårt att begripa. Vilken teorifunktion handlar det om?"
   },
   {
     "source": "Serder_och_Jober_2021_kapitel_1.pdf",
@@ -893,7 +956,8 @@
       "Teori betyder alltid samma sak inom alla discipliner"
     ],
     "answer": 0,
-    "explanation": "Utbildningsvetenskapen har flera disciplinära rötter. Kapitlet diskuterar en bredd från prövbara teorier till filosofiska perspektiv."
+    "explanation": "Utbildningsvetenskapen har flera disciplinära rötter. Kapitlet diskuterar en bredd från prövbara teorier till filosofiska perspektiv.",
+    "help": "Ett kontinuum är en skala med flera lägen mellan ytterpunkter. Varför använder författarna den bilden för teorier?"
   },
   {
     "source": "God_forskningssed_VR_2024.pdf",
@@ -907,7 +971,8 @@
       "Skyddsintresset gäller bara under själva datainsamlingen"
     ],
     "answer": 0,
-    "explanation": "Öppenhetsintresset ska vägas mot behovet av skydd. Tillgänglighet är inte ett skäl att utsätta berörda för oproportionerlig risk."
+    "explanation": "Öppenhetsintresset ska vägas mot behovet av skydd. Tillgänglighet är inte ett skäl att utsätta berörda för oproportionerlig risk.",
+    "help": "Forskaren vill dela materialet med andra, men deltagare kan fara illa. Hur bör målen vägas mot varandra?"
   },
   {
     "source": "God_forskningssed_VR_2024.pdf",
@@ -921,7 +986,8 @@
       "Det är enbart en fråga om rapportens språkliga utformning"
     ],
     "answer": 0,
-    "explanation": "Förtroendet ska inte skyddas genom att avvikelser eller obekväma resultat döljs. Det skulle strida mot ärlighet."
+    "explanation": "Förtroendet ska inte skyddas genom att avvikelser eller obekväma resultat döljs. Det skulle strida mot ärlighet.",
+    "help": "Organisationen vill skydda sitt rykte genom att gömma problem. Är det förenligt med att värna förtroendet för forskning?"
   },
   {
     "source": "God_forskningssed_VR_2024.pdf",
@@ -935,7 +1001,8 @@
       "Den gäller bara om en deltagare uttryckligen begär det"
     ],
     "answer": 0,
-    "explanation": "God forskningssed omfattar etiska krav även när de inte direkt följer av rättsligt bindande föreskrifter."
+    "explanation": "God forskningssed omfattar etiska krav även när de inte direkt följer av rättsligt bindande föreskrifter.",
+    "help": "En etisk riktlinje är inte en bindande lagregel. Vilken betydelse kan den ändå ha för forskningen?"
   },
   {
     "source": "God_forskningssed_VR_2024.pdf",
@@ -949,7 +1016,8 @@
       "För att göra metodval oberoende av riskerna"
     ],
     "answer": 0,
-    "explanation": "Tidig planering stärker beredskapen och möjligheten att bedriva forskningen ansvarsfullt. Den ersätter inte fortsatt uppmärksamhet."
+    "explanation": "Tidig planering stärker beredskapen och möjligheten att bedriva forskningen ansvarsfullt. Den ersätter inte fortsatt uppmärksamhet.",
+    "help": "Varför tänka på etiska frågor redan när undersökningen planeras?"
   },
   {
     "source": "God_forskningssed_VR_2024.pdf",
@@ -963,7 +1031,8 @@
       "Att snabb publicering alltid prioriteras framför kvalitet"
     ],
     "answer": 0,
-    "explanation": "Goda forskningsvanor i vardagen hjälper forskningsmiljön att förebygga problem och hantera negativa incitament."
+    "explanation": "Goda forskningsvanor i vardagen hjälper forskningsmiljön att förebygga problem och hantera negativa incitament.",
+    "help": "Vad i forskarnas gemensamma vardag hjälper dem att arbeta på ett etiskt bra sätt?"
   },
   {
     "source": "God_forskningssed_VR_2024.pdf",
@@ -977,7 +1046,8 @@
       "Bara till att referenslistan är korrekt"
     ],
     "answer": 0,
-    "explanation": "Ansvar omfattar forskningsprocessen, ledning, utbildning och handledning samt forskningens vidare konsekvenser."
+    "explanation": "Ansvar omfattar forskningsprocessen, ledning, utbildning och handledning samt forskningens vidare konsekvenser.",
+    "help": "Vilka delar av forskningsarbetet omfattas av principen om ansvar?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -991,7 +1061,8 @@
       "Tillståndet ersätter informationen till deltagarna"
     ],
     "answer": 0,
-    "explanation": "Tillträde till verksamheten och individens frivilliga deltagande är skilda frågor. En dörröppnare ersätter inte deltagarens eget beslut."
+    "explanation": "Tillträde till verksamheten och individens frivilliga deltagande är skilda frågor. En dörröppnare ersätter inte deltagarens eget beslut.",
+    "help": "Rektorn säger ja till studien. Vad betyder det för varje lärares eget beslut att vara med?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -1005,7 +1076,8 @@
       "Samtycket handlar enbart om hur blanketten arkiveras"
     ],
     "answer": 0,
-    "explanation": "Samtycke bygger på begriplig information och frivillighet. I långvariga eller föränderliga studier kan forskaren behöva försäkra sig om att deltagandet fortfarande är frivilligt."
+    "explanation": "Samtycke bygger på begriplig information och frivillighet. I långvariga eller föränderliga studier kan forskaren behöva försäkra sig om att deltagandet fortfarande är frivilligt.",
+    "help": "Varför beskrivs informerat samtycke som något som pågår, och inte bara som en underskrift?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -1019,7 +1091,8 @@
       "Igenkänning beror enbart på om intervjun spelades in"
     ],
     "answer": 0,
-    "explanation": "Borttagna namn räcker inte alltid. Även indirekta uppgifter behöver granskas och begränsas till det som behövs."
+    "explanation": "Borttagna namn räcker inte alltid. Även indirekta uppgifter behöver granskas och begränsas till det som behövs.",
+    "help": "Namnen är borttagna, men intervjun handlar om en liten skola. Hur kan någon ändå förstå vem personen är?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -1033,7 +1106,8 @@
       "Om ansvar för uppgifterna enbart ligger hos den intervjuade läraren"
     ],
     "answer": 0,
-    "explanation": "Även personer som inte själva deltar kan beröras. Intervjuguide och materialhantering behöver ta hänsyn till sådana uppgifter."
+    "explanation": "Även personer som inte själva deltar kan beröras. Intervjuguide och materialhantering behöver ta hänsyn till sådana uppgifter.",
+    "help": "En lärare berättar om någon som inte är med i studien. Vad behöver forskaren tänka på kring den personens uppgifter?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -1047,7 +1121,8 @@
       "Relationen påverkar bara schemaläggningen av intervjuer"
     ],
     "answer": 0,
-    "explanation": "Den egna positionen kan påverka både materialets tillkomst och analysen. Därför är detta också en kunskapsteoretisk fråga."
+    "explanation": "Den egna positionen kan påverka både materialets tillkomst och analysen. Därför är detta också en kunskapsteoretisk fråga.",
+    "help": "Studenten är både intervjuare och arbetskamrat. Hur kan det påverka det som kommer fram och hur det förstås?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -1061,7 +1136,8 @@
       "Vänta med att bestämma åtkomst tills materialet har delats"
     ],
     "answer": 0,
-    "explanation": "Materialhanteringen behöver vara konkret planerad. Uppgifterna ska begränsas till vad studien behöver."
+    "explanation": "Materialhanteringen behöver vara konkret planerad. Uppgifterna ska begränsas till vad studien behöver.",
+    "help": "Hur bör forskaren planera vilka uppgifter som samlas in och hur de hanteras?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -1075,7 +1151,8 @@
       "Informationen bör ges först när datainsamlingen är avslutad"
     ],
     "answer": 0,
-    "explanation": "Barn har olika förutsättningar och kan behöva anpassad information eller stöd. Deras egen vilja behöver respekteras och andra samtyckesfrågor också hanteras."
+    "explanation": "Barn har olika förutsättningar och kan behöva anpassad information eller stöd. Deras egen vilja behöver respekteras och andra samtyckesfrågor också hanteras.",
+    "help": "Vad behöver forskaren tänka på för att barn ska kunna förstå informationen om studien?"
   },
   {
     "source": "Serder_och_Jober_2021_kapitel_1.pdf",
@@ -1089,7 +1166,8 @@
       "Teorin är vetenskaplig endast om ingen kan kritisera den"
     ],
     "answer": 0,
-    "explanation": "Falsifierbarhet är möjligheten att motbevisa en teori. Det betyder inte att teorin faktiskt har motbevisats."
+    "explanation": "Falsifierbarhet är möjligheten att motbevisa en teori. Det betyder inte att teorin faktiskt har motbevisats.",
+    "help": "Vad menar Popper när han säger att en teori ska vara möjlig att falsifiera?"
   },
   {
     "source": "Serder_och_Jober_2021_kapitel_1.pdf",
@@ -1103,7 +1181,8 @@
       "Att utgå från att teoretiska begrepp aldrig kan förändras"
     ],
     "answer": 0,
-    "explanation": "Teoretiserande kan utveckla de begrepp och antaganden genom vilka ett fenomen förstås och analyseras."
+    "explanation": "Teoretiserande kan utveckla de begrepp och antaganden genom vilka ett fenomen förstås och analyseras.",
+    "help": "Vad gör forskaren när hen utvecklar teorier och deras begrepp?"
   },
   {
     "source": "God_forskningssed_VR_2024.pdf",
@@ -1117,7 +1196,8 @@
       "Låta den egna relationen till författaren avgöra bedömningen"
     ],
     "answer": 0,
-    "explanation": "Granskningen ska vara välgrundad och ärlig. Intressekonflikter ska redovisas, och risk för otillbörlig påverkan kräver att forskaren avstår."
+    "explanation": "Granskningen ska vara välgrundad och ärlig. Intressekonflikter ska redovisas, och risk för otillbörlig påverkan kräver att forskaren avstår.",
+    "help": "Granskaren har andra intressen som riskerar att påverka bedömningen på ett olämpligt sätt. Hur ska situationen hanteras?"
   },
   {
     "source": "God_forskningssed_VR_2024.pdf",
@@ -1131,7 +1211,8 @@
       "Vänta med att agera tills någon annan upptäcker felet"
     ],
     "answer": 0,
-    "explanation": "Forskarna och utgivaren har ansvar för att fel hanteras öppet. Rättelser eller tillbakadraganden ska förklaras tydligt."
+    "explanation": "Forskarna och utgivaren har ansvar för att fel hanteras öppet. Rättelser eller tillbakadraganden ska förklaras tydligt.",
+    "help": "Artikeln är redan publicerad när forskaren hittar ett viktigt fel. Vad bör hen göra nu?"
   },
   {
     "source": "God_forskningssed_VR_2024.pdf",
@@ -1145,6 +1226,7 @@
       "Urval, datainsamling, analys och rapportering"
     ],
     "answer": 0,
-    "explanation": "Materialet skiljer mellan flera etiska ramverk. Dessa fyra principer ska inte förväxlas med ALLEA-kodexens principer eller med de olika intressen som diskuteras."
+    "explanation": "Materialet skiljer mellan flera etiska ramverk. Dessa fyra principer ska inte förväxlas med ALLEA-kodexens principer eller med de olika intressen som diskuteras.",
+    "help": "Materialet beskriver flera grupper av etiska principer. Vilka fyra hör till det ramverk som frågan handlar om?"
   }
 ]

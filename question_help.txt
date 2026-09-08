@@ -1,0 +1,82 @@
+﻿Vad är det forskaren vill ta reda på när hen formulerar ett forskningsproblem?
+Studenten vill veta hur elever upplever stödet, men frågar bara lärare. Vad blir problemet med det upplägget?
+Att transkribera betyder att skriva ned det som sägs i intervjun. Vad är det sedan forskaren arbetar med i analysen?
+Studiens mål ändras. Vad behöver forskaren då se över i resten av undersökningen?
+Hur ska studiens frågor hänga ihop med det övergripande målet?
+Vad behöver forskaren berätta om hur svaren eller uppgifterna ska undersökas?
+Studenten nämner en teori men förklarar inte hur den används. Vilken information saknas?
+Hur ska forskaren bedöma vad den egna undersökningen fungerar bra för och vad den inte kan visa?
+Vad är skillnaden mellan hur undersökningen hänger ihop och hur rapporten är uppdelad?
+Varför läser forskaren tidigare studier när en ny undersökning planeras?
+Forskaren upptäcker att sättet att bjuda in deltagare kan skapa problem för dem. Vad kan behöva göras?
+Vilket slags resonemang visar att forskaren har tänkt igenom riskerna i just sin studie?
+Vad menas med liknelsen att teorier är verktyg för tanken?
+Vad vill man förklara genom att jämföra en teori med ett par glasögon?
+Vilka tre olika uppgifter kan en teori ha enligt kapitlet?
+Forskaren använder teorin för att undersöka varför något händer. Vilket namn har den funktionen?
+Forskaren undersöker hur makt och bakomliggande mönster påverkar skolan. Vilken funktion har teorin här?
+Vilken sorts grundfrågor hör till begreppet ontologi?
+Vilken sorts grundfrågor hör till begreppet epistemologi?
+Hur kan synen på verkligheten hänga ihop med synen på kunskap?
+Varför behöver man förstå var gränserna går för en teori?
+ALLEA-kodexen är riktlinjer för god forskning. Vilka fyra grundprinciper anges där?
+Vilken grundprincip handlar om att undersökningen är väl planerad och genomförd?
+Vad innebär det att arbeta ärligt som forskare?
+Forskaren skriver att intervjuer har gett vissa resultat, trots att resultaten är påhittade. Vad kallas det?
+Forskaren ändrar eller tar bort uppgifter för att få ett önskat resultat. Vad kallas det?
+Forskaren använder andras idéer utan att ange varifrån de kommer. Vad kallas det?
+Vilket intresse väger tyngst när olika mål för forskningen krockar?
+Vilka slags negativa följder kan forskning få för dem som berörs?
+Varför behöver forskare fundera och samtala om vad som är etiskt rimligt?
+Begreppet tillgång till stöd behöver kunna undersökas. Vad innebär det att operationalisera det?
+Ett test ger stabila svar, men undersöker inte det man ville veta. Hur bedömer man då mätningens kvalitet?
+Vad skiljer hela gruppen som studien handlar om från den grupp som faktiskt undersöks?
+Många har svarat på enkäten. Vad behöver man veta innan man säger att svaren gäller en större grupp?
+Studenten väljer personer som är lätta att få tag på. Vilket namn har det sättet att välja deltagare?
+Studenten väljer personer för att de har erfarenheter som passar studiens fråga. Vilket slags urval är det?
+Personen svarar på en del av enkäten men lämnar några frågor tomma. Vad kallas den typen av bortfall?
+Få personer avstår, men de kommer nästan alla från samma grupp. Varför kan det spela roll för resultatet?
+Deltagaren ska ta ställning till formuleringen snabbt och relevant stöd. Vad kan göra den svår att besvara?
+Vilken fråga är formulerad så att den styr deltagaren mot en viss bedömning?
+Varför testa frågorna på några liknande personer innan den riktiga enkäten skickas ut?
+Siffrorna 1 och 2 används för olika yrken. Vad betyder siffrorna i det sammanhanget?
+Tänk på svar som går från instämmer inte till instämmer helt. Vad säger en sådan svarsskala om värdena?
+Talet 999 betyder inget svar, men ligger bland testpoängen. Hur bör forskaren hantera det innan beräkningarna görs?
+En elev har mycket fler frånvarodagar än alla andra. Vilket mått på ett typiskt värde påverkas minst av det?
+Grupperna har samma genomsnitt. Vilken annan egenskap hos resultaten kan ändå vara olika?
+Forskaren testar om två grupper skiljer sig i genomsnitt. Vilket påstående utgår nollhypotesen från?
+Vad säger ett p-värde egentligen? Välj beskrivningen som anger vad sannolikheten gäller.
+En skillnad klarar testets statistiska gräns, men är liten. Vad behövs för att bedöma om den spelar roll i praktiken?
+Testet ger inte ett statistiskt signifikant resultat. Vad kan forskaren då säga om en möjlig skillnad?
+Cohen’s d används för att beskriva skillnadens storlek. Hur ska värdet 0,50 förstås?
+Man jämför varje elevs resultat före och efter en insats. Vilket t-test passar den typen av jämförelse?
+I vilken situation passar ett t-test som jämför två oberoende grupper?
+Klasserna får olika resultat efter olika undervisning. Varför räcker det inte för att veta att undervisningsmetoden är orsaken?
+Vilket alternativ beskriver hur hela undersökningen är upplagd?
+Vilket alternativ beskriver ett sätt att bearbeta och undersöka det insamlade materialet?
+Forskaren vill hitta mönster i flera intervjuer. Vad behöver hen göra med berättelserna?
+Forskaren läser vad skolans dokument säger om ansvar. Vilken sorts slutsats kan just dokumenten stödja?
+Forskaren gör en systematisk översikt av tidigare studier. Vad är det som undersöks i analysen?
+Sökningen hittar få studier. Vilken slutsats går det inte att dra enbart utifrån det?
+Man vet bara att forskaren använder intervjuer. Hur mycket säger det om forskarens syn på vetenskap och kunskap?
+Något i materialet passar inte med teorin. Hur kan forskaren arbeta vidare med det?
+Teorin hjälper läraren att förstå något som tidigare var svårt att begripa. Vilken teorifunktion handlar det om?
+Ett kontinuum är en skala med flera lägen mellan ytterpunkter. Varför använder författarna den bilden för teorier?
+Forskaren vill dela materialet med andra, men deltagare kan fara illa. Hur bör målen vägas mot varandra?
+Organisationen vill skydda sitt rykte genom att gömma problem. Är det förenligt med att värna förtroendet för forskning?
+En etisk riktlinje är inte en bindande lagregel. Vilken betydelse kan den ändå ha för forskningen?
+Varför tänka på etiska frågor redan när undersökningen planeras?
+Vad i forskarnas gemensamma vardag hjälper dem att arbeta på ett etiskt bra sätt?
+Vilka delar av forskningsarbetet omfattas av principen om ansvar?
+Rektorn säger ja till studien. Vad betyder det för varje lärares eget beslut att vara med?
+Varför beskrivs informerat samtycke som något som pågår, och inte bara som en underskrift?
+Namnen är borttagna, men intervjun handlar om en liten skola. Hur kan någon ändå förstå vem personen är?
+En lärare berättar om någon som inte är med i studien. Vad behöver forskaren tänka på kring den personens uppgifter?
+Studenten är både intervjuare och arbetskamrat. Hur kan det påverka det som kommer fram och hur det förstås?
+Hur bör forskaren planera vilka uppgifter som samlas in och hur de hanteras?
+Vad behöver forskaren tänka på för att barn ska kunna förstå informationen om studien?
+Vad menar Popper när han säger att en teori ska vara möjlig att falsifiera?
+Vad gör forskaren när hen utvecklar teorier och deras begrepp?
+Granskaren har andra intressen som riskerar att påverka bedömningen på ett olämpligt sätt. Hur ska situationen hanteras?
+Artikeln är redan publicerad när forskaren hittar ett viktigt fel. Vad bör hen göra nu?
+Materialet beskriver flera grupper av etiska principer. Vilka fyra hör till det ramverk som frågan handlar om?
