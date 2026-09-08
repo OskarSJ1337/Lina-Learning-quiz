@@ -72,7 +72,7 @@
     ],
     "answer": 0,
     "explanation": "Frågeställningarna konkretiserar syftet och ska hålla studien samman.",
-    "help": "Hur ska studiens frågor hänga ihop med det övergripande målet?"
+    "help": "Hur ska frågorna hänga ihop med det forskaren vill undersöka?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -177,7 +177,7 @@
     ],
     "answer": 0,
     "explanation": "Etik behöver knytas till faktiska situationer och till vad åtgärderna kan och inte kan lösa.",
-    "help": "Vilket slags resonemang visar att forskaren har tänkt igenom riskerna i just sin studie?"
+    "help": "Vilken beskrivning visar att forskaren har tänkt på vad som kan bli svårt eller skadligt för deltagarna?"
   },
   {
     "source": "Serder_och_Jober_2021_kapitel_1.pdf",
@@ -1002,7 +1002,7 @@
     ],
     "answer": 0,
     "explanation": "God forskningssed omfattar etiska krav även när de inte direkt följer av rättsligt bindande föreskrifter.",
-    "help": "En etisk riktlinje är inte en bindande lagregel. Vilken betydelse kan den ändå ha för forskningen?"
+    "help": "En riktlinje beskriver hur forskare bör handla. Den är inte en lag. Kan den ändå vara viktig för forskarens ansvar?"
   },
   {
     "source": "God_forskningssed_VR_2024.pdf",
@@ -1032,7 +1032,7 @@
     ],
     "answer": 0,
     "explanation": "Goda forskningsvanor i vardagen hjälper forskningsmiljön att förebygga problem och hantera negativa incitament.",
-    "help": "Vad i forskarnas gemensamma vardag hjälper dem att arbeta på ett etiskt bra sätt?"
+    "help": "Vad hjälper forskare att ta ansvar och visa hänsyn i sitt dagliga arbete?"
   },
   {
     "source": "God_forskningssed_VR_2024.pdf",
@@ -1047,7 +1047,7 @@
     ],
     "answer": 0,
     "explanation": "Ansvar omfattar forskningsprocessen, ledning, utbildning och handledning samt forskningens vidare konsekvenser.",
-    "help": "Vilka delar av forskningsarbetet omfattas av principen om ansvar?"
+    "help": "När och för vad behöver forskaren ta ansvar?"
   },
   {
     "source": "Undervisningsunderlag_bilder_och_text.pdf",
@@ -1152,7 +1152,7 @@
     ],
     "answer": 0,
     "explanation": "Barn har olika förutsättningar och kan behöva anpassad information eller stöd. Deras egen vilja behöver respekteras och andra samtyckesfrågor också hanteras.",
-    "help": "Vad behöver forskaren tänka på för att barn ska kunna förstå informationen om studien?"
+    "help": "Forskaren ska berätta för barn vad studien innebär. Vad är särskilt viktigt att tänka på?"
   },
   {
     "source": "Serder_och_Jober_2021_kapitel_1.pdf",
@@ -1182,7 +1182,7 @@
     ],
     "answer": 0,
     "explanation": "Teoretiserande kan utveckla de begrepp och antaganden genom vilka ett fenomen förstås och analyseras.",
-    "help": "Vad gör forskaren när hen utvecklar teorier och deras begrepp?"
+    "help": "Vad innebär det att arbeta fram eller utveckla en teori?"
   },
   {
     "source": "God_forskningssed_VR_2024.pdf",
@@ -1197,7 +1197,7 @@
     ],
     "answer": 0,
     "explanation": "Granskningen ska vara välgrundad och ärlig. Intressekonflikter ska redovisas, och risk för otillbörlig påverkan kräver att forskaren avstår.",
-    "help": "Granskaren har andra intressen som riskerar att påverka bedömningen på ett olämpligt sätt. Hur ska situationen hanteras?"
+    "help": "En forskare ska bedöma någon annans text. Forskaren har egna intressen som kan göra bedömningen orättvis. Vad bör forskaren göra?"
   },
   {
     "source": "God_forskningssed_VR_2024.pdf",

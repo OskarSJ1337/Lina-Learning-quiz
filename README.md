@@ -32,3 +32,5 @@ Skicka endast `dist/Lina-Sjalvtest.exe` (cirka 11 MB) till mottagaren. Appen ?r 
 Fr?gebanken omfattar nu 82 fr?gor. De 40 tillagda fr?gorna i `additional_questions.py` t?cker bland annat urval, bortfall, enk?ter, m?tningskvalitet, statistik, analys, teorifunktioner och etiska avv?gningar. Alla har fyra alternativ, f?rklaring och h?nvisning till PDF-sida.
 
 Efter granskning av ämnestäckning, överlapp och källtext tillkom 12 frågor om samtycke, indirekt identifiering, tredje person, dubbla roller, dataminimering, barn, falsifierbarhet, teoretiserande, intressekonflikter, rättelser och etiska ramverk.
+
+Läsinställningar: Verdana med minst 14 punkters text, A−/A+ för större text, kortare stycken och tydligare kontrast i dag- och nattläge. Frågehjälpen använder enklare språk. Inställningarna gäller under den öppna sessionen.

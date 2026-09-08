@@ -140,7 +140,7 @@ class App(tk.Tk):
         self.importing = False
         self.header = tk.Frame(self, bg=BG)
         self.header.pack(fill='x', padx=32, pady=(24, 10))
-        tk.Label(self.header, text='Linas coola quiz', font=self.reading_font(18, 'bold'), bg=BG, fg=INK).pack(side='left')
+        tk.Label(self.header, text='Linas coola quiz', font=self.reading_font(18, 'bold'), bg=BG, fg=INK).pack(side='top', anchor='w', pady=(0, 10))
         self.counter = tk.Label(self.header, text='Rätt: 0', bg=HOVER, fg=INK, padx=14, pady=8, font=self.reading_font(14, 'bold'))
         self.counter.pack(side='right')
         self.back_button = tk.Button(self.header, text='Till startsidan', command=self.home,
