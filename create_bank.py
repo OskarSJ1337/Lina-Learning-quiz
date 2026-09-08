@@ -1,4 +1,4 @@
-﻿import json
+import json
 from pathlib import Path
 questions=[]
 def add(source,page,category,question,correct,a,b,c,explanation):
@@ -39,5 +39,7 @@ V(47,'En forskare använder någon annans idéer utan att ge källan erkännande
 V(54,'Vilket intresse ska enligt materialet ges prioritet framför forsknings- och öppenhetsintresset?','Skyddsintresset','Publiceringstakten','Forskarens karriärintresse','Finansiärens marknadsföring','Skyddsintresset gäller omsorg om dem som deltar i eller berörs av forskningen och att begränsa skador.')
 V(55,'Vilken beskrivning av risker i forskning stämmer bäst med materialet?','Risker kan vara fysiska, psykiska, ekonomiska, sociala eller röra integriteten','Risker finns bara vid kirurgiska ingrepp','Risker försvinner om studien använder intervjuer','Risker uppstår endast efter publicering','Risker behöver övervägas i olika skeden och kan även omfatta indirekta följder, exempelvis stigmatisering.')
 V(7,'Vilken roll har etisk reflektion i forskningsarbetet?','Forskare behöver tillsammans med andra söka svar på de etiska frågor som uppstår','En skrift kan ge färdiga svar på alla etiska frågor','Etik behövs bara när resultatet är oväntat','Etik är enbart finansiärens ansvar','God forskningssed ger vägledning, men ersätter inte forskarens och forskarsamhällets eget etiska arbete.')
+from additional_questions import extend_bank
+extend_bank(U, S, V)
 Path('questions.json').write_text(json.dumps(questions,ensure_ascii=False,indent=2),encoding='utf-8')
 print(f'Skapade {len(questions)} frågor')

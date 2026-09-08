@@ -418,5 +418,565 @@
     ],
     "answer": 0,
     "explanation": "God forskningssed ger vägledning, men ersätter inte forskarens och forskarsamhällets eget etiska arbete."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 44,
+    "category": "Forskningsmetod",
+    "question": "Vad innebär operationalisering av begreppet tillgång till stöd?",
+    "options": [
+      "Att bestämma hur begreppet ska observeras eller mätas",
+      "Att välja vilka deltagare som är lättast att nå",
+      "Att avgöra resultatet innan data samlas in",
+      "Att ersätta begreppet med studiens slutsats"
+    ],
+    "answer": 0,
+    "explanation": "Operationalisering förbinder ett abstrakt begrepp med konkreta observationer eller mått. Valet behöver motiveras."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 45,
+    "category": "Forskningsmetod",
+    "question": "Ett instrument ger konsekventa svar men fångar inte det fenomen som studien avser. Vilken bedömning är rimlig?",
+    "options": [
+      "Det kan ha god reliabilitet men bristande mätningsvaliditet",
+      "Konsekventa svar garanterar god validitet",
+      "Det måste ha låg reliabilitet och god validitet",
+      "Instrumentet behöver bara användas på fler personer"
+    ],
+    "answer": 0,
+    "explanation": "Konsekvens i mätningen räcker inte. Validitet gäller stödet för tolkningen och användningen av mätresultaten."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 46,
+    "category": "Forskningsmetod",
+    "question": "Vad är skillnaden mellan population och stickprov?",
+    "options": [
+      "Populationen är gruppen studien avser; stickprovet är den del man får data från",
+      "Populationen är de svarande; stickprovet är alla som kunde ha deltagit",
+      "Population är ett annat ord för enkät; stickprov betyder intervju",
+      "Populationen är alltid alla invånare i ett land"
+    ],
+    "answer": 0,
+    "explanation": "Populationen behöver avgränsas utifrån forskningsfrågan. Stickprovet är en del av denna definierade population."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 46,
+    "category": "Forskningsmetod",
+    "question": "En enkät har många svarande. Vad behöver ändå granskas innan resultaten generaliseras?",
+    "options": [
+      "Hur deltagarna valdes och vilka som inte deltog",
+      "Om medelvärdet har tillräckligt många decimaler",
+      "Om diagrammen har samma färg",
+      "Om resultatdelen kommer före diskussionen"
+    ],
+    "answer": 0,
+    "explanation": "Ett stort stickprov kan fortfarande vara snedvridet. Storleken garanterar inte representativitet."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 47,
+    "category": "Forskningsmetod",
+    "question": "En student rekryterar de kollegor som är enklast att kontakta. Vad kallas detta urval?",
+    "options": [
+      "Bekvämlighetsurval",
+      "Slumpmässigt urval",
+      "Strategiskt urval utifrån särskilda erfarenheter",
+      "Urval av dokumentversioner"
+    ],
+    "answer": 0,
+    "explanation": "Bekvämlighetsurval utgår från vilka deltagare som är lättast att nå. Slutsatser om en större population behöver avgränsas."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 47,
+    "category": "Forskningsmetod",
+    "question": "En student väljer lärare med särskild erfarenhet av det stödarbete som ska undersökas. Vilken urvalsprincip används?",
+    "options": [
+      "Strategiskt urval",
+      "Slumpmässigt urval ur hela befolkningen",
+      "Frivilligt självurval via en öppen annons",
+      "Bekvämlighetsurval enbart utifrån restid"
+    ],
+    "answer": 0,
+    "explanation": "Ett strategiskt urval väljer deltagare utifrån egenskaper eller erfarenheter som är relevanta för studiens fråga."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 47,
+    "category": "Forskningsmetod",
+    "question": "En deltagare fyller i enkäten men hoppar över vissa frågor. Vad är detta ett exempel på?",
+    "options": [
+      "Internt bortfall",
+      "Externt bortfall",
+      "Slumpmässigt urval",
+      "En förändrad population"
+    ],
+    "answer": 0,
+    "explanation": "Internt bortfall gäller obesvarade frågor hos deltagare. Externt bortfall innebär att utvalda personer inte deltar alls."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 47,
+    "category": "Forskningsmetod",
+    "question": "Bortfallet är litet, men nästan alla som avstår tillhör samma relevanta yrkesgrupp. Vad bör forskaren uppmärksamma?",
+    "options": [
+      "Att bortfallet kan snedvrida resultaten trots sin begränsade omfattning",
+      "Att ett litet bortfall saknar betydelse oavsett vilka som avstår",
+      "Att svaren automatiskt blir mer tillförlitliga",
+      "Att hela populationen därmed har undersökts"
+    ],
+    "answer": 0,
+    "explanation": "Bortfallets sammansättning och samband med det som undersöks är viktigt, inte bara dess procentuella storlek."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 48,
+    "category": "Forskningsmetod",
+    "question": "Vad är problemet med enkätpåståendet Jag får snabbt och relevant stöd?",
+    "options": [
+      "Det ber deltagaren göra två bedömningar i samma svar",
+      "Det saknar alla kopplingar till ett mätbart fenomen",
+      "Det är automatiskt en öppen intervjufråga",
+      "Det måste ersättas med en fråga om deltagarens ålder"
+    ],
+    "answer": 0,
+    "explanation": "Stöd kan vara snabbt men irrelevant, eller långsamt men relevant. Bedömningarna bör därför hållas isär."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 48,
+    "category": "Forskningsmetod",
+    "question": "Vilken enkätfråga innehåller tydligast ett ledande antagande?",
+    "options": [
+      "Hur nöjd är du med skolans välfungerande stödarbete?",
+      "Hur många stödsamtal deltog du i förra veckan?",
+      "Vilken yrkesroll har du?",
+      "Har du deltagit i ett stödsamtal under september?"
+    ],
+    "answer": 0,
+    "explanation": "Ordet välfungerande förutsätter en positiv bedömning av det som deltagaren ska värdera."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 48,
+    "category": "Forskningsmetod",
+    "question": "Varför prova en enkät på personer som liknar målgruppen före datainsamlingen?",
+    "options": [
+      "För att upptäcka otydligheter och problem med frågornas begriplighet",
+      "För att säkerställa att alla ger samma svar",
+      "För att ersätta behovet av ett motiverat urval",
+      "För att bestämma vilka resultat som ska publiceras"
+    ],
+    "answer": 0,
+    "explanation": "En provundersökning kan visa om frågor och svarsalternativ fungerar för den tänkta målgruppen."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 49,
+    "category": "Forskningsmetod",
+    "question": "Yrkesgrupper kodas som 1 och 2. Hur bör dessa siffror förstås?",
+    "options": [
+      "Som kategorinamn utan matematisk storleksrelation",
+      "Som att grupp 2 har dubbelt så mycket av yrkesrollen",
+      "Som poäng på en kontinuerlig kunskapsskala",
+      "Som att medelvärdet alltid beskriver en genomsnittlig yrkesroll"
+    ],
+    "answer": 0,
+    "explanation": "Sifferkoder gör inte en nominalvariabel numerisk i meningsfull matematisk bemärkelse. Frekvenser och andelar kan användas."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 50,
+    "category": "Forskningsmetod",
+    "question": "Vad kännetecknar ett enskilt ordinalt skattningssvar?",
+    "options": [
+      "Alternativen kan rangordnas, men avstånden kan inte antas vara lika stora",
+      "Alternativen saknar inbördes ordning",
+      "Alla steg är med säkerhet lika stora",
+      "Värdet har alltid en absolut nollpunkt"
+    ],
+    "answer": 0,
+    "explanation": "Ordinala svar anger ordning. Skillnaden mellan två intilliggande alternativ behöver inte upplevas lika stor över hela skalan."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 51,
+    "category": "Forskningsmetod",
+    "question": "Saknade enkätsvar har kodats som 999 i en kolumn med testpoäng. Vad bör göras före analysen?",
+    "options": [
+      "Kontrollera kodningen och markera dessa värden som saknade",
+      "Räkna med 999 som höga testresultat",
+      "Ersätta alla övriga värden med 999",
+      "Genomföra t-testet först och granska kodningen bara om resultatet blir signifikant"
+    ],
+    "answer": 0,
+    "explanation": "Felkodade saknade värden kan kraftigt påverka sammanfattningar och testresultat. Datakontroll ska föregå analysen."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 52,
+    "category": "Forskningsmetod",
+    "question": "De flesta elever har få frånvarodagar, men en elev har mycket hög frånvaro. Vilket mått är mindre känsligt för det extrema värdet?",
+    "options": [
+      "Medianen",
+      "Medelvärdet",
+      "Det högsta värdet",
+      "Summan av frånvarodagarna"
+    ],
+    "answer": 0,
+    "explanation": "Ett extremt värde kan dra upp medelvärdet kraftigt. Medianen kan då bättre beskriva en typisk observation."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 52,
+    "category": "Forskningsmetod",
+    "question": "Två grupper har samma medelvärde. Vad kan ändå skilja dem åt?",
+    "options": [
+      "Hur stor spridning observationerna har",
+      "De måste ha identiska individuella värden",
+      "De måste ha samma antal deltagare",
+      "De måste ha undersökts med samma urvalsmetod"
+    ],
+    "answer": 0,
+    "explanation": "Samma medelvärde kan förekomma i grupper med mycket olika variation. Redovisa därför även spridning."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 54,
+    "category": "Forskningsmetod",
+    "question": "Vad uttrycker nollhypotesen i ett test av skillnad mellan två populationsmedelvärden?",
+    "options": [
+      "Att populationernas medelvärden inte skiljer sig åt",
+      "Att varje individ i båda grupperna har samma värde",
+      "Att urvalet är representativt",
+      "Att den ena undervisningsmetoden är bättre"
+    ],
+    "answer": 0,
+    "explanation": "Nollhypotesen gäller här frånvaro av en populationsskillnad i medelvärde, inte identiska observationer."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 54,
+    "category": "Forskningsmetod",
+    "question": "Vilken tolkning av ett p-värde är korrekt?",
+    "options": [
+      "Sannolikheten för det observerade eller ett mer extremt testresultat om nollhypotesen och testets antaganden gäller",
+      "Sannolikheten att nollhypotesen är sann",
+      "Sannolikheten att resultatet beror på slumpen",
+      "Storleken på skillnaden mellan grupperna"
+    ],
+    "answer": 0,
+    "explanation": "P-värdet är villkorat av nollhypotesen och testets antaganden. Det anger varken hypotesens sannolikhet eller effektens storlek."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 55,
+    "category": "Forskningsmetod",
+    "question": "En liten skillnad blir statistiskt signifikant i ett stort stickprov. Vad behöver undersökas för att bedöma dess betydelse?",
+    "options": [
+      "Effektstorleken och det sakliga sammanhanget",
+      "Enbart om p-värdet kan avrundas till noll",
+      "Om resultatet kan beskrivas utan att nämna urvalet",
+      "Om signifikansen kan ersätta redovisningen av mätningen"
+    ],
+    "answer": 0,
+    "explanation": "Statistisk signifikans innebär inte automatiskt att skillnaden är praktiskt viktig."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 55,
+    "category": "Forskningsmetod",
+    "question": "En studie får ett icke-signifikant resultat. Vilken slutsats är mest rimlig?",
+    "options": [
+      "Resultatet räcker inte i sig för att slå fast att en skillnad saknas",
+      "Studien har bevisat att grupperna är identiska",
+      "Mätningen har bevisats vara felfri",
+      "Nollhypotesen har därmed blivit en säker sanning"
+    ],
+    "answer": 0,
+    "explanation": "Ett litet stickprov eller osäker mätning kan göra det svårt att upptäcka en skillnad. Icke-signifikans är inte ett bevis för likhet."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 56,
+    "category": "Forskningsmetod",
+    "question": "Vad betyder Cohen’s d = 0,50 vid jämförelse av två medelvärden?",
+    "options": [
+      "Skillnaden motsvarar en halv standardavvikelse",
+      "Hälften av deltagarna har förbättrats",
+      "Nollhypotesen har 50 procents sannolikhet",
+      "Skillnaden är en halv poäng oavsett mätinstrument"
+    ],
+    "answer": 0,
+    "explanation": "Cohen’s d uttrycker en standardiserad medelvärdesskillnad. Den praktiska betydelsen behöver bedömas i sammanhanget."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 56,
+    "category": "Forskningsmetod",
+    "question": "Samma elever mäts före och efter en insats. Vilken typ av t-test är avsedd för sådana sammanhörande mätningar, om övriga antaganden är uppfyllda?",
+    "options": [
+      "Parat t-test",
+      "Oberoende t-test",
+      "T-test för ett stickprov mot ett fast referensvärde",
+      "Ett test av nominala gruppnamns medelvärden"
+    ],
+    "answer": 0,
+    "explanation": "Före- och eftervärden från samma elev hör ihop. De ska inte behandlas som två oberoende grupper."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 57,
+    "category": "Forskningsmetod",
+    "question": "Vilket upplägg passar ett oberoende t-test, om övriga antaganden är rimliga?",
+    "options": [
+      "Jämförelse av numeriska testresultat mellan två separata grupper med oberoende observationer",
+      "Jämförelse av samma elevers före- och eftervärden som oberoende data",
+      "Beräkning av medelvärdet för yrkesnamn",
+      "Tolkning av innebörden i ett policydokument"
+    ],
+    "answer": 0,
+    "explanation": "Ett oberoende t-test jämför medelvärden mellan två oberoende grupper och kräver en lämplig numerisk resultatvariabel."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 93,
+    "category": "Forskningsmetod",
+    "question": "Två klasser med olika undervisningsmetoder får signifikant olika testresultat. Varför visar testet inte ensamt att metoden orsakade skillnaden?",
+    "options": [
+      "Klasserna kan också skilja sig åt i andra faktorer som påverkar resultatet",
+      "Ett t-test kan aldrig upptäcka skillnader i medelvärden",
+      "Ett signifikant resultat innebär att alla bakgrundsfaktorer är lika",
+      "Kausala slutsatser avgörs enbart av antalet decimaler i p-värdet"
+    ],
+    "answer": 0,
+    "explanation": "Den kausala tolkningen beror på designen och hanteringen av alternativa förklaringar, inte bara på det statistiska testet."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 86,
+    "category": "Forskningsmetod",
+    "question": "Vilket av följande betecknar främst en forskningsdesign?",
+    "options": [
+      "Fallstudie",
+      "Strategiskt urval",
+      "Transkriberade utsagor",
+      "Tematisk analys"
+    ],
+    "answer": 0,
+    "explanation": "En fallstudie avser studiens övergripande upplägg. De andra alternativen gäller urval, material respektive analys."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 86,
+    "category": "Forskningsmetod",
+    "question": "Vilket av följande är en analysmetod?",
+    "options": [
+      "Tematisk analys",
+      "Semistrukturerad intervju",
+      "Strategiskt urval",
+      "Transkriberad intervju"
+    ],
+    "answer": 0,
+    "explanation": "Tematisk analys är ett sätt att analysera material. Intervju gäller datainsamling, strategiskt urval gäller vilka som ingår och transkriptionen är material."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 91,
+    "category": "Forskningsmetod",
+    "question": "En forskare vill analysera återkommande mönster i intervjuer. Vad behöver resultatbearbetningen gå vidare till?",
+    "options": [
+      "Att undersöka mönster, skillnader och relationer mellan utsagor",
+      "Att bara återberätta varje intervju i turordning",
+      "Att behandla varje utsaga som ett bevis på en kausal effekt",
+      "Att ersätta utsagorna med teorins definitioner"
+    ],
+    "answer": 0,
+    "explanation": "Analysen behöver göra något med materialet utifrån frågeställningen, utöver att återge intervjupersonernas berättelser."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 94,
+    "category": "Forskningsmetod",
+    "question": "En studie undersöker hur ansvar formuleras i kommunala styrdokument. Vilken slutsats ligger närmast materialet?",
+    "options": [
+      "Hur ansvar framställs i de analyserade dokumenten",
+      "Hur alla anställda faktiskt arbetar i vardagen",
+      "Vilka effekter dokumenten har orsakat på elevernas resultat",
+      "Hur samtliga elever upplever stödinsatserna"
+    ],
+    "answer": 0,
+    "explanation": "Dokument kan visa hur ansvar formuleras. Påståenden om faktisk praktik eller effekter kräver ytterligare relevant material."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 95,
+    "category": "Forskningsmetod",
+    "question": "Vad utgör materialet i en forskningskartläggning?",
+    "options": [
+      "De vetenskapliga publikationer som valts ut för analys",
+      "Enbart forskarens egna minnen av ämnet",
+      "Alla personer som omnämns i artiklarna",
+      "Databasens användargränssnitt"
+    ],
+    "answer": 0,
+    "explanation": "I en forskningskartläggning är tidigare publikationer analysmaterial. Sökning och urval behöver därför vara systematiska och beskrivna."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 26,
+    "category": "Forskningsmetod",
+    "question": "En forskningskartläggning hittar få studier om ett fenomen. Vad kan forskaren inte dra för slutsats enbart av detta?",
+    "options": [
+      "Att fenomenet är ovanligt eller oviktigt",
+      "Att få studier identifierades med den använda sökningen",
+      "Att sökstrategin bör diskuteras",
+      "Att urval och databaser kan påverka vad som hittades"
+    ],
+    "answer": 0,
+    "explanation": "Antalet identifierade studier beror även på sökning och urval. Det mäter inte direkt fenomenets förekomst eller betydelse."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 89,
+    "category": "Forskningsmetod",
+    "question": "En forskare använder intervjuer. Vad kan man dra för slutsats om forskarens vetenskapsteoretiska position enbart utifrån det?",
+    "options": [
+      "Metodvalet räcker inte för att fastställa positionen",
+      "Forskaren är med säkerhet hermeneutiker",
+      "Forskaren kan inte använda siffror i analysen",
+      "Forskaren anser att alla tolkningar är lika rimliga"
+    ],
+    "answer": 0,
+    "explanation": "Datainsamlingsmetod bestämmer inte automatiskt vetenskapsteoretisk position. Intervjusvar kan också kategoriseras och räknas."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 32,
+    "category": "Forskningsmetod",
+    "question": "Forskaren hittar ett fall som motsäger den valda teorin. Hur kan fallet behandlas analytiskt?",
+    "options": [
+      "Använda det för att pröva tolkningen och teorins räckvidd",
+      "Utesluta det enbart eftersom det inte stämmer med teorin",
+      "Ändra utsagan så att den passar kategorierna",
+      "Utgå från att deltagaren måste ha svarat fel"
+    ],
+    "answer": 0,
+    "explanation": "Motsägande fall kan visa att teorin behöver avgränsas eller användas annorlunda. Att bara söka bekräftelse riskerar en cirkulär analys."
+  },
+  {
+    "source": "Serder_och_Jober_2021_kapitel_1.pdf",
+    "page": 10,
+    "category": "Teori och vetenskap",
+    "question": "En teori hjälper en lärare att göra ett tidigare svårbegripligt händelseförlopp begripligt. Vilken teorifunktion betonas?",
+    "options": [
+      "Förstående",
+      "Frigörande genom maktkritik",
+      "Förklarande genom prövning av orsakssamband",
+      "Administrativ genom resursfördelning"
+    ],
+    "answer": 0,
+    "explanation": "Den förstående funktionen handlar om att göra det okända begripligt. Frågan betonar denna funktion snarare än kausal förklaring eller maktkritik."
+  },
+  {
+    "source": "Serder_och_Jober_2021_kapitel_1.pdf",
+    "page": 9,
+    "category": "Teori och vetenskap",
+    "question": "Varför beskriver författarna teoribegreppet som ett kontinuum?",
+    "options": [
+      "Det rymmer både falsifierbara teorier och mer filosofiska perspektiv",
+      "Alla teorier kan rangordnas efter hur många sidor de omfattar",
+      "Endast statistiska modeller kan räknas som vetenskapliga teorier",
+      "Teori betyder alltid samma sak inom alla discipliner"
+    ],
+    "answer": 0,
+    "explanation": "Utbildningsvetenskapen har flera disciplinära rötter. Kapitlet diskuterar en bredd från prövbara teorier till filosofiska perspektiv."
+  },
+  {
+    "source": "God_forskningssed_VR_2024.pdf",
+    "page": 15,
+    "category": "Forskningsetik",
+    "question": "En forskare vill publicera ett material öppet, men det finns risk att deltagare skadas. Vad betonar materialet?",
+    "options": [
+      "Öppenhet behöver vägas mot skyddsintresset",
+      "Öppenhet gör alla skyddsåtgärder överflödiga",
+      "Publicering ska avgöras enbart av forskarens karriärnytta",
+      "Skyddsintresset gäller bara under själva datainsamlingen"
+    ],
+    "answer": 0,
+    "explanation": "Öppenhetsintresset ska vägas mot behovet av skydd. Tillgänglighet är inte ett skäl att utsätta berörda för oproportionerlig risk."
+  },
+  {
+    "source": "God_forskningssed_VR_2024.pdf",
+    "page": 15,
+    "category": "Forskningsetik",
+    "question": "En organisation vill dölja missförhållanden för att skydda forskningens anseende. Hur förhåller sig det till förtroendeintresset?",
+    "options": [
+      "Förtroendeintresset får inte användas som skäl att dölja missförhållanden",
+      "Döljande är rimligt när organisationen riskerar kritik",
+      "Förtroendeintresset upphäver principen om ärlighet",
+      "Det är enbart en fråga om rapportens språkliga utformning"
+    ],
+    "answer": 0,
+    "explanation": "Förtroendet ska inte skyddas genom att avvikelser eller obekväma resultat döljs. Det skulle strida mot ärlighet."
+  },
+  {
+    "source": "God_forskningssed_VR_2024.pdf",
+    "page": 16,
+    "category": "Forskningsetik",
+    "question": "En etisk norm är inte i sig rättsligt bindande. Vad innebär det enligt God forskningssed?",
+    "options": [
+      "Den kan ändå ställa etiska krav på forskningen",
+      "Den saknar därför betydelse för forskarens ansvar",
+      "Den får bara beaktas efter publicering",
+      "Den gäller bara om en deltagare uttryckligen begär det"
+    ],
+    "answer": 0,
+    "explanation": "God forskningssed omfattar etiska krav även när de inte direkt följer av rättsligt bindande föreskrifter."
+  },
+  {
+    "source": "God_forskningssed_VR_2024.pdf",
+    "page": 17,
+    "category": "Forskningsetik",
+    "question": "Varför bör etiska frågor tas med tidigt i forskningsplaneringen?",
+    "options": [
+      "För att bygga in hänsyn från början och minska behovet av sena begränsande ändringar",
+      "För att garantera att inga oväntade frågor senare uppstår",
+      "För att kunna avstå från etisk reflektion under genomförandet",
+      "För att göra metodval oberoende av riskerna"
+    ],
+    "answer": 0,
+    "explanation": "Tidig planering stärker beredskapen och möjligheten att bedriva forskningen ansvarsfullt. Den ersätter inte fortsatt uppmärksamhet."
+  },
+  {
+    "source": "God_forskningssed_VR_2024.pdf",
+    "page": 19,
+    "category": "Forskningsetik",
+    "question": "Vad kännetecknar en forskningskultur som främjar god forskningssed?",
+    "options": [
+      "Att god forskningssed blir en naturlig del av det dagliga arbetet",
+      "Att etiska frågor bara diskuteras när en skandal uppstår",
+      "Att kollegial kritik undviks för att bevara arbetsro",
+      "Att snabb publicering alltid prioriteras framför kvalitet"
+    ],
+    "answer": 0,
+    "explanation": "Goda forskningsvanor i vardagen hjälper forskningsmiljön att förebygga problem och hantera negativa incitament."
+  },
+  {
+    "source": "God_forskningssed_VR_2024.pdf",
+    "page": 13,
+    "category": "Forskningsetik",
+    "question": "Hur långt sträcker sig ansvarsprincipen i ALLEA-kodexen enligt materialet?",
+    "options": [
+      "Från idé till publicering och till forskningens vidare konsekvenser",
+      "Enbart till den stund då data samlas in",
+      "Enbart till den som finansierar projektet",
+      "Bara till att referenslistan är korrekt"
+    ],
+    "answer": 0,
+    "explanation": "Ansvar omfattar forskningsprocessen, ledning, utbildning och handledning samt forskningens vidare konsekvenser."
   }
 ]
