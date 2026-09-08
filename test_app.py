@@ -1,4 +1,4 @@
-﻿import random
+import random
 import unittest
 from app import Session, validate
 import json
@@ -14,7 +14,6 @@ class QuizTests(unittest.TestCase):
     q=s.current
     original=next(x for x in self.bank if x['question']==q['question'])
     self.assertEqual(q['options'][q['answer']],original['options'][original['answer']])
-    self.assertFalse(s.advance())
     self.assertTrue(s.answer(q['answer']))
     self.assertIsNone(s.answer(q['answer']))
     self.assertEqual(s.score,n+1)
@@ -26,6 +25,20 @@ class QuizTests(unittest.TestCase):
   retry=Session(s.missed)
   self.assertTrue(retry.answer(retry.current['answer']))
   self.assertEqual(retry.score,1)
+ def test_skip_and_return(self):
+  s=Session(self.bank[:2])
+  self.assertTrue(s.advance())
+  self.assertEqual(s.score,0)
+  self.assertFalse(s.answered)
+  self.assertTrue(s.previous())
+  self.assertTrue(s.answer(s.current['answer']))
+  self.assertTrue(s.advance())
+  self.assertFalse(s.advance())
+  self.assertFalse(s.advance())
+  self.assertEqual(s.index,2)
+  self.assertEqual(s.score,1)
+  self.assertTrue(s.previous())
+  self.assertFalse(s.answered)
  def test_bank(self):
   validate(self.bank)
   self.assertEqual(len({q['source'] for q in self.bank}),3)

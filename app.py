@@ -61,7 +61,7 @@ class Session:
         return correct
 
     def advance(self):
-        if not self.answered:
+        if self.index >= len(self.questions):
             return False
         self.index += 1
         return self.index < len(self.questions)
@@ -200,6 +200,8 @@ class App(tk.Tk):
         return b
 
     def home(self):
+        self.navigation.pack_forget()
+        self.back_button.pack_forget()
         self.previous_button.configure(state='disabled')
         self.next_button.configure(state='disabled')
         self.back_button.configure(state='disabled')
@@ -221,6 +223,8 @@ class App(tk.Tk):
                             lambda questions=questions: self.start(questions), color=color)
 
     def start(self, questions, review=False):
+        self.navigation.pack(side='bottom', fill='x', padx=32, pady=(0, 16), before=self.canvas)
+        self.back_button.pack(side='right', padx=16)
         self.back_button.configure(state='normal')
         if not review:
             self.selected_questions = list(questions)
@@ -237,7 +241,7 @@ class App(tk.Tk):
         self.options = [self.button(f'{i + 1}.  {option}', lambda i=i: self.choose(i)) for i, option in enumerate(q['options'])]
         self.previous_button.configure(state='normal' if s.index > 0 else 'disabled')
         self.next_button.configure(text='Visa resultat' if s.index == len(s.questions)-1 else 'Nästa fråga →',
-                                   state='normal' if s.answered else 'disabled')
+                                   state='normal')
         if s.answered:
             self.show_feedback(s.choices[s.index])
         self.update_idletasks()
@@ -284,7 +288,7 @@ class App(tk.Tk):
             self.show_question()
 
     def next_question(self):
-        if not self.session or not self.session.answered:
+        if not self.session or self.session.index >= len(self.session.questions):
             return
         if self.session.advance():
             self.show_question()
@@ -298,6 +302,10 @@ class App(tk.Tk):
         s = self.session
         self.label('Resultat', 25)
         self.label(f'{s.score} rätt av {len(s.questions)}  ·  {s.score / len(s.questions):.0%}', 22, INK)
+        unanswered = [q for i, q in enumerate(s.questions) if i not in s.choices]
+        if unanswered:
+            self.label(f'Obesvarade: {len(unanswered)}', 13, MUTED)
+            self.button('Svara på obesvarade frågor', lambda: self.start(unanswered, review=True))
         if s.missed:
             missed = s.missed[:]
             self.button(f'Öva på missade frågor ({len(missed)})', lambda: self.start(missed, review=True), True)
