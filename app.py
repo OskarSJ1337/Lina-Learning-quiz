@@ -48,16 +48,15 @@ class Session:
     def current(self):
         return self.questions[self.index]
 
-    def answer(self, choice):
-        if self.answered:
+    def answer(self, choice, replace=False):
+        if self.answered and not replace:
             return None
         if choice not in range(4):
             raise ValueError('Ogiltigt svarsalternativ.')
         self.choices[self.index] = choice
         correct = choice == self.current['answer']
-        self.score += int(correct)
-        if not correct:
-            self.missed.append(self.current)
+        self.score = sum(value == self.questions[i]['answer'] for i, value in self.choices.items())
+        self.missed = [self.questions[i] for i, value in self.choices.items() if value != self.questions[i]['answer']]
         return correct
 
     def advance(self):
@@ -207,7 +206,7 @@ class App(tk.Tk):
         self.back_button.configure(state='disabled')
         self.session = None
         self.clear()
-        self.counter.configure(text='Rätt: 0')
+        self.counter.configure(text=f'Rätt: 0/{len(self.bank)}')
         self.label('Vetenskaplig metod', 26)
         self.label(f'{len(self.bank)} frågor · Fyra svarsalternativ', 14, MUTED)
         self.button(f'Starta quiz – Alla frågor ({len(self.bank)})', lambda: self.start(self.bank), True)
@@ -232,9 +231,10 @@ class App(tk.Tk):
         self.show_question()
 
     def show_question(self):
+        self.feedback_shown = False
         self.clear()
         s, q = self.session, self.session.current
-        self.counter.configure(text=f'Rätt: {s.score}')
+        self.counter.configure(text=f'Rätt: {s.score}/{len(s.questions)}')
         self.label(f'Fråga {s.index + 1} av {len(s.questions)}', 13, MUTED)
         ttk.Progressbar(self.body, maximum=len(s.questions), value=s.index).pack(fill='x', pady=(0, 18))
         self.label(q['question'], 20)
@@ -242,20 +242,21 @@ class App(tk.Tk):
         self.previous_button.configure(state='normal' if s.index > 0 else 'disabled')
         self.next_button.configure(text='Visa resultat' if s.index == len(s.questions)-1 else 'Nästa fråga →',
                                    state='normal')
-        if s.answered:
-            self.show_feedback(s.choices[s.index])
         self.update_idletasks()
         self.canvas.yview_moveto(0)
 
     def choose(self, index):
         if not self.session or self.session.index >= len(self.session.questions):
             return
-        result = self.session.answer(index)
+        if self.feedback_shown:
+            return
+        result = self.session.answer(index, replace=True)
         if result is None:
             return
         self.show_feedback(index)
 
     def show_feedback(self, index):
+        self.feedback_shown = True
         result = index == self.session.current['answer']
         self.update_idletasks()
         viewport_top = self.canvas.canvasy(0)
@@ -263,19 +264,30 @@ class App(tk.Tk):
         for i, button in enumerate(self.options):
             color = TRUE if i == q['answer'] else FALSE if i == index else BG
             button.configure(state='disabled', bg=color, disabledforeground=BUTTON_TEXT)
-        self.counter.configure(text=f'Rätt: {self.session.score}')
-        feedback = self.label('●  Rätt svar' if result else '●  Fel svar', 17, BUTTON_TEXT)
-        feedback.configure(bg=TRUE if result else FALSE, padx=12, pady=8)
+        self.counter.configure(text=f'Rätt: {self.session.score}/{len(self.session.questions)}')
+        bubble_color = TRUE if result else FALSE
+        self.feedback_box = tk.Frame(self.body, bg=bubble_color, padx=18, pady=14)
+        self.feedback_box.pack(fill='x', pady=(14, 6))
+        def bubble_label(text, size=13, bold=False):
+            label = tk.Label(self.feedback_box, text=text, bg=bubble_color, fg=INK,
+                             font=('Segoe UI', size, 'bold' if bold else 'normal'),
+                             justify='left', anchor='w', wraplength=max(350, self.canvas.winfo_width()-48))
+            label.pack(fill='x', pady=5)
+            return label
+        self.feedback_box.bind('<Configure>', lambda event: [
+            child.configure(wraplength=max(300, event.width-36))
+            for child in self.feedback_box.winfo_children()])
+        bubble_label('●  Rätt svar' if result else '●  Fel svar', 17, True)
         if not result:
-            self.label('Rätt svar: ' + q['options'][q['answer']], 13)
-        self.label(q['explanation'])
+            bubble_label('Rätt svar: ' + q['options'][q['answer']], bold=True)
+        bubble_label(q['explanation'])
         source_names = {
             'Undervisningsunderlag_bilder_och_text.pdf': 'Undervisningsunderlag',
             'Serder_och_Jober_2021_kapitel_1.pdf': 'Serder & Jobér, kap. 1',
             'God_forskningssed_VR_2024.pdf': 'God forskningssed (2024)',
         }
         source = source_names.get(q['source'], q['source'])
-        self.label(f'{source} · PDF-sida {q["page"]}', 12, MUTED)
+        bubble_label(f'{source} · PDF-sida {q["page"]}', 12)
         self.next_button.configure(state='normal')
         self.update_idletasks()
         # Keep the same pixel offset as feedback increases the scroll region.
