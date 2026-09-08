@@ -6,13 +6,14 @@ import sys
 import threading
 from pathlib import Path
 import tkinter as tk
+from tkinter import font as tkfont
 from tkinter import filedialog, messagebox, ttk
 
 BASE = Path(getattr(sys, '_MEIPASS', Path(__file__).resolve().parent))
-BG, INK, ACCENT = '#F4F6FB', '#202B40', '#6554C0'
-SURFACE, HOVER, ACCENT_HOVER = '#FFFFFF', '#EDE7FF', '#5141A6'
+BG, INK, ACCENT = '#F4F6FB', '#182235', '#51409B'
+SURFACE, HOVER, ACCENT_HOVER = '#FFFFFF', '#EDE7FF', '#403080'
 TRUE, FALSE, BUTTON_TEXT = '#D0F2DE', '#FFDDD8', INK
-MUTED = '#48566B'
+MUTED = '#37445A'
 
 
 def validate(questions):
@@ -119,6 +120,8 @@ class App(tk.Tk):
     def __init__(self):
         super().__init__()
         self.dark_mode = False
+        self.font_scale = 0
+        self.reading_fonts = {}
         self.title('Linas coola quiz')
         self.geometry('960x820')
         self.minsize(860, 640)
@@ -131,14 +134,14 @@ class App(tk.Tk):
                         bordercolor=BG, arrowcolor=BUTTON_TEXT,
                         lightcolor=ACCENT, darkcolor=ACCENT)
         style.map('TScrollbar', background=[('active', ACCENT)])
-        self.option_add('*Font', ('Segoe UI', 13))
+        self.option_add('*Font', self.reading_font(14))
         self.bank = validate(json.loads((BASE / 'questions.json').read_text(encoding='utf-8')))
         self.session = None
         self.importing = False
         self.header = tk.Frame(self, bg=BG)
         self.header.pack(fill='x', padx=32, pady=(24, 10))
-        tk.Label(self.header, text='Linas coola quiz', font=('Segoe UI', 18, 'bold'), bg=BG, fg=INK).pack(side='left')
-        self.counter = tk.Label(self.header, text='Rätt: 0', bg=HOVER, fg=ACCENT, padx=14, pady=8, font=('Segoe UI', 14, 'bold'))
+        tk.Label(self.header, text='Linas coola quiz', font=self.reading_font(18, 'bold'), bg=BG, fg=INK).pack(side='left')
+        self.counter = tk.Label(self.header, text='Rätt: 0', bg=HOVER, fg=INK, padx=14, pady=8, font=self.reading_font(14, 'bold'))
         self.counter.pack(side='right')
         self.back_button = tk.Button(self.header, text='Till startsidan', command=self.home,
                                      bg=HOVER, fg=INK, activebackground=ACCENT,
@@ -146,8 +149,18 @@ class App(tk.Tk):
                                      padx=12, pady=8, cursor='hand2')
         self.back_button.pack(side='right', padx=16)
         self.theme_button = tk.Button(self.header, text='Nattläge', command=self.toggle_theme,
-            bg=HOVER, fg=INK, relief='flat', padx=10, pady=8, cursor='hand2', font=('Segoe UI', 11))
+            bg=HOVER, fg=INK, relief='flat', padx=10, pady=8, cursor='hand2', font=self.reading_font(11))
         self.theme_button.pack(side='right', padx=4)
+        self.text_controls = tk.Frame(self, bg=BG)
+        self.text_controls.pack(fill='x', padx=32, pady=(0, 10))
+        tk.Label(self.text_controls, text='Textstorlek', bg=BG, fg=INK,
+                 font=self.reading_font(14)).pack(side='left')
+        self.smaller_button = tk.Button(self.text_controls, text='A−', command=lambda: self.change_text_size(-2),
+            bg=SURFACE, fg=INK, font=self.reading_font(14), padx=12, pady=5, state='disabled')
+        self.smaller_button.pack(side='left', padx=(12, 6))
+        self.larger_button = tk.Button(self.text_controls, text='A+', command=lambda: self.change_text_size(2),
+            bg=SURFACE, fg=INK, font=self.reading_font(14), padx=12, pady=5)
+        self.larger_button.pack(side='left')
         self.navigation = tk.Frame(self, bg=BG)
         self.navigation.pack(side='bottom', fill='x', padx=32, pady=(0, 16))
         self.previous_button = tk.Button(self.navigation, text='← Föregående fråga',
@@ -170,11 +183,30 @@ class App(tk.Tk):
             self.bind(str(n + 1), lambda e, i=n: self.choose(i))
         self.home()
 
+    def reading_font(self, size, weight='normal'):
+        size = max(14, size)
+        key = (size, weight)
+        if key not in self.reading_fonts:
+            self.reading_fonts[key] = tkfont.Font(self, family='Verdana', size=size+self.font_scale, weight=weight)
+        return self.reading_fonts[key]
+
+    def change_text_size(self, delta):
+        self.font_scale = max(0, min(6, self.font_scale + delta))
+        for (size, weight), font in self.reading_fonts.items():
+            font.configure(size=size+self.font_scale)
+        self.smaller_button.configure(state='disabled' if self.font_scale == 0 else 'normal')
+        self.larger_button.configure(state='disabled' if self.font_scale == 6 else 'normal')
+
+    @staticmethod
+    def readable_paragraphs(text):
+        # Break sentences into shorter reading blocks without changing wording.
+        return re.sub(r'(?<=[.!?]) +(?=[A-ZÅÄÖ])', '\n\n', text)
+
     def resize(self, event):
         self.canvas.itemconfigure(self.window, width=event.width)
         for child in self.body.winfo_children():
             if isinstance(child, (tk.Label, tk.Button)):
-                child.configure(wraplength=max(400, event.width - 48))
+                child.configure(wraplength=max(400, min(780, event.width - 48)))
 
     def clear(self):
         self.after_idle(self.apply_theme)
@@ -183,8 +215,8 @@ class App(tk.Tk):
         self.canvas.yview_moveto(0)
 
     def label(self, text, size=13, color=INK):
-        w = tk.Label(self.body, text=text, bg=BG, fg=color, font=('Segoe UI', size),
-                     justify='left', anchor='w', wraplength=max(400, self.canvas.winfo_width()-48))
+        w = tk.Label(self.body, text=text, bg=BG, fg=color, font=self.reading_font(size),
+                     justify='left', anchor='w', wraplength=max(400, min(780, self.canvas.winfo_width()-48)))
         w.pack(fill='x', pady=8)
         return w
 
@@ -195,9 +227,9 @@ class App(tk.Tk):
                       fg='white' if primary else BUTTON_TEXT,
                       activebackground=hover,
                       activeforeground='white' if primary else BUTTON_TEXT,
-                      font=('Segoe UI', 13, 'bold' if primary else 'normal'),
-                      highlightcolor=INK, relief='flat', bd=0, padx=18, pady=14,
-                      cursor='hand2', anchor='w', justify='left', wraplength=max(400, self.canvas.winfo_width()-48))
+                      font=self.reading_font(14, 'bold' if primary else 'normal'),
+                      highlightcolor=INK, highlightbackground=MUTED, highlightthickness=1, relief='flat', bd=0, padx=20, pady=18,
+                      cursor='hand2', anchor='w', justify='left', wraplength=max(400, min(780, self.canvas.winfo_width()-48)))
         b.pack(fill='x', pady=5)
         b.bind('<Enter>', lambda event: b.configure(bg=self.theme_color(hover)) if str(b['state']) == 'normal' else None)
         b.bind('<Leave>', lambda event: b.configure(bg=self.theme_color(normal)) if str(b['state']) == 'normal' else None)
@@ -242,13 +274,13 @@ class App(tk.Tk):
         self.counter.configure(text=f'Rätt: {s.score}/{len(s.questions)}')
         self.label(f'Fråga {s.index + 1} av {len(s.questions)}', 13, MUTED)
         ttk.Progressbar(self.body, maximum=len(s.questions), value=s.index).pack(fill='x', pady=(0, 18))
-        self.label(q['question'], 20)
+        self.label(self.readable_paragraphs(q['question']), 20)
         self.help_open = False
         self.help_button = self.button('Vad betyder frågan?', self.toggle_help)
-        self.help_button.configure(font=('Segoe UI', 11), pady=8)
-        self.help_text = tk.Label(self.body, text=q.get('help', 'Välj begreppet som passar i luckan i texten.'),
+        self.help_button.configure(font=self.reading_font(11), pady=8)
+        self.help_text = tk.Label(self.body, text=self.readable_paragraphs(q.get('help', 'Välj begreppet som passar i luckan i texten.')),
             bg=HOVER, fg=INK, justify='left', anchor='w', padx=14, pady=12,
-            wraplength=max(400, self.canvas.winfo_width()-48))
+            wraplength=max(400, min(780, self.canvas.winfo_width()-48)))
         self.options = [self.button(f'{i + 1}.  {option}', lambda i=i: self.choose(i)) for i, option in enumerate(q['options'])]
         self.previous_button.configure(state='normal' if s.index > 0 else 'disabled')
         self.next_button.configure(text='Visa resultat' if s.index == len(s.questions)-1 else 'Nästa fråga →',
@@ -268,7 +300,7 @@ class App(tk.Tk):
         mapping = {
             BG.lower(): '#171923', INK.lower(): '#f0f1f7', MUTED.lower(): '#bbc3d5',
             SURFACE.lower(): '#262b3b', HOVER.lower(): '#35304c',
-            ACCENT.lower(): '#7664d0', ACCENT_HOVER.lower(): '#6654c0',
+            ACCENT.lower(): '#6955b4', ACCENT_HOVER.lower(): '#58459e',
             TRUE.lower(): '#254c3b', FALSE.lower(): '#633b3e',
             '#d8eaff': '#293e5b', '#ffe4c7': '#51422f',
         }
@@ -333,17 +365,17 @@ class App(tk.Tk):
         self.feedback_box.pack(fill='x', pady=(14, 6))
         def bubble_label(text, size=13, bold=False):
             label = tk.Label(self.feedback_box, text=text, bg=bubble_color, fg=INK,
-                             font=('Segoe UI', size, 'bold' if bold else 'normal'),
+                             font=self.reading_font(size, 'bold' if bold else 'normal'),
                              justify='left', anchor='w', wraplength=max(350, self.canvas.winfo_width()-48))
             label.pack(fill='x', pady=5)
             return label
         self.feedback_box.bind('<Configure>', lambda event: [
-            child.configure(wraplength=max(300, event.width-36))
+            child.configure(wraplength=max(300, min(780, event.width-36)))
             for child in self.feedback_box.winfo_children()])
         bubble_label('●  Rätt svar' if result else '●  Fel svar', 17, True)
         if not result:
             bubble_label('Rätt svar: ' + q['options'][q['answer']], bold=True)
-        bubble_label(q['explanation'])
+        bubble_label(self.readable_paragraphs(q['explanation']))
         source_names = {
             'Undervisningsunderlag_bilder_och_text.pdf': 'Undervisningsunderlag',
             'Serder_och_Jober_2021_kapitel_1.pdf': 'Serder & Jobér, kap. 1',
