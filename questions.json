@@ -1,0 +1,422 @@
+[
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 161,
+    "category": "Forskningsmetod",
+    "question": "Vilken beskrivning motsvarar bäst ett vetenskapligt forskningsproblem?",
+    "options": [
+      "En precisering av vilken kunskap som behöver utvecklas",
+      "Ett ämnesområde som forskaren är intresserad av",
+      "Ett beslut om vilken datainsamlingsmetod som ska användas",
+      "En lista över de rubriker som ska ingå i rapporten"
+    ],
+    "answer": 0,
+    "explanation": "Kunskapsproblemet preciserar vad vi behöver veta, med stöd i vad tidigare forskning redan visar."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 165,
+    "category": "Forskningsmetod",
+    "question": "En student vill undersöka hur elever själva beskriver stöd i skolan, men intervjuar bara lärare. Vad är det centrala problemet?",
+    "options": [
+      "Informationskällan motsvarar inte den kunskap frågan efterfrågar",
+      "Studien måste alltid ha fler deltagare",
+      "Studien måste genomföras med en enkät",
+      "Studien saknar automatiskt en teori"
+    ],
+    "answer": 0,
+    "explanation": "Lärare kan beskriva sitt perspektiv. Elevernas egna beskrivningar behöver material där eleverna själva kommer till tals."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 165,
+    "category": "Forskningsmetod",
+    "question": "Vad är materialet i en studie där lärare intervjuas och samtalen transkriberas?",
+    "options": [
+      "De transkriberade intervjuerna som ska analyseras",
+      "Lärarna som personer",
+      "Enbart forskningsfrågorna",
+      "Teorin som väljs efteråt"
+    ],
+    "answer": 0,
+    "explanation": "Skilj mellan informationskälla och material: lärarna ger information, medan intervjutexterna utgör analysmaterial."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 163,
+    "category": "Forskningsmetod",
+    "question": "Syftet i en studie ändras. Vad behöver forskaren göra?",
+    "options": [
+      "Kontrollera följderna för frågor, material, datainsamling och analys",
+      "Endast ändra rubriken på rapporten",
+      "Behålla alla metodval oavsett det nya syftet",
+      "Samla in fler data innan frågorna ses över"
+    ],
+    "answer": 0,
+    "explanation": "Forskningskedjans delar hänger samman. En förändring i syftet kan därför kräva förändringar i resten av upplägget."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 163,
+    "category": "Forskningsmetod",
+    "question": "Vilken funktion har frågeställningarna i förhållande till syftet?",
+    "options": [
+      "De bryter ned syftet i frågor som tillsammans hjälper till att uppfylla det",
+      "De lägger till oberoende forskningsprojekt",
+      "De ersätter behovet av ett syfte",
+      "De anger bara i vilken ordning intervjuer ska hållas"
+    ],
+    "answer": 0,
+    "explanation": "Frågeställningarna konkretiserar syftet och ska hålla studien samman."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 165,
+    "category": "Forskningsmetod",
+    "question": "Vad behöver ett analysavsnitt förklara?",
+    "options": [
+      "Vad forskaren ska göra med materialet för att besvara frågeställningarna",
+      "Bara namnet på en analysmetod",
+      "Endast hur deltagarna rekryteras",
+      "Enbart vilket program rapporten skrivs i"
+    ],
+    "answer": 0,
+    "explanation": "Analysen behöver beskrivas som arbete med materialet, exempelvis jämförelse, kategorisering eller tolkning."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 164,
+    "category": "Forskningsmetod",
+    "question": "En student skriver bara att studien använder teori X. Vad behöver utvecklas?",
+    "options": [
+      "Vad teorin hjälper studenten att uppmärksamma och tolka",
+      "En förteckning över alla teorier i kursen",
+      "Ett påstående om att teorin är den enda riktiga",
+      "Ett löfte om att teorin inte påverkar analysen"
+    ],
+    "answer": 0,
+    "explanation": "Teorins funktion ska framgå, inklusive eventuell betydelse för frågor, datainsamling och analys."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 166,
+    "category": "Forskningsmetod",
+    "question": "Hur bör studiens kvalitet och begränsningar diskuteras?",
+    "options": [
+      "I relation till det konkreta upplägget och den kunskap det kan ge",
+      "Genom att enbart lista generella kvalitetsbegrepp",
+      "Genom att undvika alla begränsningar",
+      "Genom att enbart ange antalet sidor i rapporten"
+    ],
+    "answer": 0,
+    "explanation": "Kvalitetsresonemang ska visa vad som stärker och begränsar just den planerade studien."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 159,
+    "category": "Forskningsmetod",
+    "question": "Vad skiljer forskningskedjan från rapportmallen?",
+    "options": [
+      "Kedjan prövar studiens logik, medan mallen organiserar texten",
+      "Kedjan anger bara rubriker, medan mallen väljer metoden",
+      "De är identiska och kan alltid ersätta varandra",
+      "Mallen avgör om slutsatserna är sanna"
+    ],
+    "answer": 0,
+    "explanation": "Forskningskedjan synliggör sambanden mellan studiens delar. Mallen visar var delarna ska beskrivas."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 161,
+    "category": "Forskningsmetod",
+    "question": "Vilken uppgift har tidigare forskning i en forskningsplan?",
+    "options": [
+      "Att visa vad som är känt och hjälpa till att precisera kunskapsproblemet",
+      "Att ersätta forskarens egna frågeställningar",
+      "Att endast göra referenslistan längre",
+      "Att garantera ett visst resultat"
+    ],
+    "answer": 0,
+    "explanation": "Tidigare forskning ska jämföras och användas för att motivera vad som fortfarande behöver undersökas."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 153,
+    "category": "Forskningsmetod",
+    "question": "En etisk granskning visar risker med rekryteringen. Vad kan bli en rimlig följd?",
+    "options": [
+      "Att rekryteringsvägen eller urvalet ändras",
+      "Att etiken flyttas till en bilaga utan åtgärd",
+      "Att riskerna ignoreras eftersom metoden redan är vald",
+      "Att alla forskningsfrågor automatiskt blir ogiltiga"
+    ],
+    "answer": 0,
+    "explanation": "Etiska och metodologiska val hänger samman. Etisk reflektion kan kräva ändringar i upplägget."
+  },
+  {
+    "source": "Undervisningsunderlag_bilder_och_text.pdf",
+    "page": 166,
+    "category": "Forskningsmetod",
+    "question": "Vad kännetecknar ett konkret etiskt resonemang i forskningsplanen?",
+    "options": [
+      "Att koppla situation, risk, åtgärd, motivering och kvarstående risk till studien",
+      "Att endast skriva att alla etiska regler följs",
+      "Att påstå att inga risker någonsin kan uppstå",
+      "Att låta valet av analysprogram ersätta etikavsnittet"
+    ],
+    "answer": 0,
+    "explanation": "Etik behöver knytas till faktiska situationer och till vad åtgärderna kan och inte kan lösa."
+  },
+  {
+    "source": "Serder_och_Jober_2021_kapitel_1.pdf",
+    "page": 8,
+    "category": "Teori och vetenskap",
+    "question": "Hur beskrivs teorier som en tankeverktygslåda?",
+    "options": [
+      "Som redskap för att producera kunskap, tolka erfarenheter och vägleda handling",
+      "Som färdiga recept som alltid ger samma svar",
+      "Som enbart statistikprogram",
+      "Som privata åsikter som inte behöver diskuteras"
+    ],
+    "answer": 0,
+    "explanation": "Teori ger begrepp och perspektiv som kan användas för förståelse, analys och handling."
+  },
+  {
+    "source": "Serder_och_Jober_2021_kapitel_1.pdf",
+    "page": 9,
+    "category": "Teori och vetenskap",
+    "question": "Vad illustrerar liknelsen mellan teori och glasögon?",
+    "options": [
+      "Att perspektivet påverkar vad vi ser och hur vi förstår det",
+      "Att alla teorier gör exakt samma saker synliga",
+      "Att observationer alltid är helt oberoende av perspektiv",
+      "Att forskaren kan ersätta material med åsikter"
+    ],
+    "answer": 0,
+    "explanation": "Ett teoretiskt perspektiv riktar uppmärksamheten mot vissa aspekter av det som undersöks."
+  },
+  {
+    "source": "Serder_och_Jober_2021_kapitel_1.pdf",
+    "page": 10,
+    "category": "Teori och vetenskap",
+    "question": "Vilka tre huvudsakliga funktioner hos teori diskuteras i kapitlet?",
+    "options": [
+      "Förklara, förstå och frigöra",
+      "Mäta, arkivera och publicera",
+      "Intervjua, observera och transkribera",
+      "Planera, finansiera och betygsätta"
+    ],
+    "answer": 0,
+    "explanation": "Kapitlet beskriver teoriers förklarande, förstående och frigörande funktioner."
+  },
+  {
+    "source": "Serder_och_Jober_2021_kapitel_1.pdf",
+    "page": 10,
+    "category": "Teori och vetenskap",
+    "question": "En teori används för att undersöka orsakssammanhang. Vilken funktion står i centrum?",
+    "options": [
+      "Förklarande",
+      "Frigörande",
+      "Administrativ",
+      "Arkiverande"
+    ],
+    "answer": 0,
+    "explanation": "Den förklarande funktionen gäller relationer mellan fenomen, exempelvis orsak och verkan."
+  },
+  {
+    "source": "Serder_och_Jober_2021_kapitel_1.pdf",
+    "page": 10,
+    "category": "Teori och vetenskap",
+    "question": "En analys synliggör makt och underliggande strukturer i en skolpraktik. Vilken teorifunktion ligger närmast?",
+    "options": [
+      "Frigörande",
+      "Enbart beskrivande statistik",
+      "Administrativ",
+      "Teknisk lagring"
+    ],
+    "answer": 0,
+    "explanation": "Den frigörande funktionen förknippas med kritisk teori och med att blottlägga makt och underliggande antaganden."
+  },
+  {
+    "source": "Serder_och_Jober_2021_kapitel_1.pdf",
+    "page": 10,
+    "category": "Teori och vetenskap",
+    "question": "Vad handlar ontologi om?",
+    "options": [
+      "Grundläggande antaganden om hur verkligheten är beskaffad",
+      "Hur referenser sorteras alfabetiskt",
+      "Hur intervjuer bokas",
+      "Hur många deltagare en enkät alltid måste ha"
+    ],
+    "answer": 0,
+    "explanation": "Ontologiska utgångspunkter gäller vad världen är och hur den är beskaffad."
+  },
+  {
+    "source": "Serder_och_Jober_2021_kapitel_1.pdf",
+    "page": 10,
+    "category": "Teori och vetenskap",
+    "question": "Vad handlar epistemologi om?",
+    "options": [
+      "Vilken kunskap vi kan få om verkligheten och hur",
+      "Hur lång en forskningsrapport ska vara",
+      "Vilket filformat som används för data",
+      "Hur en budget fördelas"
+    ],
+    "answer": 0,
+    "explanation": "Epistemologi är kunskapsteori och berör kunskapens möjligheter och grunder."
+  },
+  {
+    "source": "Serder_och_Jober_2021_kapitel_1.pdf",
+    "page": 11,
+    "category": "Teori och vetenskap",
+    "question": "Hur kan ontologi och epistemologi förhålla sig till varandra?",
+    "options": [
+      "Antaganden om verkligheten kan möjliggöra eller utesluta vissa kunskapsteoretiska positioner",
+      "De är alltid helt oberoende",
+      "De är två namn på samma datainsamlingsmetod",
+      "Epistemologi handlar bara om rapportens disposition"
+    ],
+    "answer": 0,
+    "explanation": "Synen på verkligheten hänger samman med vad vi anser att vi kan veta om den."
+  },
+  {
+    "source": "Serder_och_Jober_2021_kapitel_1.pdf",
+    "page": 12,
+    "category": "Teori och vetenskap",
+    "question": "Varför är det viktigt att läsa om en teoris begränsningar?",
+    "options": [
+      "För att förstå vad teorin är och inte är avsedd att användas till",
+      "För att kunna undvika allt empiriskt material",
+      "För att visa att alla teorier saknar värde",
+      "För att välja den teori som har flest begrepp"
+    ],
+    "answer": 0,
+    "explanation": "Författarna framhåller betydelsen av att förstå teoriernas användningsområden och begränsningar."
+  },
+  {
+    "source": "God_forskningssed_VR_2024.pdf",
+    "page": 13,
+    "category": "Forskningsetik",
+    "question": "Vilka fyra grundprinciper återges från ALLEA-kodexen?",
+    "options": [
+      "Tillförlitlighet, ärlighet, respekt och ansvar",
+      "Snabbhet, konkurrens, lönsamhet och lydnad",
+      "Urval, intervju, analys och resultat",
+      "Sekretess, statistik, teori och publicitet"
+    ],
+    "answer": 0,
+    "explanation": "Dessa fyra principer utgör en grund för god forskningssed och vägleder både individer och organisationer."
+  },
+  {
+    "source": "God_forskningssed_VR_2024.pdf",
+    "page": 13,
+    "category": "Forskningsetik",
+    "question": "Vilken princip handlar bland annat om kvalitet i design, metod och analys?",
+    "options": [
+      "Tillförlitlighet",
+      "Popularitet",
+      "Snabbhet",
+      "Exklusivitet"
+    ],
+    "answer": 0,
+    "explanation": "Tillförlitlighet gäller att säkerställa kvaliteten i hur forskning planeras och genomförs."
+  },
+  {
+    "source": "God_forskningssed_VR_2024.pdf",
+    "page": 13,
+    "category": "Forskningsetik",
+    "question": "Vad innebär ärlighet i forskningssammanhang enligt grundprinciperna?",
+    "options": [
+      "Att utveckla och redovisa forskning öppet, rättvist, fullständigt och objektivt",
+      "Att enbart redovisa förväntade resultat",
+      "Att undvika att beskriva osäkerhet",
+      "Att låta finansiären välja vilka resultat som är sanna"
+    ],
+    "answer": 0,
+    "explanation": "Ärlighet gäller hela forskningsarbetet, inklusive granskning, rapportering och information."
+  },
+  {
+    "source": "God_forskningssed_VR_2024.pdf",
+    "page": 47,
+    "category": "Forskningsetik",
+    "question": "En forskare hittar på intervjuresultat och redovisar dem som insamlade. Vilket begrepp passar?",
+    "options": [
+      "Fabricering",
+      "Plagiering",
+      "Anonymisering",
+      "Teoretisering"
+    ],
+    "answer": 0,
+    "explanation": "Fabricering innebär att resultat hittas på och presenteras som verkliga."
+  },
+  {
+    "source": "God_forskningssed_VR_2024.pdf",
+    "page": 47,
+    "category": "Forskningsetik",
+    "question": "En forskare ändrar eller utelämnar data utan motivering för att passa en önskad slutsats. Vad beskriver det?",
+    "options": [
+      "Förfalskning",
+      "Transkribering",
+      "Rekrytering",
+      "Begreppsanalys"
+    ],
+    "answer": 0,
+    "explanation": "Förfalskning kan innebära otillbörlig manipulation eller omotiverad ändring och undanhållande av data."
+  },
+  {
+    "source": "God_forskningssed_VR_2024.pdf",
+    "page": 47,
+    "category": "Forskningsetik",
+    "question": "En forskare använder någon annans idéer utan att ge källan erkännande. Vilket begrepp passar?",
+    "options": [
+      "Plagiering",
+      "Fabricering",
+      "Observation",
+      "Operationalisering"
+    ],
+    "answer": 0,
+    "explanation": "Plagiering gäller användning av andras arbete eller idéer utan tillbörligt erkännande."
+  },
+  {
+    "source": "God_forskningssed_VR_2024.pdf",
+    "page": 54,
+    "category": "Forskningsetik",
+    "question": "Vilket intresse ska enligt materialet ges prioritet framför forsknings- och öppenhetsintresset?",
+    "options": [
+      "Skyddsintresset",
+      "Publiceringstakten",
+      "Forskarens karriärintresse",
+      "Finansiärens marknadsföring"
+    ],
+    "answer": 0,
+    "explanation": "Skyddsintresset gäller omsorg om dem som deltar i eller berörs av forskningen och att begränsa skador."
+  },
+  {
+    "source": "God_forskningssed_VR_2024.pdf",
+    "page": 55,
+    "category": "Forskningsetik",
+    "question": "Vilken beskrivning av risker i forskning stämmer bäst med materialet?",
+    "options": [
+      "Risker kan vara fysiska, psykiska, ekonomiska, sociala eller röra integriteten",
+      "Risker finns bara vid kirurgiska ingrepp",
+      "Risker försvinner om studien använder intervjuer",
+      "Risker uppstår endast efter publicering"
+    ],
+    "answer": 0,
+    "explanation": "Risker behöver övervägas i olika skeden och kan även omfatta indirekta följder, exempelvis stigmatisering."
+  },
+  {
+    "source": "God_forskningssed_VR_2024.pdf",
+    "page": 7,
+    "category": "Forskningsetik",
+    "question": "Vilken roll har etisk reflektion i forskningsarbetet?",
+    "options": [
+      "Forskare behöver tillsammans med andra söka svar på de etiska frågor som uppstår",
+      "En skrift kan ge färdiga svar på alla etiska frågor",
+      "Etik behövs bara när resultatet är oväntat",
+      "Etik är enbart finansiärens ansvar"
+    ],
+    "answer": 0,
+    "explanation": "God forskningssed ger vägledning, men ersätter inte forskarens och forskarsamhällets eget etiska arbete."
+  }
+]
