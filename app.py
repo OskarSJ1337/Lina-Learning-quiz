@@ -131,6 +131,11 @@ class App(tk.Tk):
         tk.Label(self.header, text='Lina / självtest', font=('Segoe UI', 18, 'bold'), bg=BG, fg=INK).pack(side='left')
         self.counter = tk.Label(self.header, text='Rätt: 0', bg=HOVER, fg=ACCENT, padx=14, pady=8, font=('Segoe UI', 14, 'bold'))
         self.counter.pack(side='right')
+        self.back_button = tk.Button(self.header, text='← Tillbaka', command=self.home,
+                                     bg=HOVER, fg=INK, activebackground=ACCENT,
+                                     activeforeground='white', relief='flat', bd=0,
+                                     padx=12, pady=8, cursor='hand2')
+        self.back_button.pack(side='right', padx=16)
         self.canvas = tk.Canvas(self, bg=BG, highlightthickness=0)
         scroll = ttk.Scrollbar(self, orient='vertical', command=self.canvas.yview)
         scroll.pack(side='right', fill='y')
@@ -176,6 +181,7 @@ class App(tk.Tk):
         return b
 
     def home(self):
+        self.back_button.configure(state='disabled')
         self.session = None
         self.clear()
         self.counter.configure(text='Rätt: 0')
@@ -194,6 +200,7 @@ class App(tk.Tk):
                             lambda questions=questions: self.start(questions))
 
     def start(self, questions, review=False):
+        self.back_button.configure(state='normal')
         if not review:
             self.selected_questions = list(questions)
         self.session = Session(questions)
@@ -214,6 +221,8 @@ class App(tk.Tk):
         result = self.session.answer(index)
         if result is None:
             return
+        self.update_idletasks()
+        viewport_top = self.canvas.canvasy(0)
         q = self.session.current
         for i, button in enumerate(self.options):
             color = TRUE if i == q['answer'] else FALSE if i == index else BG
@@ -234,7 +243,10 @@ class App(tk.Tk):
         self.next_button = self.button('Visa resultat' if self.session.index == len(self.session.questions)-1 else 'Nästa', self.next_question, True)
         self.next_button.focus_set()
         self.update_idletasks()
-        self.canvas.yview_moveto(1)
+        # Keep the same pixel offset as feedback increases the scroll region.
+        bounds = self.canvas.bbox('all')
+        if bounds and bounds[3] > bounds[1]:
+            self.canvas.yview_moveto((viewport_top - bounds[1]) / (bounds[3] - bounds[1]))
 
     def next_question(self):
         if self.session.advance():
