@@ -6,11 +6,11 @@ En svensk skrivbordsapp för Windows med 30 förståelse- och tillämpningsfråg
 
 Dubbelklicka på `dist/Lina-Sjalvtest.exe`. Ingen Python-installation, internetanslutning eller API-nyckel behövs. EXE-filen kan flyttas till en annan Windows-dator; frågebanken är inbyggd.
 
-## PDF-läge
+## Gränssnitt
 
-Välj **Läs PDF-filer och skapa fler begreppsfrågor** och markera en eller flera PDF-filer. Texten läses lokalt med pypdf. Meningar med kända kursbegrepp blir luckfrågor med fyra alternativ. Originalmening, filnamn och PDF-sida visas efter svaret. Detta är regelbaserad generering, inte en språkmodell som kan skapa fria resonemangsfrågor från valfritt innehåll. Skannade dokument utan textlager kräver OCR; ingen OCR ingår. Importerade frågor används under den aktuella sessionen och sparas inte.
+Startsidan har **Starta quiz** för alla frågor samt ett separat alternativ för varje PDF. Antalet frågor visas vid varje val. **Nytt test** behåller vald grupp, även efter repetition av missade frågor. Under testet visas frågan, fyra svar och antal rätt. Efter svaret visas återkoppling, förklaring, en kort källhänvisning och **Nästa**. Texten är större och har tydligare kontrast.
 
-Den inbyggda frågebanken är separat formulerad utifrån PDF-materialet. Sidhänvisningar räknas från PDF-filens första sida, inte bokens tryckta sidnummer. Övningsfrågorna är inte ett officiellt facit och täcker inte hela kursen. Original-PDF:erna packas inte in i EXE-filen.
+PDF-import visas inte längre i gränssnittet. Alla 70 frågor ingår. Sidhänvisningar räknas från PDF-filens första sida.
 
 ## Utveckling
 

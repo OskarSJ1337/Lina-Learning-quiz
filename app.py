@@ -9,7 +9,7 @@ import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
 
 BASE = Path(getattr(sys, '_MEIPASS', Path(__file__).resolve().parent))
-BG, INK, MUTED, ACCENT = '#f4f6fb', '#202b40', '#617089', '#4f46bb'
+BG, INK, MUTED, ACCENT = '#f4f6fb', '#202b40', '#48566b', '#4f46bb'
 
 
 def validate(questions):
@@ -107,11 +107,11 @@ def extract_questions(paths):
 class App(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title('Lina – självtest')
+        self.title('Linas coola quiz')
         self.geometry('960x820')
         self.minsize(720, 640)
         self.configure(bg=BG)
-        self.option_add('*Font', ('Segoe UI', 11))
+        self.option_add('*Font', ('Segoe UI', 13))
         self.bank = validate(json.loads((BASE / 'questions.json').read_text(encoding='utf-8')))
         self.session = None
         self.importing = False
@@ -145,7 +145,7 @@ class App(tk.Tk):
             child.destroy()
         self.canvas.yview_moveto(0)
 
-    def label(self, text, size=12, color=INK):
+    def label(self, text, size=13, color=INK):
         w = tk.Label(self.body, text=text, bg=BG, fg=color, font=('Segoe UI', size),
                      justify='left', anchor='w', wraplength=max(400, self.canvas.winfo_width()-48))
         w.pack(fill='x', pady=8)
@@ -154,7 +154,7 @@ class App(tk.Tk):
     def button(self, text, command, primary=False):
         b = tk.Button(self.body, text=text, command=command, bg=ACCENT if primary else 'white',
                       fg='white' if primary else INK, relief='flat', bd=0, padx=18, pady=14,
-                      cursor='hand2', anchor='w', justify='left', wraplength=780)
+                      cursor='hand2', anchor='w', justify='left', wraplength=max(400, self.canvas.winfo_width()-48))
         b.pack(fill='x', pady=5)
         return b
 
@@ -162,16 +162,23 @@ class App(tk.Tk):
         self.session = None
         self.clear()
         self.counter.configure(text='Rätt: 0')
-        self.label('Lite övning. Mer förståelse.', 26)
-        self.label('Vetenskaplig metod · teori · forskningsetik', 13, MUTED)
-        self.label(f'{len(self.bank)} övningsfrågor från dina tre PDF-filer. Välj ett av fyra alternativ. Efter svaret får du en förklaring och en sidhänvisning.')
-        self.label('Ett självtest för övning – inte ett officiellt examinationsfacit.', 11, MUTED)
-        self.button('Starta självtestet  →', lambda: self.start(self.bank), True)
-        self.button('Läs PDF-filer och skapa fler begreppsfrågor', self.import_pdf)
-        self.label('PDF-läget skapar automatiska luckfrågor ur texten. De färdiga övningsfrågorna tränar också förståelse och tillämpning. Allt fungerar lokalt.', 11, MUTED)
-        self.label('Tips: du kan även välja svar med tangenterna 1–4.', 11, MUTED)
+        self.label('Vetenskaplig metod', 26)
+        self.label(f'{len(self.bank)} frågor · Fyra svarsalternativ', 14, MUTED)
+        self.button(f'Starta quiz – Alla frågor ({len(self.bank)})', lambda: self.start(self.bank), True)
+        sources = [
+            ('God_forskningssed_VR_2024.pdf', 'God forskningssed'),
+            ('Serder_och_Jober_2021_kapitel_1.pdf', 'Serder & Jobér, kapitel 1'),
+            ('Undervisningsunderlag_bilder_och_text.pdf', 'Undervisningsunderlag'),
+        ]
+        for source, title in sources:
+            questions = [q for q in self.bank if q['source'] == source]
+            if questions:
+                self.button(f'Starta quiz – {title} ({len(questions)})',
+                            lambda questions=questions: self.start(questions))
 
-    def start(self, questions):
+    def start(self, questions, review=False):
+        if not review:
+            self.selected_questions = list(questions)
         self.session = Session(questions)
         self.show_question()
 
@@ -179,10 +186,9 @@ class App(tk.Tk):
         self.clear()
         s, q = self.session, self.session.current
         self.counter.configure(text=f'Rätt: {s.score}')
-        self.label(f'FRÅGA {s.index + 1} AV {len(s.questions)}  ·  {q["category"]}', 11, MUTED)
+        self.label(f'Fråga {s.index + 1} av {len(s.questions)}', 13, MUTED)
         ttk.Progressbar(self.body, maximum=len(s.questions), value=s.index).pack(fill='x', pady=(0, 18))
-        self.label(q['question'], 19)
-        self.label('Välj det alternativ du tycker stämmer bäst.', 11, MUTED)
+        self.label(q['question'], 20)
         self.options = [self.button(f'{i + 1}.  {option}', lambda i=i: self.choose(i)) for i, option in enumerate(q['options'])]
 
     def choose(self, index):
@@ -196,12 +202,18 @@ class App(tk.Tk):
             color = '#d9f2e2' if i == q['answer'] else '#fce0e2' if i == index else '#e9edf3'
             button.configure(state='disabled', bg=color, disabledforeground=INK)
         self.counter.configure(text=f'Rätt: {self.session.score}')
-        self.label('●  Rätt svar!' if result else '●  Fel svar', 17, '#16713c' if result else '#b32b3a')
+        self.label('●  Rätt svar' if result else '●  Fel svar', 17, '#16713c' if result else '#b32b3a')
         if not result:
             self.label('Rätt svar: ' + q['options'][q['answer']], 13)
         self.label(q['explanation'])
-        self.label(f'Källa: {q["source"]} · PDF-sida {q["page"]}', 10, MUTED)
-        self.next_button = self.button('Visa resultat  →' if self.session.index == len(self.session.questions)-1 else 'Nästa  →', self.next_question, True)
+        source_names = {
+            'Undervisningsunderlag_bilder_och_text.pdf': 'Undervisningsunderlag',
+            'Serder_och_Jober_2021_kapitel_1.pdf': 'Serder & Jobér, kap. 1',
+            'God_forskningssed_VR_2024.pdf': 'God forskningssed (2024)',
+        }
+        source = source_names.get(q['source'], q['source'])
+        self.label(f'{source} · PDF-sida {q["page"]}', 12, MUTED)
+        self.next_button = self.button('Visa resultat' if self.session.index == len(self.session.questions)-1 else 'Nästa', self.next_question, True)
         self.next_button.focus_set()
         self.update_idletasks()
         self.canvas.yview_moveto(1)
@@ -215,13 +227,13 @@ class App(tk.Tk):
     def finish(self):
         self.clear()
         s = self.session
-        self.label('Bra jobbat – testet är klart!', 25)
+        self.label('Resultat', 25)
         self.label(f'{s.score} rätt av {len(s.questions)}  ·  {s.score / len(s.questions):.0%}', 22, ACCENT)
         if s.missed:
             missed = s.missed[:]
-            self.button(f'Öva igen på de {len(missed)} frågor du missade', lambda: self.start(missed), True)
-        self.button('Starta ett nytt blandat test', lambda: self.start(self.bank), True)
-        self.button('Till startsidan', self.home)
+            self.button(f'Öva på missade frågor ({len(missed)})', lambda: self.start(missed, review=True), True)
+        self.button('Nytt test', lambda: self.start(self.selected_questions), True)
+        self.button('Startsida', self.home)
 
     def import_pdf(self):
         paths = filedialog.askopenfilenames(title='Välj dina PDF-filer', filetypes=[('PDF-filer', '*.pdf')])
@@ -259,7 +271,7 @@ class App(tk.Tk):
             self.button(f'Starta {len(questions)} begreppsfrågor', lambda: self.start(questions), True)
         else:
             self.label('Inga lämpliga textstycken hittades. Skannade PDF-filer utan textlager behöver OCR innan de kan användas.')
-        self.button('Till startsidan', self.home)
+        self.button('Startsida', self.home)
 
 
 def self_test(report, pdf_paths):
