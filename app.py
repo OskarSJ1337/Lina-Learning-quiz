@@ -201,10 +201,10 @@ class App(tk.Tk):
         w.pack(fill='x', pady=8)
         return w
 
-    def button(self, text, command, primary=False, color=None):
+    def button(self, text, command, primary=False, color=None, parent=None):
         normal = color or (ACCENT if primary else SURFACE)
-        hover = color or (ACCENT_HOVER if primary else HOVER)
-        b = tk.Button(self.body, text=text, command=command, bg=normal,
+        hover = {'#D0F2DE': '#ADE3C4', '#D8EAFF': '#AECFF7', '#FFE4C7': '#F6CCA0'}.get(color, ACCENT_HOVER if primary else HOVER)
+        b = tk.Button(parent or self.body, text=text, command=command, bg=normal,
                       fg='white' if primary else BUTTON_TEXT,
                       activebackground=hover,
                       activeforeground='white' if primary else BUTTON_TEXT,
@@ -262,7 +262,20 @@ class App(tk.Tk):
         self.help_text = tk.Label(self.body, text=self.readable_paragraphs(q.get('help', 'Välj begreppet som passar i luckan i texten.')),
             bg=HOVER, fg=INK, justify='left', anchor='w', padx=14, pady=12,
             wraplength=max(400, min(780, self.canvas.winfo_width()-48)))
-        self.options = [self.button(f'{i + 1}.  {option}', lambda i=i: self.choose(i)) for i, option in enumerate(q['options'])]
+        self.options = []
+        self.answer_labels = []
+        for i, option in enumerate(q['options']):
+            row = tk.Frame(self.body, bg=SURFACE)
+            row.pack(fill='x', pady=5)
+            button = self.button(f'{i + 1}.  {option}', lambda i=i: self.choose(i), parent=row)
+            button.pack_forget()
+            status = tk.Label(row, text='', width=11, anchor='e', padx=12,
+                              bg=SURFACE, fg=INK, font=self.reading_font(12, 'bold'))
+            status.pack(side='right', fill='y')
+            button.pack(side='left', fill='both', expand=True)
+            button.bind('<Configure>', lambda event, b=button: b.configure(wraplength=max(260, event.width-44)))
+            self.options.append(button)
+            self.answer_labels.append(status)
         self.previous_button.configure(state='normal' if s.index > 0 else 'disabled')
         self.next_button.configure(text='Visa resultat' if s.index == len(s.questions)-1 else 'Nästa fråga →',
                                    state='normal')
@@ -284,6 +297,8 @@ class App(tk.Tk):
             ACCENT.lower(): '#6955b4', ACCENT_HOVER.lower(): '#58459e',
             TRUE.lower(): '#254c3b', FALSE.lower(): '#633b3e',
             '#d8eaff': '#293e5b', '#ffe4c7': '#51422f',
+            '#ade3c4': '#376d52', '#aecff7': '#3d5d86', '#f6cca0': '#7a5835',
+            '#176333': '#8cf0ad', '#9d202b': '#ffacb5',
         }
         value = str(color).lower()
         if self.dark_mode:
@@ -340,6 +355,11 @@ class App(tk.Tk):
         for i, button in enumerate(self.options):
             color = TRUE if i == q['answer'] else FALSE if i == index else BG
             button.configure(state='disabled', bg=color, disabledforeground=BUTTON_TEXT)
+            button.master.configure(bg=color)
+            status = self.answer_labels[i]
+            status.configure(bg=color,
+                text='Rätt svar' if i == q['answer'] else 'Fel svar' if i == index else '',
+                fg='#176333' if i == q['answer'] else '#9d202b' if i == index else INK)
         self.counter.configure(text=f'Rätt: {self.session.score}/{len(self.session.questions)}')
         bubble_color = TRUE if result else FALSE
         self.feedback_box = tk.Frame(self.body, bg=bubble_color, padx=18, pady=14)
@@ -356,6 +376,7 @@ class App(tk.Tk):
         bubble_label('●  Rätt svar' if result else '●  Fel svar', 17, True)
         if not result:
             bubble_label('Rätt svar: ' + q['options'][q['answer']], bold=True)
+        bubble_label('Varför är svaret rätt?', 13, True)
         bubble_label(self.readable_paragraphs(q['explanation']))
         source_names = {
             'Undervisningsunderlag_bilder_och_text.pdf': 'Undervisningsunderlag',

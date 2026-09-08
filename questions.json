@@ -5,13 +5,13 @@
     "category": "Forskningsmetod",
     "question": "Vilken beskrivning motsvarar bäst ett vetenskapligt forskningsproblem?",
     "options": [
-      "En precisering av vilken kunskap som behöver utvecklas",
+      "Att tydligt beskriva vilken kunskap som saknas",
       "Ett ämnesområde som forskaren är intresserad av",
       "Ett beslut om vilken datainsamlingsmetod som ska användas",
       "En lista över de rubriker som ska ingå i rapporten"
     ],
     "answer": 0,
-    "explanation": "Kunskapsproblemet preciserar vad vi behöver veta, med stöd i vad tidigare forskning redan visar.",
+    "explanation": "Ett forskningsproblem beskriver vad vi behöver veta mer om. Ett intressant ämne är bara en början. Forskaren behöver också ange vilken kunskap som saknas.",
     "help": "Vad är det forskaren vill ta reda på när hen formulerar ett forskningsproblem?"
   },
   {
@@ -20,13 +20,13 @@
     "category": "Forskningsmetod",
     "question": "En student vill undersöka hur elever själva beskriver stöd i skolan, men intervjuar bara lärare. Vad är det centrala problemet?",
     "options": [
-      "Informationskällan motsvarar inte den kunskap frågan efterfrågar",
+      "Lärarnas svar ger inte elevernas egna beskrivningar",
       "Studien måste alltid ha fler deltagare",
       "Studien måste genomföras med en enkät",
       "Studien saknar automatiskt en teori"
     ],
     "answer": 0,
-    "explanation": "Lärare kan beskriva sitt perspektiv. Elevernas egna beskrivningar behöver material där eleverna själva kommer till tals.",
+    "explanation": "Elever och lärare kan beskriva stödet på olika sätt. Lärarnas svar visar lärarnas perspektiv. För att undersöka elevernas egna erfarenheter behöver eleverna själva få komma till tals.",
     "help": "Studenten vill veta hur elever upplever stödet, men frågar bara lärare. Vad blir problemet med det upplägget?"
   },
   {
@@ -35,13 +35,13 @@
     "category": "Forskningsmetod",
     "question": "Vad är materialet i en studie där lärare intervjuas och samtalen transkriberas?",
     "options": [
-      "De transkriberade intervjuerna som ska analyseras",
+      "Intervjuerna som har skrivits ned i text",
       "Lärarna som personer",
       "Enbart forskningsfrågorna",
       "Teorin som väljs efteråt"
     ],
     "answer": 0,
-    "explanation": "Skilj mellan informationskälla och material: lärarna ger information, medan intervjutexterna utgör analysmaterial.",
+    "explanation": "Materialet är intervjuerna i skriven form. Lärarna är de som ger informationen. Det är texten från intervjuerna som forskaren sedan analyserar.",
     "help": "Att transkribera betyder att skriva ned det som sägs i intervjun. Vad är det sedan forskaren arbetar med i analysen?"
   },
   {
@@ -50,13 +50,13 @@
     "category": "Forskningsmetod",
     "question": "Syftet i en studie ändras. Vad behöver forskaren göra?",
     "options": [
-      "Kontrollera följderna för frågor, material, datainsamling och analys",
+      "Se över hur ändringen påverkar frågor, material, insamling och analys",
       "Endast ändra rubriken på rapporten",
       "Behålla alla metodval oavsett det nya syftet",
       "Samla in fler data innan frågorna ses över"
     ],
     "answer": 0,
-    "explanation": "Forskningskedjans delar hänger samman. En förändring i syftet kan därför kräva förändringar i resten av upplägget.",
+    "explanation": "Syftet styr vad studien behöver undersöka. Om syftet ändras kan även frågorna, materialet och analysen behöva ändras.",
     "help": "Studiens mål ändras. Vad behöver forskaren då se över i resten av undersökningen?"
   },
   {
@@ -65,13 +65,13 @@
     "category": "Forskningsmetod",
     "question": "Vilken funktion har frågeställningarna i förhållande till syftet?",
     "options": [
-      "De bryter ned syftet i frågor som tillsammans hjälper till att uppfylla det",
+      "De delar upp syftet i frågor som tillsammans besvarar det",
       "De lägger till oberoende forskningsprojekt",
       "De ersätter behovet av ett syfte",
       "De anger bara i vilken ordning intervjuer ska hållas"
     ],
     "answer": 0,
-    "explanation": "Frågeställningarna konkretiserar syftet och ska hålla studien samman.",
+    "explanation": "Syftet är studiens mål. Frågeställningarna delar upp målet i tydliga frågor. Tillsammans ska de hjälpa forskaren att uppnå syftet.",
     "help": "Hur ska frågorna hänga ihop med det forskaren vill undersöka?"
   },
   {
@@ -86,7 +86,7 @@
       "Enbart vilket program rapporten skrivs i"
     ],
     "answer": 0,
-    "explanation": "Analysen behöver beskrivas som arbete med materialet, exempelvis jämförelse, kategorisering eller tolkning.",
+    "explanation": "Analysavsnittet beskriver hur forskaren ska arbeta med materialet. Det kan till exempel vara att jämföra svar eller leta efter mönster. Att bara skriva metodens namn räcker inte.",
     "help": "Vad behöver forskaren berätta om hur svaren eller uppgifterna ska undersökas?"
   },
   {
@@ -96,12 +96,12 @@
     "question": "En student skriver bara att studien använder teori X. Vad behöver utvecklas?",
     "options": [
       "Vad teorin hjälper studenten att uppmärksamma och tolka",
-      "En förteckning över alla teorier i kursen",
+      "En lista över alla teorier i kursen",
       "Ett påstående om att teorin är den enda riktiga",
       "Ett löfte om att teorin inte påverkar analysen"
     ],
     "answer": 0,
-    "explanation": "Teorins funktion ska framgå, inklusive eventuell betydelse för frågor, datainsamling och analys.",
+    "explanation": "En teori ska användas till något i studien. Läsaren behöver förstå vad teorin hjälper forskaren att se och tolka. Det räcker inte att nämna teorins namn.",
     "help": "Studenten nämner en teori men förklarar inte hur den används. Vilken information saknas?"
   },
   {
@@ -110,13 +110,13 @@
     "category": "Forskningsmetod",
     "question": "Hur bör studiens kvalitet och begränsningar diskuteras?",
     "options": [
-      "I relation till det konkreta upplägget och den kunskap det kan ge",
+      "Utifrån hur studien är upplagd och vad den kan visa",
       "Genom att enbart lista generella kvalitetsbegrepp",
       "Genom att undvika alla begränsningar",
       "Genom att enbart ange antalet sidor i rapporten"
     ],
     "answer": 0,
-    "explanation": "Kvalitetsresonemang ska visa vad som stärker och begränsar just den planerade studien.",
+    "explanation": "Kvalitet behöver bedömas utifrån just den aktuella studien. Förklara vad upplägget kan visa och vad det inte kan visa. En lista med kvalitetsbegrepp räcker inte.",
     "help": "Hur ska forskaren bedöma vad den egna undersökningen fungerar bra för och vad den inte kan visa?"
   },
   {
@@ -125,13 +125,13 @@
     "category": "Forskningsmetod",
     "question": "Vad skiljer forskningskedjan från rapportmallen?",
     "options": [
-      "Kedjan prövar studiens logik, medan mallen organiserar texten",
+      "Kedjan visar hur studien hänger ihop. Mallen ordnar texten",
       "Kedjan anger bara rubriker, medan mallen väljer metoden",
       "De är identiska och kan alltid ersätta varandra",
       "Mallen avgör om slutsatserna är sanna"
     ],
     "answer": 0,
-    "explanation": "Forskningskedjan synliggör sambanden mellan studiens delar. Mallen visar var delarna ska beskrivas.",
+    "explanation": "Forskningskedjan handlar om varför studiens delar passar ihop. Rapportmallen handlar om var delarna ska stå i texten. En välordnad rapport kan ändå ha brister i forskningskedjan.",
     "help": "Vad är skillnaden mellan hur undersökningen hänger ihop och hur rapporten är uppdelad?"
   },
   {
@@ -140,13 +140,13 @@
     "category": "Forskningsmetod",
     "question": "Vilken uppgift har tidigare forskning i en forskningsplan?",
     "options": [
-      "Att visa vad som är känt och hjälpa till att precisera kunskapsproblemet",
+      "Att visa vad vi redan vet och vad vi behöver veta mer om",
       "Att ersätta forskarens egna frågeställningar",
       "Att endast göra referenslistan längre",
       "Att garantera ett visst resultat"
     ],
     "answer": 0,
-    "explanation": "Tidigare forskning ska jämföras och användas för att motivera vad som fortfarande behöver undersökas.",
+    "explanation": "Tidigare forskning visar vad andra redan har kommit fram till. Det hjälper forskaren att förklara vad den nya studien behöver undersöka.",
     "help": "Varför läser forskaren tidigare studier när en ny undersökning planeras?"
   },
   {
@@ -155,13 +155,13 @@
     "category": "Forskningsmetod",
     "question": "En etisk granskning visar risker med rekryteringen. Vad kan bli en rimlig följd?",
     "options": [
-      "Att rekryteringsvägen eller urvalet ändras",
+      "Att ändra vilka som bjuds in eller hur de bjuds in",
       "Att etiken flyttas till en bilaga utan åtgärd",
       "Att riskerna ignoreras eftersom metoden redan är vald",
       "Att alla forskningsfrågor automatiskt blir ogiltiga"
     ],
     "answer": 0,
-    "explanation": "Etiska och metodologiska val hänger samman. Etisk reflektion kan kräva ändringar i upplägget.",
+    "explanation": "Hur deltagare väljs och bjuds in kan skapa etiska problem. Forskaren kan därför behöva ändra urvalet eller inbjudan. Etik kan påverka själva metoden.",
     "help": "Forskaren upptäcker att sättet att bjuda in deltagare kan skapa problem för dem. Vad kan behöva göras?"
   },
   {
@@ -170,13 +170,13 @@
     "category": "Forskningsmetod",
     "question": "Vad kännetecknar ett konkret etiskt resonemang i forskningsplanen?",
     "options": [
-      "Att koppla situation, risk, åtgärd, motivering och kvarstående risk till studien",
+      "Att beskriva risken, åtgärden, varför den passar och vad som återstår",
       "Att endast skriva att alla etiska regler följs",
       "Att påstå att inga risker någonsin kan uppstå",
       "Att låta valet av analysprogram ersätta etikavsnittet"
     ],
     "answer": 0,
-    "explanation": "Etik behöver knytas till faktiska situationer och till vad åtgärderna kan och inte kan lösa.",
+    "explanation": "Beskriv situationen, risken och vad ni ska göra åt den. Förklara varför åtgärden passar och vilka risker som finns kvar. Då handlar etiken om den verkliga studien.",
     "help": "Vilken beskrivning visar att forskaren har tänkt på vad som kan bli svårt eller skadligt för deltagarna?"
   },
   {
@@ -185,13 +185,13 @@
     "category": "Teori och vetenskap",
     "question": "Hur beskrivs teorier som en tankeverktygslåda?",
     "options": [
-      "Som redskap för att producera kunskap, tolka erfarenheter och vägleda handling",
+      "Som verktyg för att skapa kunskap, förstå erfarenheter och vägleda handling",
       "Som färdiga recept som alltid ger samma svar",
       "Som enbart statistikprogram",
       "Som privata åsikter som inte behöver diskuteras"
     ],
     "answer": 0,
-    "explanation": "Teori ger begrepp och perspektiv som kan användas för förståelse, analys och handling.",
+    "explanation": "Teorier ger verktyg för att tänka. De kan hjälpa oss att undersöka något, förstå erfarenheter och välja hur vi ska handla. De är inte färdiga recept.",
     "help": "Vad menas med liknelsen att teorier är verktyg för tanken?"
   },
   {
@@ -202,11 +202,11 @@
     "options": [
       "Att perspektivet påverkar vad vi ser och hur vi förstår det",
       "Att alla teorier gör exakt samma saker synliga",
-      "Att observationer alltid är helt oberoende av perspektiv",
+      "Att det forskaren ser aldrig påverkas av perspektivet",
       "Att forskaren kan ersätta material med åsikter"
     ],
     "answer": 0,
-    "explanation": "Ett teoretiskt perspektiv riktar uppmärksamheten mot vissa aspekter av det som undersöks.",
+    "explanation": "Olika teorier riktar blicken mot olika saker. Därför kan teorivalet påverka både vad forskaren uppmärksammar och hur materialet förstås.",
     "help": "Vad vill man förklara genom att jämföra en teori med ett par glasögon?"
   },
   {
@@ -221,7 +221,7 @@
       "Planera, finansiera och betygsätta"
     ],
     "answer": 0,
-    "explanation": "Kapitlet beskriver teoriers förklarande, förstående och frigörande funktioner.",
+    "explanation": "Kapitlet beskriver tre funktioner: förklara, förstå och frigöra. Det handlar om vad teorin används till, inte om hur data samlas in.",
     "help": "Vilka tre olika uppgifter kan en teori ha enligt kapitlet?"
   },
   {
@@ -236,7 +236,7 @@
       "Arkiverande"
     ],
     "answer": 0,
-    "explanation": "Den förklarande funktionen gäller relationer mellan fenomen, exempelvis orsak och verkan.",
+    "explanation": "En förklarande teori används för att undersöka varför något händer. Frågor om orsak och verkan hör därför till den förklarande funktionen.",
     "help": "Forskaren använder teorin för att undersöka varför något händer. Vilket namn har den funktionen?"
   },
   {
@@ -246,12 +246,12 @@
     "question": "En analys synliggör makt och underliggande strukturer i en skolpraktik. Vilken teorifunktion ligger närmast?",
     "options": [
       "Frigörande",
-      "Enbart beskrivande statistik",
+      "Bara statistik som sammanfattar data",
       "Administrativ",
       "Teknisk lagring"
     ],
     "answer": 0,
-    "explanation": "Den frigörande funktionen förknippas med kritisk teori och med att blottlägga makt och underliggande antaganden.",
+    "explanation": "Den frigörande funktionen handlar bland annat om att synliggöra makt. Forskaren kan då granska sådant som tas för givet och som begränsar människor.",
     "help": "Forskaren undersöker hur makt och bakomliggande mönster påverkar skolan. Vilken funktion har teorin här?"
   },
   {
@@ -260,13 +260,13 @@
     "category": "Teori och vetenskap",
     "question": "Vad handlar ontologi om?",
     "options": [
-      "Grundläggande antaganden om hur verkligheten är beskaffad",
+      "Grundläggande antaganden om hur verkligheten är",
       "Hur referenser sorteras alfabetiskt",
       "Hur intervjuer bokas",
       "Hur många deltagare en enkät alltid måste ha"
     ],
     "answer": 0,
-    "explanation": "Ontologiska utgångspunkter gäller vad världen är och hur den är beskaffad.",
+    "explanation": "Ontologi handlar om våra grundläggande antaganden om verkligheten. Det är en annan fråga än hur vi bokar intervjuer eller skriver referenser.",
     "help": "Vilken sorts grundfrågor hör till begreppet ontologi?"
   },
   {
@@ -281,7 +281,7 @@
       "Hur en budget fördelas"
     ],
     "answer": 0,
-    "explanation": "Epistemologi är kunskapsteori och berör kunskapens möjligheter och grunder.",
+    "explanation": "Epistemologi betyder kunskapsteori. Det handlar om vad vi kan få kunskap om och hur vi kan få den kunskapen.",
     "help": "Vilken sorts grundfrågor hör till begreppet epistemologi?"
   },
   {
@@ -290,13 +290,13 @@
     "category": "Teori och vetenskap",
     "question": "Hur kan ontologi och epistemologi förhålla sig till varandra?",
     "options": [
-      "Antaganden om verkligheten kan möjliggöra eller utesluta vissa kunskapsteoretiska positioner",
+      "Synen på verkligheten påverkar vilken kunskap vi tror är möjlig",
       "De är alltid helt oberoende",
       "De är två namn på samma datainsamlingsmetod",
       "Epistemologi handlar bara om rapportens disposition"
     ],
     "answer": 0,
-    "explanation": "Synen på verkligheten hänger samman med vad vi anser att vi kan veta om den.",
+    "explanation": "Vår syn på verkligheten påverkar vilken kunskap vi tror är möjlig. Ontologi och epistemologi hänger därför ihop, även om de handlar om olika frågor.",
     "help": "Hur kan synen på verkligheten hänga ihop med synen på kunskap?"
   },
   {
@@ -306,12 +306,12 @@
     "question": "Varför är det viktigt att läsa om en teoris begränsningar?",
     "options": [
       "För att förstå vad teorin är och inte är avsedd att användas till",
-      "För att kunna undvika allt empiriskt material",
+      "För att kunna undvika allt material från undersökningar",
       "För att visa att alla teorier saknar värde",
       "För att välja den teori som har flest begrepp"
     ],
     "answer": 0,
-    "explanation": "Författarna framhåller betydelsen av att förstå teoriernas användningsområden och begränsningar.",
+    "explanation": "En teori passar för vissa frågor men inte för alla. När forskaren känner till begränsningarna blir det lättare att använda teorin på ett rimligt sätt.",
     "help": "Varför behöver man förstå var gränserna går för en teori?"
   },
   {
@@ -326,7 +326,7 @@
       "Sekretess, statistik, teori och publicitet"
     ],
     "answer": 0,
-    "explanation": "Dessa fyra principer utgör en grund för god forskningssed och vägleder både individer och organisationer.",
+    "explanation": "ALLEA-kodexens fyra grundprinciper är tillförlitlighet, ärlighet, respekt och ansvar. De vägleder både forskare och forskningsorganisationer.",
     "help": "ALLEA-kodexen är riktlinjer för god forskning. Vilka fyra grundprinciper anges där?"
   },
   {
@@ -341,7 +341,7 @@
       "Exklusivitet"
     ],
     "answer": 0,
-    "explanation": "Tillförlitlighet gäller att säkerställa kvaliteten i hur forskning planeras och genomförs.",
+    "explanation": "Tillförlitlighet handlar om forskningens kvalitet. Det gäller bland annat hur studien planeras och hur metod och analys genomförs.",
     "help": "Vilken grundprincip handlar om att undersökningen är väl planerad och genomförd?"
   },
   {
@@ -350,13 +350,13 @@
     "category": "Forskningsetik",
     "question": "Vad innebär ärlighet i forskningssammanhang enligt grundprinciperna?",
     "options": [
-      "Att utveckla och redovisa forskning öppet, rättvist, fullständigt och objektivt",
+      "Att beskriva och genomföra forskning öppet, rättvist och utan att dölja viktiga delar",
       "Att enbart redovisa förväntade resultat",
       "Att undvika att beskriva osäkerhet",
       "Att låta finansiären välja vilka resultat som är sanna"
     ],
     "answer": 0,
-    "explanation": "Ärlighet gäller hela forskningsarbetet, inklusive granskning, rapportering och information.",
+    "explanation": "Ärlighet innebär att beskriva forskningen öppet och rättvisande. Forskaren ska även redovisa osäkerhet och resultat som inte blev som väntat.",
     "help": "Vad innebär det att arbeta ärligt som forskare?"
   },
   {
@@ -371,7 +371,7 @@
       "Teoretisering"
     ],
     "answer": 0,
-    "explanation": "Fabricering innebär att resultat hittas på och presenteras som verkliga.",
+    "explanation": "Fabricering betyder att hitta på resultat och presentera dem som riktiga. Här har forskaren alltså skapat resultat som inte kommer från intervjuerna.",
     "help": "Forskaren skriver att intervjuer har gett vissa resultat, trots att resultaten är påhittade. Vad kallas det?"
   },
   {
@@ -386,7 +386,7 @@
       "Begreppsanalys"
     ],
     "answer": 0,
-    "explanation": "Förfalskning kan innebära otillbörlig manipulation eller omotiverad ändring och undanhållande av data.",
+    "explanation": "Förfalskning betyder att uppgifter eller annat forskningsmaterial ändras på ett otillåtet sätt. Här manipuleras materialet för att passa en önskad slutsats.",
     "help": "Forskaren ändrar eller tar bort uppgifter för att få ett önskat resultat. Vad kallas det?"
   },
   {
@@ -401,7 +401,7 @@
       "Operationalisering"
     ],
     "answer": 0,
-    "explanation": "Plagiering gäller användning av andras arbete eller idéer utan tillbörligt erkännande.",
+    "explanation": "Plagiering innebär att använda andras arbete eller idéer utan att ange källan på rätt sätt. Det gäller även idéer, inte bara kopierad text.",
     "help": "Forskaren använder andras idéer utan att ange varifrån de kommer. Vad kallas det?"
   },
   {
@@ -416,7 +416,7 @@
       "Finansiärens marknadsföring"
     ],
     "answer": 0,
-    "explanation": "Skyddsintresset gäller omsorg om dem som deltar i eller berörs av forskningen och att begränsa skador.",
+    "explanation": "Skyddsintresset handlar om att skydda dem som berörs av forskningen. Ny kunskap och öppenhet får inte motivera alltför stora risker för skada.",
     "help": "Vilket intresse väger tyngst när olika mål för forskningen krockar?"
   },
   {
@@ -425,13 +425,13 @@
     "category": "Forskningsetik",
     "question": "Vilken beskrivning av risker i forskning stämmer bäst med materialet?",
     "options": [
-      "Risker kan vara fysiska, psykiska, ekonomiska, sociala eller röra integriteten",
+      "Risker kan röra kroppen, måendet, ekonomin, relationer eller privatlivet",
       "Risker finns bara vid kirurgiska ingrepp",
       "Risker försvinner om studien använder intervjuer",
       "Risker uppstår endast efter publicering"
     ],
     "answer": 0,
-    "explanation": "Risker behöver övervägas i olika skeden och kan även omfatta indirekta följder, exempelvis stigmatisering.",
+    "explanation": "Forskning kan påverka mer än den fysiska hälsan. Den kan också påverka mående, ekonomi, sociala relationer och privatliv. Därför behöver flera slags risker bedömas.",
     "help": "Vilka slags negativa följder kan forskning få för dem som berörs?"
   },
   {
@@ -440,13 +440,13 @@
     "category": "Forskningsetik",
     "question": "Vilken roll har etisk reflektion i forskningsarbetet?",
     "options": [
-      "Forskare behöver tillsammans med andra söka svar på de etiska frågor som uppstår",
+      "Forskare behöver tänka igenom och diskutera etiska frågor med andra",
       "En skrift kan ge färdiga svar på alla etiska frågor",
       "Etik behövs bara när resultatet är oväntat",
       "Etik är enbart finansiärens ansvar"
     ],
     "answer": 0,
-    "explanation": "God forskningssed ger vägledning, men ersätter inte forskarens och forskarsamhällets eget etiska arbete.",
+    "explanation": "Regler och riktlinjer ger stöd men har inte färdiga svar på varje situation. Forskare behöver därför tänka igenom och diskutera etiska frågor under arbetet.",
     "help": "Varför behöver forskare fundera och samtala om vad som är etiskt rimligt?"
   },
   {
@@ -461,7 +461,7 @@
       "Att ersätta begreppet med studiens slutsats"
     ],
     "answer": 0,
-    "explanation": "Operationalisering förbinder ett abstrakt begrepp med konkreta observationer eller mått. Valet behöver motiveras.",
+    "explanation": "Operationalisering innebär att välja hur ett begrepp ska undersökas i praktiken. Tillgång till stöd kan till exempel mätas på olika sätt. Forskaren behöver förklara varför det valda måttet passar.",
     "help": "Begreppet tillgång till stöd behöver kunna undersökas. Vad innebär det att operationalisera det?"
   },
   {
@@ -471,12 +471,12 @@
     "question": "Ett instrument ger konsekventa svar men fångar inte det fenomen som studien avser. Vilken bedömning är rimlig?",
     "options": [
       "Det kan ha god reliabilitet men bristande mätningsvaliditet",
-      "Konsekventa svar garanterar god validitet",
+      "Stabila svar garanterar god validitet",
       "Det måste ha låg reliabilitet och god validitet",
       "Instrumentet behöver bara användas på fler personer"
     ],
     "answer": 0,
-    "explanation": "Konsekvens i mätningen räcker inte. Validitet gäller stödet för tolkningen och användningen av mätresultaten.",
+    "explanation": "Reliabilitet handlar här om hur stabil mätningen är. Validitet handlar om stödet för den tolkning man gör av resultaten. Ett test kan ge stabila svar och ändå missa det man ville undersöka.",
     "help": "Ett test ger stabila svar, men undersöker inte det man ville veta. Hur bedömer man då mätningens kvalitet?"
   },
   {
@@ -485,13 +485,13 @@
     "category": "Forskningsmetod",
     "question": "Vad är skillnaden mellan population och stickprov?",
     "options": [
-      "Populationen är gruppen studien avser; stickprovet är den del man får data från",
+      "Populationen är hela gruppen. Stickprovet är den del man får uppgifter från",
       "Populationen är de svarande; stickprovet är alla som kunde ha deltagit",
       "Population är ett annat ord för enkät; stickprov betyder intervju",
       "Populationen är alltid alla invånare i ett land"
     ],
     "answer": 0,
-    "explanation": "Populationen behöver avgränsas utifrån forskningsfrågan. Stickprovet är en del av denna definierade population.",
+    "explanation": "Populationen är hela den grupp studien handlar om. Stickprovet är den del av gruppen som forskaren får uppgifter från. De två grupperna är alltså inte samma sak.",
     "help": "Vad skiljer hela gruppen som studien handlar om från den grupp som faktiskt undersöks?"
   },
   {
@@ -506,7 +506,7 @@
       "Om resultatdelen kommer före diskussionen"
     ],
     "answer": 0,
-    "explanation": "Ett stort stickprov kan fortfarande vara snedvridet. Storleken garanterar inte representativitet.",
+    "explanation": "Många svar gör inte automatiskt urvalet representativt. Vissa grupper kan saknas eller vara överrepresenterade. Därför behöver forskaren granska vilka som deltog och vilka som inte gjorde det.",
     "help": "Många har svarat på enkäten. Vad behöver man veta innan man säger att svaren gäller en större grupp?"
   },
   {
@@ -521,7 +521,7 @@
       "Urval av dokumentversioner"
     ],
     "answer": 0,
-    "explanation": "Bekvämlighetsurval utgår från vilka deltagare som är lättast att nå. Slutsatser om en större population behöver avgränsas.",
+    "explanation": "Bekvämlighetsurval betyder att välja personer som är lätta att nå. Det kan vara praktiskt, men gruppen behöver inte spegla alla som studien handlar om.",
     "help": "Studenten väljer personer som är lätta att få tag på. Vilket namn har det sättet att välja deltagare?"
   },
   {
@@ -536,7 +536,7 @@
       "Bekvämlighetsurval enbart utifrån restid"
     ],
     "answer": 0,
-    "explanation": "Ett strategiskt urval väljer deltagare utifrån egenskaper eller erfarenheter som är relevanta för studiens fråga.",
+    "explanation": "Strategiskt urval betyder att välja deltagare med erfarenheter eller egenskaper som är viktiga för frågan. Här är det deras erfarenhet av stödarbete som styr valet.",
     "help": "Studenten väljer personer för att de har erfarenheter som passar studiens fråga. Vilket slags urval är det?"
   },
   {
@@ -551,7 +551,7 @@
       "En förändrad population"
     ],
     "answer": 0,
-    "explanation": "Internt bortfall gäller obesvarade frågor hos deltagare. Externt bortfall innebär att utvalda personer inte deltar alls.",
+    "explanation": "Internt bortfall är när en deltagare lämnar vissa frågor obesvarade. Externt bortfall är när en utvald person inte deltar alls.",
     "help": "Personen svarar på en del av enkäten men lämnar några frågor tomma. Vad kallas den typen av bortfall?"
   },
   {
@@ -560,13 +560,13 @@
     "category": "Forskningsmetod",
     "question": "Bortfallet är litet, men nästan alla som avstår tillhör samma relevanta yrkesgrupp. Vad bör forskaren uppmärksamma?",
     "options": [
-      "Att bortfallet kan snedvrida resultaten trots sin begränsade omfattning",
+      "Resultatet kan bli missvisande även om få personer avstår",
       "Att ett litet bortfall saknar betydelse oavsett vilka som avstår",
-      "Att svaren automatiskt blir mer tillförlitliga",
+      "Att svaren automatiskt blir mer pålitliga",
       "Att hela populationen därmed har undersökts"
     ],
     "answer": 0,
-    "explanation": "Bortfallets sammansättning och samband med det som undersöks är viktigt, inte bara dess procentuella storlek.",
+    "explanation": "Även ett litet bortfall kan ge en missvisande bild. Om nästan alla som avstår tillhör samma grupp kan just den gruppens erfarenheter saknas i resultatet.",
     "help": "Få personer avstår, men de kommer nästan alla från samma grupp. Varför kan det spela roll för resultatet?"
   },
   {
@@ -581,7 +581,7 @@
       "Det måste ersättas med en fråga om deltagarens ålder"
     ],
     "answer": 0,
-    "explanation": "Stöd kan vara snabbt men irrelevant, eller långsamt men relevant. Bedömningarna bör därför hållas isär.",
+    "explanation": "Snabbt stöd och relevant stöd är två olika saker. Stödet kan komma snabbt men ändå vara fel sorts hjälp. Därför bör de bedömas i separata frågor.",
     "help": "Deltagaren ska ta ställning till formuleringen snabbt och relevant stöd. Vad kan göra den svår att besvara?"
   },
   {
@@ -596,7 +596,7 @@
       "Har du deltagit i ett stödsamtal under september?"
     ],
     "answer": 0,
-    "explanation": "Ordet välfungerande förutsätter en positiv bedömning av det som deltagaren ska värdera.",
+    "explanation": "Ordet välfungerande säger redan att stödarbetet är bra. Det kan styra deltagarens svar. En neutral fråga ska inte utgå från en sådan bedömning.",
     "help": "Vilken fråga är formulerad så att den styr deltagaren mot en viss bedömning?"
   },
   {
@@ -605,13 +605,13 @@
     "category": "Forskningsmetod",
     "question": "Varför prova en enkät på personer som liknar målgruppen före datainsamlingen?",
     "options": [
-      "För att upptäcka otydligheter och problem med frågornas begriplighet",
+      "För att hitta frågor och svarsalternativ som är svåra att förstå",
       "För att säkerställa att alla ger samma svar",
       "För att ersätta behovet av ett motiverat urval",
       "För att bestämma vilka resultat som ska publiceras"
     ],
     "answer": 0,
-    "explanation": "En provundersökning kan visa om frågor och svarsalternativ fungerar för den tänkta målgruppen.",
+    "explanation": "När enkäten provas kan forskaren upptäcka ord eller svarsalternativ som är svåra att förstå. Då kan frågorna förbättras innan den riktiga undersökningen börjar.",
     "help": "Varför testa frågorna på några liknande personer innan den riktiga enkäten skickas ut?"
   },
   {
@@ -620,13 +620,13 @@
     "category": "Forskningsmetod",
     "question": "Yrkesgrupper kodas som 1 och 2. Hur bör dessa siffror förstås?",
     "options": [
-      "Som kategorinamn utan matematisk storleksrelation",
+      "Som namn på grupper, inte som mängder eller storlekar",
       "Som att grupp 2 har dubbelt så mycket av yrkesrollen",
-      "Som poäng på en kontinuerlig kunskapsskala",
+      "Som poäng på en skala som mäter kunskap",
       "Som att medelvärdet alltid beskriver en genomsnittlig yrkesroll"
     ],
     "answer": 0,
-    "explanation": "Sifferkoder gör inte en nominalvariabel numerisk i meningsfull matematisk bemärkelse. Frekvenser och andelar kan användas.",
+    "explanation": "Siffrorna är bara koder för olika yrkesgrupper. Siffran 2 betyder inte dubbelt så mycket som 1. Därför är ett medelvärde av dessa koder inte meningsfullt.",
     "help": "Siffrorna 1 och 2 används för olika yrken. Vad betyder siffrorna i det sammanhanget?"
   },
   {
@@ -635,13 +635,13 @@
     "category": "Forskningsmetod",
     "question": "Vad kännetecknar ett enskilt ordinalt skattningssvar?",
     "options": [
-      "Alternativen kan rangordnas, men avstånden kan inte antas vara lika stora",
+      "Svaren har en ordning, men stegen mellan dem behöver inte vara lika stora",
       "Alternativen saknar inbördes ordning",
       "Alla steg är med säkerhet lika stora",
       "Värdet har alltid en absolut nollpunkt"
     ],
     "answer": 0,
-    "explanation": "Ordinala svar anger ordning. Skillnaden mellan två intilliggande alternativ behöver inte upplevas lika stor över hela skalan.",
+    "explanation": "Ordinala svar kan ordnas från lägre till högre. Men steget mellan två svar behöver inte vara lika stort över hela skalan. Det är skillnaden mellan ordning och lika avstånd.",
     "help": "Tänk på svar som går från instämmer inte till instämmer helt. Vad säger en sådan svarsskala om värdena?"
   },
   {
@@ -656,7 +656,7 @@
       "Genomföra t-testet först och granska kodningen bara om resultatet blir signifikant"
     ],
     "answer": 0,
-    "explanation": "Felkodade saknade värden kan kraftigt påverka sammanfattningar och testresultat. Datakontroll ska föregå analysen.",
+    "explanation": "Här betyder 999 att ett svar saknas. Om talet räknas som en riktig poäng kan resultatet bli fel. Kodningen behöver därför kontrolleras före analysen.",
     "help": "Talet 999 betyder inget svar, men ligger bland testpoängen. Hur bör forskaren hantera det innan beräkningarna görs?"
   },
   {
@@ -671,7 +671,7 @@
       "Summan av frånvarodagarna"
     ],
     "answer": 0,
-    "explanation": "Ett extremt värde kan dra upp medelvärdet kraftigt. Medianen kan då bättre beskriva en typisk observation.",
+    "explanation": "Medianen är det mittersta värdet när värdena sorteras. Ett mycket högt värde drar upp medelvärdet mer än medianen. Därför är medianen mindre känslig i exemplet.",
     "help": "En elev har mycket fler frånvarodagar än alla andra. Vilket mått på ett typiskt värde påverkas minst av det?"
   },
   {
@@ -680,13 +680,13 @@
     "category": "Forskningsmetod",
     "question": "Två grupper har samma medelvärde. Vad kan ändå skilja dem åt?",
     "options": [
-      "Hur stor spridning observationerna har",
-      "De måste ha identiska individuella värden",
+      "Hur mycket värdena varierar inom grupperna",
+      "Varje person måste ha exakt samma värde",
       "De måste ha samma antal deltagare",
       "De måste ha undersökts med samma urvalsmetod"
     ],
     "answer": 0,
-    "explanation": "Samma medelvärde kan förekomma i grupper med mycket olika variation. Redovisa därför även spridning.",
+    "explanation": "Medelvärdet säger inte hur utspridda värdena är. I en grupp kan alla ligga nära genomsnittet. I en annan kan resultaten skilja sig mycket mellan individerna.",
     "help": "Grupperna har samma genomsnitt. Vilken annan egenskap hos resultaten kan ändå vara olika?"
   },
   {
@@ -695,13 +695,13 @@
     "category": "Forskningsmetod",
     "question": "Vad uttrycker nollhypotesen i ett test av skillnad mellan två populationsmedelvärden?",
     "options": [
-      "Att populationernas medelvärden inte skiljer sig åt",
-      "Att varje individ i båda grupperna har samma värde",
+      "Att populationerna har samma medelvärde",
+      "Att varje person i båda grupperna har samma värde",
       "Att urvalet är representativt",
       "Att den ena undervisningsmetoden är bättre"
     ],
     "answer": 0,
-    "explanation": "Nollhypotesen gäller här frånvaro av en populationsskillnad i medelvärde, inte identiska observationer.",
+    "explanation": "Nollhypotesen säger här att populationernas medelvärden är lika. Den säger inte att varje person har samma resultat.",
     "help": "Forskaren testar om två grupper skiljer sig i genomsnitt. Vilket påstående utgår nollhypotesen från?"
   },
   {
@@ -716,7 +716,7 @@
       "Storleken på skillnaden mellan grupperna"
     ],
     "answer": 0,
-    "explanation": "P-värdet är villkorat av nollhypotesen och testets antaganden. Det anger varken hypotesens sannolikhet eller effektens storlek.",
+    "explanation": "Utgå från att nollhypotesen och testets övriga antaganden gäller. P-värdet anger då sannolikheten för det resultat man fått eller ett mer extremt resultat. Det anger inte sannolikheten att nollhypotesen är sann.",
     "help": "Vad säger ett p-värde egentligen? Välj beskrivningen som anger vad sannolikheten gäller."
   },
   {
@@ -725,13 +725,13 @@
     "category": "Forskningsmetod",
     "question": "En liten skillnad blir statistiskt signifikant i ett stort stickprov. Vad behöver undersökas för att bedöma dess betydelse?",
     "options": [
-      "Effektstorleken och det sakliga sammanhanget",
+      "Hur stor skillnaden är och vad den betyder i sammanhanget",
       "Enbart om p-värdet kan avrundas till noll",
       "Om resultatet kan beskrivas utan att nämna urvalet",
       "Om signifikansen kan ersätta redovisningen av mätningen"
     ],
     "answer": 0,
-    "explanation": "Statistisk signifikans innebär inte automatiskt att skillnaden är praktiskt viktig.",
+    "explanation": "Statistisk signifikans visar inte hur viktig en skillnad är i vardagen. Därför behöver forskaren också se hur stor skillnaden är och vad den betyder i det aktuella sammanhanget.",
     "help": "En skillnad klarar testets statistiska gräns, men är liten. Vad behövs för att bedöma om den spelar roll i praktiken?"
   },
   {
@@ -740,13 +740,13 @@
     "category": "Forskningsmetod",
     "question": "En studie får ett icke-signifikant resultat. Vilken slutsats är mest rimlig?",
     "options": [
-      "Resultatet räcker inte i sig för att slå fast att en skillnad saknas",
+      "Resultatet bevisar inte att en skillnad saknas",
       "Studien har bevisat att grupperna är identiska",
       "Mätningen har bevisats vara felfri",
       "Nollhypotesen har därmed blivit en säker sanning"
     ],
     "answer": 0,
-    "explanation": "Ett litet stickprov eller osäker mätning kan göra det svårt att upptäcka en skillnad. Icke-signifikans är inte ett bevis för likhet.",
+    "explanation": "Ett icke-signifikant resultat bevisar inte att grupperna är lika. Studien kan ha för få deltagare eller en alltför osäker mätning för att upptäcka en skillnad.",
     "help": "Testet ger inte ett statistiskt signifikant resultat. Vad kan forskaren då säga om en möjlig skillnad?"
   },
   {
@@ -761,7 +761,7 @@
       "Skillnaden är en halv poäng oavsett mätinstrument"
     ],
     "answer": 0,
-    "explanation": "Cohen’s d uttrycker en standardiserad medelvärdesskillnad. Den praktiska betydelsen behöver bedömas i sammanhanget.",
+    "explanation": "Cohen’s d beskriver skillnaden i enheter av standardavvikelse. Värdet 0,50 betyder en halv standardavvikelse. Det betyder inte en halv testpoäng eller att hälften av deltagarna förbättrats.",
     "help": "Cohen’s d används för att beskriva skillnadens storlek. Hur ska värdet 0,50 förstås?"
   },
   {
@@ -776,7 +776,7 @@
       "Ett test av nominala gruppnamns medelvärden"
     ],
     "answer": 0,
-    "explanation": "Före- och eftervärden från samma elev hör ihop. De ska inte behandlas som två oberoende grupper.",
+    "explanation": "Varje elevs före- och eftervärde hör ihop. Ett parat t-test tar hänsyn till det. Ett oberoende t-test behandlar i stället grupperna som separata.",
     "help": "Man jämför varje elevs resultat före och efter en insats. Vilket t-test passar den typen av jämförelse?"
   },
   {
@@ -785,13 +785,13 @@
     "category": "Forskningsmetod",
     "question": "Vilket upplägg passar ett oberoende t-test, om övriga antaganden är rimliga?",
     "options": [
-      "Jämförelse av numeriska testresultat mellan två separata grupper med oberoende observationer",
+      "Att jämföra testpoäng i två separata grupper där observationerna är oberoende",
       "Jämförelse av samma elevers före- och eftervärden som oberoende data",
       "Beräkning av medelvärdet för yrkesnamn",
       "Tolkning av innebörden i ett policydokument"
     ],
     "answer": 0,
-    "explanation": "Ett oberoende t-test jämför medelvärden mellan två oberoende grupper och kräver en lämplig numerisk resultatvariabel.",
+    "explanation": "Ett oberoende t-test jämför medelvärden i två separata grupper. Resultatet som jämförs behöver vara numeriskt, och observationerna behöver vara oberoende av varandra.",
     "help": "I vilken situation passar ett t-test som jämför två oberoende grupper?"
   },
   {
@@ -800,13 +800,13 @@
     "category": "Forskningsmetod",
     "question": "Två klasser med olika undervisningsmetoder får signifikant olika testresultat. Varför visar testet inte ensamt att metoden orsakade skillnaden?",
     "options": [
-      "Klasserna kan också skilja sig åt i andra faktorer som påverkar resultatet",
+      "Andra skillnader mellan klasserna kan ha påverkat resultaten",
       "Ett t-test kan aldrig upptäcka skillnader i medelvärden",
       "Ett signifikant resultat innebär att alla bakgrundsfaktorer är lika",
       "Kausala slutsatser avgörs enbart av antalet decimaler i p-värdet"
     ],
     "answer": 0,
-    "explanation": "Den kausala tolkningen beror på designen och hanteringen av alternativa förklaringar, inte bara på det statistiska testet.",
+    "explanation": "Klasserna kan ha olika förkunskaper, lärare eller andra förutsättningar. Testet visar en skillnad i resultat, men avgör inte vad som orsakade den.",
     "help": "Klasserna får olika resultat efter olika undervisning. Varför räcker det inte för att veta att undervisningsmetoden är orsaken?"
   },
   {
@@ -821,7 +821,7 @@
       "Tematisk analys"
     ],
     "answer": 0,
-    "explanation": "En fallstudie avser studiens övergripande upplägg. De andra alternativen gäller urval, material respektive analys.",
+    "explanation": "Fallstudie beskriver främst studiens övergripande upplägg. Strategiskt urval handlar om vilka som väljs. Transkriptioner är material och tematisk analys är en analysmetod.",
     "help": "Vilket alternativ beskriver hur hela undersökningen är upplagd?"
   },
   {
@@ -836,7 +836,7 @@
       "Transkriberad intervju"
     ],
     "answer": 0,
-    "explanation": "Tematisk analys är ett sätt att analysera material. Intervju gäller datainsamling, strategiskt urval gäller vilka som ingår och transkriptionen är material.",
+    "explanation": "Tematisk analys beskriver hur materialet analyseras. En intervju är ett sätt att samla in material. Urval handlar om vilka som deltar, och intervjutexten är själva materialet.",
     "help": "Vilket alternativ beskriver ett sätt att bearbeta och undersöka det insamlade materialet?"
   },
   {
@@ -845,13 +845,13 @@
     "category": "Forskningsmetod",
     "question": "En forskare vill analysera återkommande mönster i intervjuer. Vad behöver resultatbearbetningen gå vidare till?",
     "options": [
-      "Att undersöka mönster, skillnader och relationer mellan utsagor",
+      "Att jämföra berättelserna och undersöka mönster och skillnader",
       "Att bara återberätta varje intervju i turordning",
-      "Att behandla varje utsaga som ett bevis på en kausal effekt",
+      "Att se varje berättelse som ett bevis på orsak och verkan",
       "Att ersätta utsagorna med teorins definitioner"
     ],
     "answer": 0,
-    "explanation": "Analysen behöver göra något med materialet utifrån frågeställningen, utöver att återge intervjupersonernas berättelser.",
+    "explanation": "Att återberätta intervjuerna är inte samma sak som att analysera dem. Forskaren behöver jämföra det som sagts och undersöka mönster och skillnader som hör till frågan.",
     "help": "Forskaren vill hitta mönster i flera intervjuer. Vad behöver hen göra med berättelserna?"
   },
   {
@@ -860,13 +860,13 @@
     "category": "Forskningsmetod",
     "question": "En studie undersöker hur ansvar formuleras i kommunala styrdokument. Vilken slutsats ligger närmast materialet?",
     "options": [
-      "Hur ansvar framställs i de analyserade dokumenten",
+      "Hur dokumenten beskriver ansvar",
       "Hur alla anställda faktiskt arbetar i vardagen",
       "Vilka effekter dokumenten har orsakat på elevernas resultat",
       "Hur samtliga elever upplever stödinsatserna"
     ],
     "answer": 0,
-    "explanation": "Dokument kan visa hur ansvar formuleras. Påståenden om faktisk praktik eller effekter kräver ytterligare relevant material.",
+    "explanation": "Dokumenten visar hur ansvar beskrivs i text. De visar inte i sig hur personalen faktiskt arbetar eller vilka effekter arbetet får.",
     "help": "Forskaren läser vad skolans dokument säger om ansvar. Vilken sorts slutsats kan just dokumenten stödja?"
   },
   {
@@ -875,13 +875,13 @@
     "category": "Forskningsmetod",
     "question": "Vad utgör materialet i en forskningskartläggning?",
     "options": [
-      "De vetenskapliga publikationer som valts ut för analys",
-      "Enbart forskarens egna minnen av ämnet",
+      "De vetenskapliga texter som forskaren har valt att undersöka",
+      "Bara det forskaren minns om ämnet",
       "Alla personer som omnämns i artiklarna",
       "Databasens användargränssnitt"
     ],
     "answer": 0,
-    "explanation": "I en forskningskartläggning är tidigare publikationer analysmaterial. Sökning och urval behöver därför vara systematiska och beskrivna.",
+    "explanation": "I en forskningskartläggning undersöks tidigare vetenskapliga publikationer. Det är alltså dessa texter som är materialet för analysen.",
     "help": "Forskaren gör en systematisk översikt av tidigare studier. Vad är det som undersöks i analysen?"
   },
   {
@@ -890,13 +890,13 @@
     "category": "Forskningsmetod",
     "question": "En forskningskartläggning hittar få studier om ett fenomen. Vad kan forskaren inte dra för slutsats enbart av detta?",
     "options": [
-      "Att fenomenet är ovanligt eller oviktigt",
-      "Att få studier identifierades med den använda sökningen",
+      "Att det man undersöker är ovanligt eller oviktigt",
+      "Att den här sökningen hittade få studier",
       "Att sökstrategin bör diskuteras",
       "Att urval och databaser kan påverka vad som hittades"
     ],
     "answer": 0,
-    "explanation": "Antalet identifierade studier beror även på sökning och urval. Det mäter inte direkt fenomenets förekomst eller betydelse.",
+    "explanation": "Få träffar kan bero på hur och var forskaren har sökt. Det säger inte direkt hur vanligt eller viktigt fenomenet är.",
     "help": "Sökningen hittar få studier. Vilken slutsats går det inte att dra enbart utifrån det?"
   },
   {
@@ -905,13 +905,13 @@
     "category": "Forskningsmetod",
     "question": "En forskare använder intervjuer. Vad kan man dra för slutsats om forskarens vetenskapsteoretiska position enbart utifrån det?",
     "options": [
-      "Metodvalet räcker inte för att fastställa positionen",
+      "Valet av intervjuer räcker inte för att avgöra forskarens synsätt",
       "Forskaren är med säkerhet hermeneutiker",
       "Forskaren kan inte använda siffror i analysen",
       "Forskaren anser att alla tolkningar är lika rimliga"
     ],
     "answer": 0,
-    "explanation": "Datainsamlingsmetod bestämmer inte automatiskt vetenskapsteoretisk position. Intervjusvar kan också kategoriseras och räknas.",
+    "explanation": "Intervjuer kan användas utifrån olika synsätt på kunskap. Metoden ensam räcker därför inte för att avgöra forskarens vetenskapsteoretiska position.",
     "help": "Man vet bara att forskaren använder intervjuer. Hur mycket säger det om forskarens syn på vetenskap och kunskap?"
   },
   {
@@ -920,13 +920,13 @@
     "category": "Forskningsmetod",
     "question": "Forskaren hittar ett fall som motsäger den valda teorin. Hur kan fallet behandlas analytiskt?",
     "options": [
-      "Använda det för att pröva tolkningen och teorins räckvidd",
+      "Använda fallet för att pröva tolkningen och teorins gränser",
       "Utesluta det enbart eftersom det inte stämmer med teorin",
       "Ändra utsagan så att den passar kategorierna",
       "Utgå från att deltagaren måste ha svarat fel"
     ],
     "answer": 0,
-    "explanation": "Motsägande fall kan visa att teorin behöver avgränsas eller användas annorlunda. Att bara söka bekräftelse riskerar en cirkulär analys.",
+    "explanation": "Ett fall som inte passar teorin kan vara viktigt. Det kan få forskaren att tänka om kring tolkningen eller teorins gränser. Att bara behålla det som passar ger en ensidig analys.",
     "help": "Något i materialet passar inte med teorin. Hur kan forskaren arbeta vidare med det?"
   },
   {
@@ -937,11 +937,11 @@
     "options": [
       "Förstående",
       "Frigörande genom maktkritik",
-      "Förklarande genom prövning av orsakssamband",
-      "Administrativ genom resursfördelning"
+      "Förklarande genom att undersöka orsak och verkan",
+      "Administrativ genom att fördela resurser"
     ],
     "answer": 0,
-    "explanation": "Den förstående funktionen handlar om att göra det okända begripligt. Frågan betonar denna funktion snarare än kausal förklaring eller maktkritik.",
+    "explanation": "Den förstående funktionen gör något svårbegripligt lättare att förstå. Här ligger fokus på förståelse, inte på att fastställa orsaker eller synliggöra makt.",
     "help": "Teorin hjälper läraren att förstå något som tidigare var svårt att begripa. Vilken teorifunktion handlar det om?"
   },
   {
@@ -950,13 +950,13 @@
     "category": "Teori och vetenskap",
     "question": "Varför beskriver författarna teoribegreppet som ett kontinuum?",
     "options": [
-      "Det rymmer både falsifierbara teorier och mer filosofiska perspektiv",
+      "Det rymmer både teorier som kan motbevisas och mer filosofiska perspektiv",
       "Alla teorier kan rangordnas efter hur många sidor de omfattar",
       "Endast statistiska modeller kan räknas som vetenskapliga teorier",
       "Teori betyder alltid samma sak inom alla discipliner"
     ],
     "answer": 0,
-    "explanation": "Utbildningsvetenskapen har flera disciplinära rötter. Kapitlet diskuterar en bredd från prövbara teorier till filosofiska perspektiv.",
+    "explanation": "Utbildningsvetenskapen rymmer olika sorters teorier. Vissa kan formuleras så att de går att motbevisa. Andra är mer filosofiska perspektiv. Därför beskriver författarna en bredd mellan ytterpunkter.",
     "help": "Ett kontinuum är en skala med flera lägen mellan ytterpunkter. Varför använder författarna den bilden för teorier?"
   },
   {
@@ -971,7 +971,7 @@
       "Skyddsintresset gäller bara under själva datainsamlingen"
     ],
     "answer": 0,
-    "explanation": "Öppenhetsintresset ska vägas mot behovet av skydd. Tillgänglighet är inte ett skäl att utsätta berörda för oproportionerlig risk.",
+    "explanation": "Att dela forskning öppet är värdefullt, men deltagarna behöver också skyddas. Forskaren måste därför bedöma vad som kan delas utan att skapa orimliga risker.",
     "help": "Forskaren vill dela materialet med andra, men deltagare kan fara illa. Hur bör målen vägas mot varandra?"
   },
   {
@@ -980,13 +980,13 @@
     "category": "Forskningsetik",
     "question": "En organisation vill dölja missförhållanden för att skydda forskningens anseende. Hur förhåller sig det till förtroendeintresset?",
     "options": [
-      "Förtroendeintresset får inte användas som skäl att dölja missförhållanden",
+      "Att värna förtroendet är inte ett skäl att gömma problem",
       "Döljande är rimligt när organisationen riskerar kritik",
-      "Förtroendeintresset upphäver principen om ärlighet",
+      "Att skydda förtroendet gör ärlighet onödig",
       "Det är enbart en fråga om rapportens språkliga utformning"
     ],
     "answer": 0,
-    "explanation": "Förtroendet ska inte skyddas genom att avvikelser eller obekväma resultat döljs. Det skulle strida mot ärlighet.",
+    "explanation": "Förtroende ska inte skyddas genom att problem göms undan. Det skulle strida mot ärlighet. Problem behöver i stället uppmärksammas och hanteras.",
     "help": "Organisationen vill skydda sitt rykte genom att gömma problem. Är det förenligt med att värna förtroendet för forskning?"
   },
   {
@@ -997,11 +997,11 @@
     "options": [
       "Den kan ändå ställa etiska krav på forskningen",
       "Den saknar därför betydelse för forskarens ansvar",
-      "Den får bara beaktas efter publicering",
+      "Den får bara tas hänsyn till efter publiceringen",
       "Den gäller bara om en deltagare uttryckligen begär det"
     ],
     "answer": 0,
-    "explanation": "God forskningssed omfattar etiska krav även när de inte direkt följer av rättsligt bindande föreskrifter.",
+    "explanation": "God forskningssed omfattar mer än lagar. En riktlinje kan därför ställa etiska krav även om den inte i sig är rättsligt bindande.",
     "help": "En riktlinje beskriver hur forskare bör handla. Den är inte en lag. Kan den ändå vara viktig för forskarens ansvar?"
   },
   {
@@ -1010,13 +1010,13 @@
     "category": "Forskningsetik",
     "question": "Varför bör etiska frågor tas med tidigt i forskningsplaneringen?",
     "options": [
-      "För att bygga in hänsyn från början och minska behovet av sena begränsande ändringar",
+      "För att ta hänsyn från början och undvika svåra ändringar senare",
       "För att garantera att inga oväntade frågor senare uppstår",
-      "För att kunna avstå från etisk reflektion under genomförandet",
+      "För att slippa tänka på etik när studien genomförs",
       "För att göra metodval oberoende av riskerna"
     ],
     "answer": 0,
-    "explanation": "Tidig planering stärker beredskapen och möjligheten att bedriva forskningen ansvarsfullt. Den ersätter inte fortsatt uppmärksamhet.",
+    "explanation": "Tidig planering gör det lättare att ta hänsyn till risker från början. Annars kan forskaren behöva ändra mycket senare. Etiska frågor behöver ändå följas under hela studien.",
     "help": "Varför tänka på etiska frågor redan när undersökningen planeras?"
   },
   {
@@ -1027,11 +1027,11 @@
     "options": [
       "Att god forskningssed blir en naturlig del av det dagliga arbetet",
       "Att etiska frågor bara diskuteras när en skandal uppstår",
-      "Att kollegial kritik undviks för att bevara arbetsro",
+      "Att forskare undviker att kritisera varandras arbete",
       "Att snabb publicering alltid prioriteras framför kvalitet"
     ],
     "answer": 0,
-    "explanation": "Goda forskningsvanor i vardagen hjälper forskningsmiljön att förebygga problem och hantera negativa incitament.",
+    "explanation": "God forskningssed behöver märkas i det dagliga arbetet. Gemensamma vanor och öppna samtal kan hjälpa forskare att förebygga problem.",
     "help": "Vad hjälper forskare att ta ansvar och visa hänsyn i sitt dagliga arbete?"
   },
   {
@@ -1040,13 +1040,13 @@
     "category": "Forskningsetik",
     "question": "Hur långt sträcker sig ansvarsprincipen i ALLEA-kodexen enligt materialet?",
     "options": [
-      "Från idé till publicering och till forskningens vidare konsekvenser",
+      "Från första idén till publiceringen och forskningens följder",
       "Enbart till den stund då data samlas in",
       "Enbart till den som finansierar projektet",
       "Bara till att referenslistan är korrekt"
     ],
     "answer": 0,
-    "explanation": "Ansvar omfattar forskningsprocessen, ledning, utbildning och handledning samt forskningens vidare konsekvenser.",
+    "explanation": "Ansvar gäller från den första idén till publiceringen och forskningens följder. Det omfattar också sådant som ledning och handledning.",
     "help": "När och för vad behöver forskaren ta ansvar?"
   },
   {
@@ -1061,7 +1061,7 @@
       "Tillståndet ersätter informationen till deltagarna"
     ],
     "answer": 0,
-    "explanation": "Tillträde till verksamheten och individens frivilliga deltagande är skilda frågor. En dörröppnare ersätter inte deltagarens eget beslut.",
+    "explanation": "Rektorn kan ge tillträde till skolan. Varje lärare behöver ändå själv få välja om hen vill delta. Tillträde och individuellt samtycke är olika saker.",
     "help": "Rektorn säger ja till studien. Vad betyder det för varje lärares eget beslut att vara med?"
   },
   {
@@ -1076,7 +1076,7 @@
       "Samtycket handlar enbart om hur blanketten arkiveras"
     ],
     "answer": 0,
-    "explanation": "Samtycke bygger på begriplig information och frivillighet. I långvariga eller föränderliga studier kan forskaren behöva försäkra sig om att deltagandet fortfarande är frivilligt.",
+    "explanation": "En underskrift räcker inte om deltagaren inte förstår vad studien innebär. Personen behöver information och ett frivilligt val. Vid förändringar kan forskaren behöva försäkra sig om att deltagandet fortfarande är frivilligt.",
     "help": "Varför beskrivs informerat samtycke som något som pågår, och inte bara som en underskrift?"
   },
   {
@@ -1085,13 +1085,13 @@
     "category": "Forskningsmetod",
     "question": "Namn tas bort ur en intervju från en liten skola. Varför kan personen ändå bli igenkänd?",
     "options": [
-      "Kombinationer av yrkesroll, händelser och citat kan avslöja vem det är",
+      "Yrkesroll, händelser och citat kan tillsammans avslöja personen",
       "Personer kan bara identifieras genom sitt fullständiga namn",
       "En kod gör alla övriga detaljer ofarliga att publicera",
       "Igenkänning beror enbart på om intervjun spelades in"
     ],
     "answer": 0,
-    "explanation": "Borttagna namn räcker inte alltid. Även indirekta uppgifter behöver granskas och begränsas till det som behövs.",
+    "explanation": "Även utan namn kan detaljer avslöja vem personen är. En viss yrkesroll tillsammans med en händelse eller ett citat kan räcka på en liten skola.",
     "help": "Namnen är borttagna, men intervjun handlar om en liten skola. Hur kan någon ändå förstå vem personen är?"
   },
   {
@@ -1100,13 +1100,13 @@
     "category": "Forskningsmetod",
     "question": "En intervjuad lärare berättar om en elevs familjesituation. Eleven deltar inte i studien. Vilken etisk fråga uppstår?",
     "options": [
-      "Hur uppgifter om tredje person ska begränsas och hanteras",
+      "Hur uppgifter om någon som inte deltar ska begränsas och hanteras",
       "Om lärarens deltagande automatiskt gör elevuppgifterna fria att använda",
       "Om elevens uppgifter måste tas med för att intervjun ska vara fullständig",
       "Om ansvar för uppgifterna enbart ligger hos den intervjuade läraren"
     ],
     "answer": 0,
-    "explanation": "Även personer som inte själva deltar kan beröras. Intervjuguide och materialhantering behöver ta hänsyn till sådana uppgifter.",
+    "explanation": "Eleven är en tredje person: någon som beskrivs men inte själv deltar. Forskaren behöver därför tänka på vilka uppgifter som behövs och hur de ska skyddas.",
     "help": "En lärare berättar om någon som inte är med i studien. Vad behöver forskaren tänka på kring den personens uppgifter?"
   },
   {
@@ -1116,12 +1116,12 @@
     "question": "En student intervjuar sina egna kollegor. Hur kan den dubbla rollen påverka kunskapen i studien?",
     "options": [
       "Relationen kan påverka vad kollegorna berättar och hur studenten tolkar det",
-      "Kollegornas utsagor blir automatiskt mer objektiva",
-      "Yrkeserfarenheten gör reflektion över tolkningen överflödig",
+      "Kollegornas svar blir automatiskt mer sakliga",
+      "Yrkeserfarenheten gör det onödigt att granska den egna tolkningen",
       "Relationen påverkar bara schemaläggningen av intervjuer"
     ],
     "answer": 0,
-    "explanation": "Den egna positionen kan påverka både materialets tillkomst och analysen. Därför är detta också en kunskapsteoretisk fråga.",
+    "explanation": "Kollegor kan välja sina ord utifrån relationen till studenten. Studenten kan också tolka svaren genom sina egna erfarenheter. Den dubbla rollen kan därför påverka både materialet och analysen.",
     "help": "Studenten är både intervjuare och arbetskamrat. Hur kan det påverka det som kommer fram och hur det förstås?"
   },
   {
@@ -1130,13 +1130,13 @@
     "category": "Forskningsmetod",
     "question": "Vilken plan följer bäst principen att inte samla in mer än studien behöver?",
     "options": [
-      "Motivera vilka uppgifter som behövs och planera åtkomst och förvaring före insamlingen",
+      "Förklara vilka uppgifter som behövs och planera förvaring och åtkomst i förväg",
       "Samla in alla tillgängliga uppgifter för eventuella framtida frågor",
       "Be deltagarna lämna extra personuppgifter för säkerhets skull",
       "Vänta med att bestämma åtkomst tills materialet har delats"
     ],
     "answer": 0,
-    "explanation": "Materialhanteringen behöver vara konkret planerad. Uppgifterna ska begränsas till vad studien behöver.",
+    "explanation": "Forskaren ska kunna förklara varför uppgifterna behövs. Redan före insamlingen behöver det vara tydligt hur de ska förvaras och vem som får använda dem.",
     "help": "Hur bör forskaren planera vilka uppgifter som samlas in och hur de hanteras?"
   },
   {
@@ -1145,13 +1145,13 @@
     "category": "Forskningsmetod",
     "question": "Vad behöver särskilt beaktas när barn får information om en studie?",
     "options": [
-      "Informationen behöver anpassas så att barnet kan förstå och uttrycka sin egen vilja",
+      "Anpassa informationen så att barnet förstår och kan uttrycka sin vilja",
       "Samma vuxentext är tillräcklig oavsett barnets förutsättningar",
       "Barnets egen vilja saknar betydelse när vuxna är positiva",
       "Informationen bör ges först när datainsamlingen är avslutad"
     ],
     "answer": 0,
-    "explanation": "Barn har olika förutsättningar och kan behöva anpassad information eller stöd. Deras egen vilja behöver respekteras och andra samtyckesfrågor också hanteras.",
+    "explanation": "Barn behöver få information som de kan förstå. De behöver också kunna uttrycka vad de själva vill. Barn har olika förutsättningar, så samma information passar inte alltid alla.",
     "help": "Forskaren ska berätta för barn vad studien innebär. Vad är särskilt viktigt att tänka på?"
   },
   {
@@ -1166,7 +1166,7 @@
       "Teorin är vetenskaplig endast om ingen kan kritisera den"
     ],
     "answer": 0,
-    "explanation": "Falsifierbarhet är möjligheten att motbevisa en teori. Det betyder inte att teorin faktiskt har motbevisats.",
+    "explanation": "Falsifierbar betyder att teorin skulle kunna motbevisas. Det betyder inte att den redan är bevisad som falsk. Skillnaden är mellan en möjlighet att pröva teorin och resultatet av prövningen.",
     "help": "Vad menar Popper när han säger att en teori ska vara möjlig att falsifiera?"
   },
   {
@@ -1175,13 +1175,13 @@
     "category": "Teori och vetenskap",
     "question": "Vad innebär det att teoretisera enligt kapitlets beskrivning av begreppsapparater?",
     "options": [
-      "Att skapa nya begreppsapparater eller utveckla befintliga",
+      "Att skapa nya begrepp och samband eller utveckla dem som redan finns",
       "Att endast räkna hur ofta ett vardagsord förekommer",
       "Att ersätta studiens analys med en lista över författarnamn",
       "Att utgå från att teoretiska begrepp aldrig kan förändras"
     ],
     "answer": 0,
-    "explanation": "Teoretiserande kan utveckla de begrepp och antaganden genom vilka ett fenomen förstås och analyseras.",
+    "explanation": "Att teoretisera kan vara att skapa nya begrepp eller utveckla hur befintliga begrepp hänger ihop. Det hjälper forskaren att förstå och analysera något på nya sätt.",
     "help": "Vad innebär det att arbeta fram eller utveckla en teori?"
   },
   {
@@ -1190,13 +1190,13 @@
     "category": "Forskningsetik",
     "question": "En forskare ska granska ett manuskript men har en intressekonflikt som innebär risk för otillbörlig påverkan. Vad anger materialet?",
     "options": [
-      "Redovisa konflikten och avstå från att delta i processen och beslutet vid sådan risk",
+      "Berätta om konflikten och avstå från granskningen när sådan risk finns",
       "Dölja konflikten och göra granskningen snabbare",
       "Delta så länge författaren inte känner till konflikten",
       "Låta den egna relationen till författaren avgöra bedömningen"
     ],
     "answer": 0,
-    "explanation": "Granskningen ska vara välgrundad och ärlig. Intressekonflikter ska redovisas, och risk för otillbörlig påverkan kräver att forskaren avstår.",
+    "explanation": "Granskaren ska berätta om intressekonflikten. Om den innebär risk för otillbörlig påverkan ska granskaren avstå. Bedömningen ska inte styras av egna intressen eller relationer.",
     "help": "En forskare ska bedöma någon annans text. Forskaren har egna intressen som kan göra bedömningen orättvis. Vad bör forskaren göra?"
   },
   {
@@ -1205,13 +1205,13 @@
     "category": "Forskningsetik",
     "question": "En forskare upptäcker ett betydelsefullt fel i en publicerad artikel. Vad bör forskaren göra enligt materialet?",
     "options": [
-      "Hantera felet öppet och medverka till rättelse eller tillbakadragande om det behövs",
+      "Berätta om felet och bidra till att artikeln rättas eller vid behov dras tillbaka",
       "Låta artikeln stå oförändrad eftersom den redan är publicerad",
       "Rätta sin privata kopia utan att informera utgivaren",
       "Vänta med att agera tills någon annan upptäcker felet"
     ],
     "answer": 0,
-    "explanation": "Forskarna och utgivaren har ansvar för att fel hanteras öppet. Rättelser eller tillbakadraganden ska förklaras tydligt.",
+    "explanation": "Forskaren behöver vara öppen med felet och hjälpa till att rätta artikeln. Om felet kräver det kan artikeln behöva dras tillbaka. Att den redan är publicerad tar inte bort ansvaret.",
     "help": "Artikeln är redan publicerad när forskaren hittar ett viktigt fel. Vad bör hen göra nu?"
   },
   {
@@ -1226,7 +1226,7 @@
       "Urval, datainsamling, analys och rapportering"
     ],
     "answer": 0,
-    "explanation": "Materialet skiljer mellan flera etiska ramverk. Dessa fyra principer ska inte förväxlas med ALLEA-kodexens principer eller med de olika intressen som diskuteras.",
+    "explanation": "Här efterfrågas göra gott, inte skada, självbestämmande och rättvisa. ALLEA-kodexens principer är en annan grupp: tillförlitlighet, ärlighet, respekt och ansvar. Materialet använder båda ramverken.",
     "help": "Materialet beskriver flera grupper av etiska principer. Vilka fyra hör till det ramverk som frågan handlar om?"
   }
 ]

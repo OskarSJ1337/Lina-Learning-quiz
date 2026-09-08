@@ -1,0 +1,82 @@
+﻿Ett forskningsproblem beskriver vad vi behöver veta mer om. Ett intressant ämne är bara en början. Forskaren behöver också ange vilken kunskap som saknas.
+Elever och lärare kan beskriva stödet på olika sätt. Lärarnas svar visar lärarnas perspektiv. För att undersöka elevernas egna erfarenheter behöver eleverna själva få komma till tals.
+Materialet är intervjuerna i skriven form. Lärarna är de som ger informationen. Det är texten från intervjuerna som forskaren sedan analyserar.
+Syftet styr vad studien behöver undersöka. Om syftet ändras kan även frågorna, materialet och analysen behöva ändras.
+Syftet är studiens mål. Frågeställningarna delar upp målet i tydliga frågor. Tillsammans ska de hjälpa forskaren att uppnå syftet.
+Analysavsnittet beskriver hur forskaren ska arbeta med materialet. Det kan till exempel vara att jämföra svar eller leta efter mönster. Att bara skriva metodens namn räcker inte.
+En teori ska användas till något i studien. Läsaren behöver förstå vad teorin hjälper forskaren att se och tolka. Det räcker inte att nämna teorins namn.
+Kvalitet behöver bedömas utifrån just den aktuella studien. Förklara vad upplägget kan visa och vad det inte kan visa. En lista med kvalitetsbegrepp räcker inte.
+Forskningskedjan handlar om varför studiens delar passar ihop. Rapportmallen handlar om var delarna ska stå i texten. En välordnad rapport kan ändå ha brister i forskningskedjan.
+Tidigare forskning visar vad andra redan har kommit fram till. Det hjälper forskaren att förklara vad den nya studien behöver undersöka.
+Hur deltagare väljs och bjuds in kan skapa etiska problem. Forskaren kan därför behöva ändra urvalet eller inbjudan. Etik kan påverka själva metoden.
+Beskriv situationen, risken och vad ni ska göra åt den. Förklara varför åtgärden passar och vilka risker som finns kvar. Då handlar etiken om den verkliga studien.
+Teorier ger verktyg för att tänka. De kan hjälpa oss att undersöka något, förstå erfarenheter och välja hur vi ska handla. De är inte färdiga recept.
+Olika teorier riktar blicken mot olika saker. Därför kan teorivalet påverka både vad forskaren uppmärksammar och hur materialet förstås.
+Kapitlet beskriver tre funktioner: förklara, förstå och frigöra. Det handlar om vad teorin används till, inte om hur data samlas in.
+En förklarande teori används för att undersöka varför något händer. Frågor om orsak och verkan hör därför till den förklarande funktionen.
+Den frigörande funktionen handlar bland annat om att synliggöra makt. Forskaren kan då granska sådant som tas för givet och som begränsar människor.
+Ontologi handlar om våra grundläggande antaganden om verkligheten. Det är en annan fråga än hur vi bokar intervjuer eller skriver referenser.
+Epistemologi betyder kunskapsteori. Det handlar om vad vi kan få kunskap om och hur vi kan få den kunskapen.
+Vår syn på verkligheten påverkar vilken kunskap vi tror är möjlig. Ontologi och epistemologi hänger därför ihop, även om de handlar om olika frågor.
+En teori passar för vissa frågor men inte för alla. När forskaren känner till begränsningarna blir det lättare att använda teorin på ett rimligt sätt.
+ALLEA-kodexens fyra grundprinciper är tillförlitlighet, ärlighet, respekt och ansvar. De vägleder både forskare och forskningsorganisationer.
+Tillförlitlighet handlar om forskningens kvalitet. Det gäller bland annat hur studien planeras och hur metod och analys genomförs.
+Ärlighet innebär att beskriva forskningen öppet och rättvisande. Forskaren ska även redovisa osäkerhet och resultat som inte blev som väntat.
+Fabricering betyder att hitta på resultat och presentera dem som riktiga. Här har forskaren alltså skapat resultat som inte kommer från intervjuerna.
+Förfalskning betyder att uppgifter eller annat forskningsmaterial ändras på ett otillåtet sätt. Här manipuleras materialet för att passa en önskad slutsats.
+Plagiering innebär att använda andras arbete eller idéer utan att ange källan på rätt sätt. Det gäller även idéer, inte bara kopierad text.
+Skyddsintresset handlar om att skydda dem som berörs av forskningen. Ny kunskap och öppenhet får inte motivera alltför stora risker för skada.
+Forskning kan påverka mer än den fysiska hälsan. Den kan också påverka mående, ekonomi, sociala relationer och privatliv. Därför behöver flera slags risker bedömas.
+Regler och riktlinjer ger stöd men har inte färdiga svar på varje situation. Forskare behöver därför tänka igenom och diskutera etiska frågor under arbetet.
+Operationalisering innebär att välja hur ett begrepp ska undersökas i praktiken. Tillgång till stöd kan till exempel mätas på olika sätt. Forskaren behöver förklara varför det valda måttet passar.
+Reliabilitet handlar här om hur stabil mätningen är. Validitet handlar om stödet för den tolkning man gör av resultaten. Ett test kan ge stabila svar och ändå missa det man ville undersöka.
+Populationen är hela den grupp studien handlar om. Stickprovet är den del av gruppen som forskaren får uppgifter från. De två grupperna är alltså inte samma sak.
+Många svar gör inte automatiskt urvalet representativt. Vissa grupper kan saknas eller vara överrepresenterade. Därför behöver forskaren granska vilka som deltog och vilka som inte gjorde det.
+Bekvämlighetsurval betyder att välja personer som är lätta att nå. Det kan vara praktiskt, men gruppen behöver inte spegla alla som studien handlar om.
+Strategiskt urval betyder att välja deltagare med erfarenheter eller egenskaper som är viktiga för frågan. Här är det deras erfarenhet av stödarbete som styr valet.
+Internt bortfall är när en deltagare lämnar vissa frågor obesvarade. Externt bortfall är när en utvald person inte deltar alls.
+Även ett litet bortfall kan ge en missvisande bild. Om nästan alla som avstår tillhör samma grupp kan just den gruppens erfarenheter saknas i resultatet.
+Snabbt stöd och relevant stöd är två olika saker. Stödet kan komma snabbt men ändå vara fel sorts hjälp. Därför bör de bedömas i separata frågor.
+Ordet välfungerande säger redan att stödarbetet är bra. Det kan styra deltagarens svar. En neutral fråga ska inte utgå från en sådan bedömning.
+När enkäten provas kan forskaren upptäcka ord eller svarsalternativ som är svåra att förstå. Då kan frågorna förbättras innan den riktiga undersökningen börjar.
+Siffrorna är bara koder för olika yrkesgrupper. Siffran 2 betyder inte dubbelt så mycket som 1. Därför är ett medelvärde av dessa koder inte meningsfullt.
+Ordinala svar kan ordnas från lägre till högre. Men steget mellan två svar behöver inte vara lika stort över hela skalan. Det är skillnaden mellan ordning och lika avstånd.
+Här betyder 999 att ett svar saknas. Om talet räknas som en riktig poäng kan resultatet bli fel. Kodningen behöver därför kontrolleras före analysen.
+Medianen är det mittersta värdet när värdena sorteras. Ett mycket högt värde drar upp medelvärdet mer än medianen. Därför är medianen mindre känslig i exemplet.
+Medelvärdet säger inte hur utspridda värdena är. I en grupp kan alla ligga nära genomsnittet. I en annan kan resultaten skilja sig mycket mellan individerna.
+Nollhypotesen säger här att populationernas medelvärden är lika. Den säger inte att varje person har samma resultat.
+Utgå från att nollhypotesen och testets övriga antaganden gäller. P-värdet anger då sannolikheten för det resultat man fått eller ett mer extremt resultat. Det anger inte sannolikheten att nollhypotesen är sann.
+Statistisk signifikans visar inte hur viktig en skillnad är i vardagen. Därför behöver forskaren också se hur stor skillnaden är och vad den betyder i det aktuella sammanhanget.
+Ett icke-signifikant resultat bevisar inte att grupperna är lika. Studien kan ha för få deltagare eller en alltför osäker mätning för att upptäcka en skillnad.
+Cohen’s d beskriver skillnaden i enheter av standardavvikelse. Värdet 0,50 betyder en halv standardavvikelse. Det betyder inte en halv testpoäng eller att hälften av deltagarna förbättrats.
+Varje elevs före- och eftervärde hör ihop. Ett parat t-test tar hänsyn till det. Ett oberoende t-test behandlar i stället grupperna som separata.
+Ett oberoende t-test jämför medelvärden i två separata grupper. Resultatet som jämförs behöver vara numeriskt, och observationerna behöver vara oberoende av varandra.
+Klasserna kan ha olika förkunskaper, lärare eller andra förutsättningar. Testet visar en skillnad i resultat, men avgör inte vad som orsakade den.
+Fallstudie beskriver främst studiens övergripande upplägg. Strategiskt urval handlar om vilka som väljs. Transkriptioner är material och tematisk analys är en analysmetod.
+Tematisk analys beskriver hur materialet analyseras. En intervju är ett sätt att samla in material. Urval handlar om vilka som deltar, och intervjutexten är själva materialet.
+Att återberätta intervjuerna är inte samma sak som att analysera dem. Forskaren behöver jämföra det som sagts och undersöka mönster och skillnader som hör till frågan.
+Dokumenten visar hur ansvar beskrivs i text. De visar inte i sig hur personalen faktiskt arbetar eller vilka effekter arbetet får.
+I en forskningskartläggning undersöks tidigare vetenskapliga publikationer. Det är alltså dessa texter som är materialet för analysen.
+Få träffar kan bero på hur och var forskaren har sökt. Det säger inte direkt hur vanligt eller viktigt fenomenet är.
+Intervjuer kan användas utifrån olika synsätt på kunskap. Metoden ensam räcker därför inte för att avgöra forskarens vetenskapsteoretiska position.
+Ett fall som inte passar teorin kan vara viktigt. Det kan få forskaren att tänka om kring tolkningen eller teorins gränser. Att bara behålla det som passar ger en ensidig analys.
+Den förstående funktionen gör något svårbegripligt lättare att förstå. Här ligger fokus på förståelse, inte på att fastställa orsaker eller synliggöra makt.
+Utbildningsvetenskapen rymmer olika sorters teorier. Vissa kan formuleras så att de går att motbevisa. Andra är mer filosofiska perspektiv. Därför beskriver författarna en bredd mellan ytterpunkter.
+Att dela forskning öppet är värdefullt, men deltagarna behöver också skyddas. Forskaren måste därför bedöma vad som kan delas utan att skapa orimliga risker.
+Förtroende ska inte skyddas genom att problem göms undan. Det skulle strida mot ärlighet. Problem behöver i stället uppmärksammas och hanteras.
+God forskningssed omfattar mer än lagar. En riktlinje kan därför ställa etiska krav även om den inte i sig är rättsligt bindande.
+Tidig planering gör det lättare att ta hänsyn till risker från början. Annars kan forskaren behöva ändra mycket senare. Etiska frågor behöver ändå följas under hela studien.
+God forskningssed behöver märkas i det dagliga arbetet. Gemensamma vanor och öppna samtal kan hjälpa forskare att förebygga problem.
+Ansvar gäller från den första idén till publiceringen och forskningens följder. Det omfattar också sådant som ledning och handledning.
+Rektorn kan ge tillträde till skolan. Varje lärare behöver ändå själv få välja om hen vill delta. Tillträde och individuellt samtycke är olika saker.
+En underskrift räcker inte om deltagaren inte förstår vad studien innebär. Personen behöver information och ett frivilligt val. Vid förändringar kan forskaren behöva försäkra sig om att deltagandet fortfarande är frivilligt.
+Även utan namn kan detaljer avslöja vem personen är. En viss yrkesroll tillsammans med en händelse eller ett citat kan räcka på en liten skola.
+Eleven är en tredje person: någon som beskrivs men inte själv deltar. Forskaren behöver därför tänka på vilka uppgifter som behövs och hur de ska skyddas.
+Kollegor kan välja sina ord utifrån relationen till studenten. Studenten kan också tolka svaren genom sina egna erfarenheter. Den dubbla rollen kan därför påverka både materialet och analysen.
+Forskaren ska kunna förklara varför uppgifterna behövs. Redan före insamlingen behöver det vara tydligt hur de ska förvaras och vem som får använda dem.
+Barn behöver få information som de kan förstå. De behöver också kunna uttrycka vad de själva vill. Barn har olika förutsättningar, så samma information passar inte alltid alla.
+Falsifierbar betyder att teorin skulle kunna motbevisas. Det betyder inte att den redan är bevisad som falsk. Skillnaden är mellan en möjlighet att pröva teorin och resultatet av prövningen.
+Att teoretisera kan vara att skapa nya begrepp eller utveckla hur befintliga begrepp hänger ihop. Det hjälper forskaren att förstå och analysera något på nya sätt.
+Granskaren ska berätta om intressekonflikten. Om den innebär risk för otillbörlig påverkan ska granskaren avstå. Bedömningen ska inte styras av egna intressen eller relationer.
+Forskaren behöver vara öppen med felet och hjälpa till att rätta artikeln. Om felet kräver det kan artikeln behöva dras tillbaka. Att den redan är publicerad tar inte bort ansvaret.
+Här efterfrågas göra gott, inte skada, självbestämmande och rättvisa. ALLEA-kodexens principer är en annan grupp: tillförlitlighet, ärlighet, respekt och ansvar. Materialet använder båda ramverken.

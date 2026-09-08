@@ -44,5 +44,8 @@ extend_bank(U, S, V)
 help_map = json.loads(Path('question_help.json').read_text(encoding='utf-8'))
 for question in questions:
  question['help'] = help_map[question['question']]
+answer_wording = json.loads(Path('answer_wording.json').read_text(encoding='utf-8'))
+for question in questions:
+ question.update(answer_wording[question['question']])
 Path('questions.json').write_text(json.dumps(questions,ensure_ascii=False,indent=2),encoding='utf-8')
 print(f'Skapade {len(questions)} frågor')
