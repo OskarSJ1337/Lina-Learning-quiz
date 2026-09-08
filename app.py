@@ -118,9 +118,10 @@ def extract_questions(paths):
 class App(tk.Tk):
     def __init__(self):
         super().__init__()
+        self.dark_mode = False
         self.title('Linas coola quiz')
         self.geometry('960x820')
-        self.minsize(720, 640)
+        self.minsize(860, 640)
         self.configure(bg=BG)
         style = ttk.Style(self)
         style.theme_use('clam')
@@ -144,6 +145,9 @@ class App(tk.Tk):
                                      activeforeground='white', relief='flat', bd=0,
                                      padx=12, pady=8, cursor='hand2')
         self.back_button.pack(side='right', padx=16)
+        self.theme_button = tk.Button(self.header, text='Nattläge', command=self.toggle_theme,
+            bg=HOVER, fg=INK, relief='flat', padx=10, pady=8, cursor='hand2', font=('Segoe UI', 11))
+        self.theme_button.pack(side='right', padx=4)
         self.navigation = tk.Frame(self, bg=BG)
         self.navigation.pack(side='bottom', fill='x', padx=32, pady=(0, 16))
         self.previous_button = tk.Button(self.navigation, text='← Föregående fråga',
@@ -173,6 +177,7 @@ class App(tk.Tk):
                 child.configure(wraplength=max(400, event.width - 48))
 
     def clear(self):
+        self.after_idle(self.apply_theme)
         for child in self.body.winfo_children():
             child.destroy()
         self.canvas.yview_moveto(0)
@@ -194,8 +199,8 @@ class App(tk.Tk):
                       highlightcolor=INK, relief='flat', bd=0, padx=18, pady=14,
                       cursor='hand2', anchor='w', justify='left', wraplength=max(400, self.canvas.winfo_width()-48))
         b.pack(fill='x', pady=5)
-        b.bind('<Enter>', lambda event: b.configure(bg=hover) if str(b['state']) == 'normal' else None)
-        b.bind('<Leave>', lambda event: b.configure(bg=normal) if str(b['state']) == 'normal' else None)
+        b.bind('<Enter>', lambda event: b.configure(bg=self.theme_color(hover)) if str(b['state']) == 'normal' else None)
+        b.bind('<Leave>', lambda event: b.configure(bg=self.theme_color(normal)) if str(b['state']) == 'normal' else None)
         return b
 
     def home(self):
@@ -238,12 +243,69 @@ class App(tk.Tk):
         self.label(f'Fråga {s.index + 1} av {len(s.questions)}', 13, MUTED)
         ttk.Progressbar(self.body, maximum=len(s.questions), value=s.index).pack(fill='x', pady=(0, 18))
         self.label(q['question'], 20)
+        self.help_open = False
+        self.help_button = self.button('Vad betyder frågan?', self.toggle_help)
+        self.help_button.configure(font=('Segoe UI', 11), pady=8)
+        self.help_text = tk.Label(self.body, text=q.get('help', 'Välj begreppet som passar i luckan i texten.'),
+            bg=HOVER, fg=INK, justify='left', anchor='w', padx=14, pady=12,
+            wraplength=max(400, self.canvas.winfo_width()-48))
         self.options = [self.button(f'{i + 1}.  {option}', lambda i=i: self.choose(i)) for i, option in enumerate(q['options'])]
         self.previous_button.configure(state='normal' if s.index > 0 else 'disabled')
         self.next_button.configure(text='Visa resultat' if s.index == len(s.questions)-1 else 'Nästa fråga →',
                                    state='normal')
         self.update_idletasks()
         self.canvas.yview_moveto(0)
+
+    def toggle_help(self):
+        self.help_open = not self.help_open
+        if self.help_open:
+            self.help_text.pack(fill='x', pady=(0, 10), after=self.help_button)
+        else:
+            self.help_text.pack_forget()
+        self.apply_theme()
+
+    def theme_color(self, color):
+        mapping = {
+            BG.lower(): '#171923', INK.lower(): '#f0f1f7', MUTED.lower(): '#bbc3d5',
+            SURFACE.lower(): '#262b3b', HOVER.lower(): '#35304c',
+            ACCENT.lower(): '#7664d0', ACCENT_HOVER.lower(): '#6654c0',
+            TRUE.lower(): '#254c3b', FALSE.lower(): '#633b3e',
+            '#d8eaff': '#293e5b', '#ffe4c7': '#51422f',
+        }
+        value = str(color).lower()
+        if self.dark_mode:
+            return mapping.get(value, color)
+        return {v: k for k, v in mapping.items()}.get(value, color)
+
+    def apply_theme(self):
+        def paint(widget):
+            changes = {}
+            for key in ('background', 'foreground', 'activebackground', 'activeforeground',
+                        'disabledforeground', 'highlightbackground', 'highlightcolor'):
+                if key in widget.keys():
+                    value = str(widget.cget(key))
+                    # White button lettering stays white; white surfaces darken.
+                    if 'foreground' in key and value.lower() in ('white', '#ffffff'):
+                        continue
+                    changes[key] = self.theme_color(value)
+            if changes:
+                widget.configure(**changes)
+            for child in widget.winfo_children():
+                paint(child)
+        paint(self)
+        style = ttk.Style(self)
+        background, accent = self.theme_color(BG), self.theme_color(ACCENT)
+        style.configure('TProgressbar', background=accent, troughcolor=background,
+                        bordercolor=background, lightcolor=accent, darkcolor=accent)
+        style.configure('TScrollbar', background=self.theme_color(HOVER), troughcolor=background,
+                        bordercolor=background, arrowcolor=self.theme_color(INK),
+                        lightcolor=accent, darkcolor=accent)
+        style.map('TScrollbar', background=[('active', accent)])
+
+    def toggle_theme(self):
+        self.dark_mode = not self.dark_mode
+        self.theme_button.configure(text='Dagläge' if self.dark_mode else 'Nattläge')
+        self.apply_theme()
 
     def choose(self, index):
         if not self.session or self.session.index >= len(self.session.questions):
@@ -256,6 +318,7 @@ class App(tk.Tk):
         self.show_feedback(index)
 
     def show_feedback(self, index):
+        self.after_idle(self.apply_theme)
         self.feedback_shown = True
         result = index == self.session.current['answer']
         self.update_idletasks()
@@ -289,6 +352,7 @@ class App(tk.Tk):
         source = source_names.get(q['source'], q['source'])
         bubble_label(f'{source} · PDF-sida {q["page"]}', 12)
         self.next_button.configure(state='normal')
+        self.apply_theme()
         self.update_idletasks()
         # Keep the same pixel offset as feedback increases the scroll region.
         bounds = self.canvas.bbox('all')
