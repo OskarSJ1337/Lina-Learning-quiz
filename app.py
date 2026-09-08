@@ -1,4 +1,4 @@
-﻿"""Lina – lokalt självtest med PDF-baserad frågebank."""
+"""Lina – lokalt självtest med PDF-baserad frågebank."""
 import json
 import random
 import re
@@ -262,5 +262,33 @@ class App(tk.Tk):
         self.button('Till startsidan', self.home)
 
 
+def self_test(report, pdf_paths):
+    """Exercise the bundled app from an arbitrary working directory."""
+    app = App()
+    app.withdraw()
+    try:
+        app.start(app.bank[:2])
+        app.update()
+        app.choose(app.session.current['answer'])
+        if app.session.score != 1:
+            raise RuntimeError('Incorrect score')
+        app.next_question()
+        app.choose((app.session.current['answer'] + 1) % 4)
+        if app.session.score != 1:
+            raise RuntimeError('Wrong answer changed score')
+        app.next_question()
+        app.home()
+        questions, reports = extract_questions(pdf_paths) if pdf_paths else ([], [])
+        if pdf_paths:
+            validate(questions)
+        Path(report).write_text(json.dumps({'ok': True, 'bank': len(app.bank),
+            'imported': len(questions), 'pdfs': reports}, ensure_ascii=False), encoding='utf-8')
+    finally:
+        app.destroy()
+
+
 if __name__ == '__main__':
-    App().mainloop()
+    if len(sys.argv) >= 3 and sys.argv[1] == '--self-test':
+        self_test(sys.argv[2], sys.argv[3:])
+    else:
+        App().mainloop()
