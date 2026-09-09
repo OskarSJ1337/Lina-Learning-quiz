@@ -122,7 +122,7 @@ class App(tk.Tk):
         self.dark_mode = False
         self.reading_fonts = {}
         self.title('Linas coola quiz')
-        self.geometry('960x820')
+        self.geometry('1200x850')
         self.minsize(860, 640)
         self.configure(bg=BG)
         style = ttk.Style(self)
@@ -283,17 +283,36 @@ class App(tk.Tk):
         self.counter.configure(text=f'Rätt: {s.score}/{len(s.questions)}')
         self.label(f'Fråga {s.index + 1} av {len(s.questions)}', 13, MUTED)
         ttk.Progressbar(self.body, maximum=len(s.questions), value=s.index).pack(fill='x', pady=(0, 18))
-        self.label(self.readable_paragraphs(q['question']), 20).configure(font=self.reading_font(20, 'bold'))
+        self.question_row = tk.Frame(self.body, bg=BG)
+        self.question_row.pack(fill='x', pady=(8, 16))
+        self.question_row.columnconfigure(0, weight=1)
+        self.quiz_content = tk.Frame(self.question_row, bg=BG)
+        self.quiz_content.grid(row=0, column=0, sticky='new', padx=(0, 22))
+        self.question_label = tk.Label(self.quiz_content,
+            text=q['question'], font=self.reading_font(20, 'bold'),
+            bg='#E4EAF8', fg=INK, anchor='nw', justify='left', wraplength=700, padx=18, pady=16)
+        self.question_label.pack(fill='x', pady=(0, 12))
+        self.help_panel = tk.Frame(self.question_row, bg='#E5D6F5', padx=12, pady=12)
+        self.help_panel.grid(row=0, column=1, sticky='ne')
         self.help_open = False
-        self.help_button = self.button('Vad betyder frågan?', self.toggle_help)
-        self.help_button.configure(font=self.reading_font(11), pady=8)
-        self.help_text = tk.Label(self.body, text=self.readable_paragraphs(q.get('help', 'Välj begreppet som passar i luckan i texten.')),
-            bg=HOVER, fg=INK, justify='left', anchor='w', padx=14, pady=12,
-            wraplength=max(400, min(780, self.canvas.winfo_width()-48)))
+        self.help_button = tk.Button(self.help_panel, text='Förenkla frågan',
+            command=self.toggle_help, bg='#75429D', fg='white',
+            activebackground='#5E3183', activeforeground='white',
+            font=self.reading_font(12, 'bold'), relief='flat', bd=0,
+            padx=16, pady=12, width=21, cursor='hand2', justify='left', anchor='w')
+        self.help_button.pack(fill='x')
+        self.help_button.bind('<Enter>', lambda event: self.help_button.configure(bg=self.theme_color('#5E3183')))
+        self.help_button.bind('<Leave>', lambda event: self.help_button.configure(bg=self.theme_color('#75429D')))
+        self.help_text = tk.Label(self.help_panel,
+            text=self.readable_paragraphs(q.get('help', 'Välj begreppet som passar i luckan i texten.')),
+            bg='#F3EBFC', fg=INK, justify='left', anchor='nw', padx=12, pady=12,
+            font=self.reading_font(13), wraplength=220)
+        self.quiz_content.bind('<Configure>', lambda event: self.question_label.configure(
+            wraplength=max(280, event.width-36)))
         self.options = []
         self.answer_labels = []
         for i, option in enumerate(q['options']):
-            row = tk.Frame(self.body, bg=SURFACE)
+            row = tk.Frame(self.quiz_content, bg=SURFACE)
             row.pack(fill='x', pady=5)
             button = self.button(f'{i + 1}.  {option}', lambda i=i: self.choose(i), parent=row)
             button.pack_forget()
@@ -313,7 +332,7 @@ class App(tk.Tk):
     def toggle_help(self):
         self.help_open = not self.help_open
         if self.help_open:
-            self.help_text.pack(fill='x', pady=(0, 10), after=self.help_button)
+            self.help_text.pack(fill='x', pady=(10, 0), after=self.help_button)
         else:
             self.help_text.pack_forget()
         self.apply_theme()
@@ -327,6 +346,9 @@ class App(tk.Tk):
             '#d8eaff': '#293e5b', '#ffe4c7': '#51422f',
             '#ade3c4': '#376d52', '#aecff7': '#3d5d86', '#f6cca0': '#7a5835',
             '#176333': '#8cf0ad', '#9d202b': '#ffacb5',
+            '#e5d6f5': '#49345f', '#f3ebfc': '#33253f',
+            '#75429d': '#8650b0', '#5e3183': '#703f98',
+            '#e4eaf8': '#28354e',
         }
         value = str(color).lower()
         if self.dark_mode:
@@ -390,7 +412,7 @@ class App(tk.Tk):
                 fg='#176333' if i == q['answer'] else '#9d202b' if i == index else INK)
         self.counter.configure(text=f'Rätt: {self.session.score}/{len(self.session.questions)}')
         bubble_color = TRUE if result else FALSE
-        self.feedback_box = tk.Frame(self.body, bg=bubble_color, padx=18, pady=14)
+        self.feedback_box = tk.Frame(self.quiz_content, bg=bubble_color, padx=18, pady=14)
         self.feedback_box.pack(fill='x', pady=(14, 6))
         def bubble_label(text, size=13, bold=False):
             label = tk.Label(self.feedback_box, text=text, bg=bubble_color, fg=INK,
