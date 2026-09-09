@@ -154,10 +154,21 @@ class App(tk.Tk):
         self.navigation.pack(side='bottom', fill='x', padx=32, pady=(0, 16))
         self.previous_button = tk.Button(self.navigation, text='← Föregående fråga',
             command=self.previous_question, bg=HOVER, fg=INK, relief='flat', padx=16, pady=12)
-        self.previous_button.pack(side='left')
+        self.navigation.columnconfigure(0, weight=1, uniform='navigation')
+        self.navigation.columnconfigure(2, weight=1, uniform='navigation')
+        self.previous_button.grid(row=0, column=0, sticky='w')
         self.next_button = tk.Button(self.navigation, text='Nästa fråga →',
             command=self.next_question, bg=ACCENT, fg='white', relief='flat', padx=16, pady=12)
-        self.next_button.pack(side='right')
+        self.next_button.grid(row=0, column=2, sticky='e')
+        self.progress_state = None
+        self.progress_panel = tk.Frame(self.navigation, bg=BG)
+        self.progress_panel.grid(row=0, column=1, padx=12)
+        self.question_position = tk.Label(self.progress_panel, text='', bg=BG, fg=MUTED,
+            font=self.reading_font(13), padx=12)
+        self.question_position.pack()
+        self.question_progress = ttk.Progressbar(self.progress_panel, length=180,
+            style='Quiz.Horizontal.TProgressbar', mode='determinate')
+        self.question_progress.pack(fill='x', pady=(6, 0))
         self.canvas = tk.Canvas(self, bg=BG, highlightthickness=0)
         self.scrollbar = ttk.Scrollbar(self, orient='vertical', command=self.scroll_view)
         self.canvas.pack(fill='both', expand=True, padx=32, pady=(0, 24))
@@ -209,6 +220,11 @@ class App(tk.Tk):
             self.canvas.yview_scroll(steps, 'units')
         self.sync_scroll()
         return 'break'
+
+    @staticmethod
+    def set_wrap(widget, width):
+        if int(widget.cget('wraplength')) != width:
+            widget.configure(wraplength=width)
 
     def resize(self, event):
         self.canvas.itemconfigure(self.window, width=event.width)
@@ -278,12 +294,13 @@ class App(tk.Tk):
         self.show_question()
 
     def show_question(self):
+        self.progress_state = None
         self.feedback_shown = False
         self.clear()
         s, q = self.session, self.session.current
         self.counter.configure(text=f'Rätt: {s.score}/{len(s.questions)}')
-        self.label(f'Fråga {s.index + 1} av {len(s.questions)}', 13, MUTED)
-        ttk.Progressbar(self.body, maximum=len(s.questions), value=s.index).pack(fill='x', pady=(0, 18))
+        self.question_progress.configure(maximum=len(s.questions), value=s.index + 1)
+        self.question_position.configure(text=f'Fråga {s.index + 1} av {len(s.questions)}')
         self.question_row = tk.Frame(self.body, bg=BG)
         self.question_row.pack(fill='x', pady=(8, 16))
         self.question_row.columnconfigure(0, weight=1)
@@ -291,7 +308,7 @@ class App(tk.Tk):
         self.quiz_content.grid(row=0, column=0, sticky='new', padx=(0, 22))
         self.question_label = tk.Label(self.quiz_content,
             text=q['question'], font=self.reading_font(20, 'bold'),
-            bg='#E4EAF8', fg=INK, anchor='nw', justify='left', wraplength=700, padx=18, pady=16)
+            bg='#E4EAF8', fg=INK, width=1, anchor='nw', justify='left', wraplength=700, padx=18, pady=16)
         self.question_label.pack(fill='x', pady=(0, 12))
         self.help_panel = tk.Frame(self.question_row, bg='#E5D6F5', padx=12, pady=12)
         self.help_panel.grid(row=0, column=1, sticky='ne')
@@ -308,20 +325,27 @@ class App(tk.Tk):
             text=self.readable_paragraphs(q.get('help', 'Välj begreppet som passar i luckan i texten.')),
             bg='#F3EBFC', fg=INK, justify='left', anchor='nw', padx=12, pady=12,
             font=self.reading_font(13), wraplength=220)
-        self.quiz_content.bind('<Configure>', lambda event: self.question_label.configure(
-            wraplength=max(280, event.width-36)))
+        self.quiz_content.bind('<Configure>', lambda event: self.set_wrap(self.question_label, max(280, event.width-36)))
         self.options = []
         self.answer_labels = []
         for i, option in enumerate(q['options']):
             row = tk.Frame(self.quiz_content, bg=SURFACE)
             row.pack(fill='x', pady=5)
             button = self.button(f'{i + 1}.  {option}', lambda i=i: self.choose(i), parent=row)
+            button.configure(width=1)
             button.pack_forget()
             status = tk.Label(row, text='', width=11, anchor='e', padx=12,
                               bg=SURFACE, fg=INK, font=self.reading_font(12, 'bold'))
             status.pack(side='right', fill='y')
             button.pack(side='left', fill='both', expand=True)
-            button.bind('<Configure>', lambda event, b=button: b.configure(wraplength=max(260, event.width-44)))
+            button.bind('<Configure>', lambda event, b=button: self.set_wrap(b, max(260, event.width-44)))
+            for part in (row, button, status):
+                part.bind('<Enter>', lambda event, b=button, r=row, label=status:
+                          self.highlight_answer(b, r, label, True))
+                part.bind('<Leave>', lambda event, b=button, r=row, label=status:
+                          self.highlight_answer(b, r, label, False))
+            status.configure(cursor='hand2')
+            status.bind('<Button-1>', lambda event, i=i: self.choose(i))
             self.options.append(button)
             self.answer_labels.append(status)
         self.previous_button.configure(state='normal' if s.index > 0 else 'disabled')
@@ -329,6 +353,13 @@ class App(tk.Tk):
                                    state='normal')
         self.update_idletasks()
         self.sync_scroll(offset=0)
+
+    def highlight_answer(self, button, row, status, hovered):
+        if str(button['state']) != 'normal':
+            return
+        color = self.theme_color(HOVER if hovered else SURFACE)
+        for part in (row, button, status):
+            part.configure(bg=color)
 
     def toggle_help(self):
         self.help_open = not self.help_open
@@ -357,6 +388,13 @@ class App(tk.Tk):
             return mapping.get(value, color)
         return {v: k for k, v in mapping.items()}.get(value, color)
 
+    def update_progress_color(self):
+        color = ACCENT if self.progress_state is None else '#176333' if self.progress_state else '#9d202b'
+        color = self.theme_color(color)
+        ttk.Style(self).configure('Quiz.Horizontal.TProgressbar',
+            background=color, lightcolor=color, darkcolor=color, borderwidth=0,
+            troughcolor=self.theme_color(HOVER), thickness=8)
+
     def apply_theme(self):
         def paint(widget):
             changes = {}
@@ -382,6 +420,8 @@ class App(tk.Tk):
                         lightcolor=accent, darkcolor=accent)
         style.map('TScrollbar', background=[('active', accent)])
 
+        self.update_progress_color()
+
     def toggle_theme(self):
         self.dark_mode = not self.dark_mode
         self.theme_button.configure(text='Dagläge' if self.dark_mode else 'Nattläge')
@@ -401,6 +441,8 @@ class App(tk.Tk):
         self.after_idle(self.apply_theme)
         self.feedback_shown = True
         result = index == self.session.current['answer']
+        self.progress_state = result
+        self.update_progress_color()
         self.update_idletasks()
         viewport_top = self.canvas.canvasy(0)
         q = self.session.current
@@ -457,6 +499,7 @@ class App(tk.Tk):
             self.finish()
 
     def finish(self):
+        self.question_position.configure(text='Resultat')
         self.previous_button.configure(state='normal')
         self.next_button.configure(state='disabled')
         self.clear()
