@@ -121,7 +121,7 @@ class App(tk.Tk):
         super().__init__()
         self.dark_mode = False
         self.reading_fonts = {}
-        self.title('Linas coola quiz')
+        self.title('Linas självstudie quiz')
         self.geometry('1200x850')
         self.minsize(860, 640)
         self.configure(bg=BG)
@@ -139,7 +139,7 @@ class App(tk.Tk):
         self.importing = False
         self.header = tk.Frame(self, bg=BG)
         self.header.pack(fill='x', padx=32, pady=(24, 10))
-        tk.Label(self.header, text='Linas coola quiz', font=self.reading_font(18, 'bold'), bg=BG, fg=INK).pack(side='left')
+        tk.Label(self.header, text='Linas självstudie quiz', font=self.reading_font(18, 'bold'), bg=BG, fg=INK).pack(side='left')
         self.counter = tk.Label(self.header, text='Rätt: 0', bg=HOVER, fg=INK, padx=14, pady=8, font=self.reading_font(14, 'bold'))
         self.counter.pack(side='right')
         self.back_button = tk.Button(self.header, text='Till startsidan', command=self.home,
@@ -269,7 +269,7 @@ class App(tk.Tk):
         self.session = None
         self.clear()
         self.counter.configure(text=f'Rätt: 0/{len(self.bank)}')
-        self.label('Vetenskaplig metod', 26)
+        self.label('Vetenskaplig metodkurs Speciallärar- och specialpedagogprogrammet', 26)
         self.label(f'{len(self.bank)} frågor · Fyra svarsalternativ', 14, MUTED)
         self.button(f'Starta quiz – Alla frågor ({len(self.bank)})', lambda: self.start(self.bank), True)
         sources = [

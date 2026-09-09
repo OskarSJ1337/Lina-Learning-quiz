@@ -1,6 +1,6 @@
-# Linas coola quiz
+# Linas självstudie quiz
 
-En svensk quizapp för Vetenskaplig metodkurs Speciallärar- och specialpedagogprogrammen. Frågebanken innehåller 98 frågor från fyra PDF-filer, med fyra svarsalternativ, enkla förklaringar och källhänvisningar.
+En svensk quizapp för Vetenskaplig metodkurs Speciallärar- och specialpedagogprogrammet. Frågebanken innehåller 98 frågor från fyra PDF-filer, med fyra svarsalternativ, enkla förklaringar och källhänvisningar.
 
 ## Starta
 
