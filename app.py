@@ -231,7 +231,7 @@ class App(tk.Tk):
 
     def button(self, text, command, primary=False, color=None, parent=None):
         normal = color or (ACCENT if primary else SURFACE)
-        hover = {'#D0F2DE': '#ADE3C4', '#D8EAFF': '#AECFF7', '#FFE4C7': '#F6CCA0'}.get(color, ACCENT_HOVER if primary else HOVER)
+        hover = {'#D0F2DE': '#ADE3C4', '#D8EAFF': '#AECFF7', '#FFE4C7': '#F6CCA0', '#F5D9E8': '#EAB8D2'}.get(color, ACCENT_HOVER if primary else HOVER)
         b = tk.Button(parent or self.body, text=text, command=command, bg=normal,
                       fg='white' if primary else BUTTON_TEXT,
                       activebackground=hover,
@@ -257,6 +257,7 @@ class App(tk.Tk):
         self.label(f'{len(self.bank)} frågor · Fyra svarsalternativ', 14, MUTED)
         self.button(f'Starta quiz – Alla frågor ({len(self.bank)})', lambda: self.start(self.bank), True)
         sources = [
+            ('Aasberg-2001.pdf', 'Åsberg (2001)', '#F5D9E8'),
             ('God_forskningssed_VR_2024.pdf', 'God forskningssed', '#D0F2DE'),
             ('Serder_och_Jober_2021_kapitel_1.pdf', 'Serder & Jobér, kapitel 1', '#D8EAFF'),
             ('Undervisningsunderlag_bilder_och_text.pdf', 'Undervisningsunderlag', '#FFE4C7'),
@@ -349,6 +350,7 @@ class App(tk.Tk):
             '#e5d6f5': '#49345f', '#f3ebfc': '#33253f',
             '#75429d': '#8650b0', '#5e3183': '#703f98',
             '#e4eaf8': '#28354e',
+            '#f5d9e8': '#512c45', '#eab8d2': '#75405f',
         }
         value = str(color).lower()
         if self.dark_mode:
@@ -429,6 +431,7 @@ class App(tk.Tk):
         bubble_label('Varför är svaret rätt?', 13, True)
         bubble_label(self.readable_paragraphs(q['explanation']))
         source_names = {
+            'Aasberg-2001.pdf': 'Åsberg (2001)',
             'Undervisningsunderlag_bilder_och_text.pdf': 'Undervisningsunderlag',
             'Serder_och_Jober_2021_kapitel_1.pdf': 'Serder & Jobér, kap. 1',
             'God_forskningssed_VR_2024.pdf': 'God forskningssed (2024)',

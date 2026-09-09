@@ -1228,5 +1228,245 @@
     "answer": 0,
     "explanation": "Här efterfrågas göra gott, inte skada, självbestämmande och rättvisa. ALLEA-kodexens principer är en annan grupp: tillförlitlighet, ärlighet, respekt och ansvar. Materialet använder båda ramverken.",
     "help": "Materialet tar upp flera grupper av etiska principer. Vilka fyra gäller här för forskning där människor deltar, och är en annan grupp än ALLEA-kodexens principer?"
+  },
+  {
+    "question": "Vad är Åsbergs huvudinvändning mot uttrycken kvalitativ och kvantitativ metod?",
+    "options": [
+      "De blandar ihop hur data samlas in med vilken form data har",
+      "De beskriver två metoder som inte längre används",
+      "De innebär att forskaren måste välja bort teori",
+      "De visar att siffror ger säkrare kunskap än ord"
+    ],
+    "answer": 0,
+    "explanation": "Åsberg skiljer mellan arbetssättet och det material man får fram. Ord och siffror beskriver data. De beskriver inte i sig hur forskaren arbetar.",
+    "source": "Aasberg-2001.pdf",
+    "page": 1,
+    "category": "Åsberg – metod och kunskap",
+    "help": "Varför tycker Åsberg att namnen på de två typerna av metod kan bli missvisande?"
+  },
+  {
+    "question": "En student ska undersöka stöd i skolan. Vad räknas som en datainsamlingsmetod i Åsbergs uppdelning?",
+    "options": [
+      "Att intervjua elever om deras erfarenheter",
+      "Att anta att verkligheten finns oberoende av oss",
+      "Att diskutera vad som räknas som säker kunskap",
+      "Att vilja skapa en mer rättvis skola"
+    ],
+    "answer": 0,
+    "explanation": "En datainsamlingsmetod är ett sätt att samla in material. Att intervjua är ett sådant sätt. Synen på verkligheten, kunskap och studiens mål är andra frågor.",
+    "source": "Aasberg-2001.pdf",
+    "page": 2,
+    "category": "Åsberg – metod och kunskap",
+    "help": "Vilket alternativ beskriver hur studenten samlar in sitt material?"
+  },
+  {
+    "question": "En enkät innehåller både kryssfrågor och frågor där elever skriver egna svar. Hur kan materialet beskrivas med Åsbergs uppdelning?",
+    "options": [
+      "Samma datainsamlingsmetod ger både numeriska och icke-numeriska data",
+      "Enkäten måste delas upp eftersom en metod bara får ge en sorts data",
+      "De skrivna svaren blir numeriska eftersom de ingår i en enkät",
+      "Krysssvaren gör att elevernas egna ord inte kan analyseras"
+    ],
+    "answer": 0,
+    "explanation": "Numeriska data är siffror. Icke-numeriska data kan vara ord. Samma enkät kan ge båda delarna, till exempel antal svar och elevernas beskrivningar.",
+    "source": "Aasberg-2001.pdf",
+    "page": 4,
+    "category": "Åsberg – metod och kunskap",
+    "help": "Eleverna både kryssar i rutor och skriver med egna ord. Vilka sorters material får studenten?"
+  },
+  {
+    "question": "En forskare observerar en lektion, räknar avbrott och skriver ned vad som händer. Vad visar exemplet utifrån Åsbergs resonemang?",
+    "options": [
+      "Observation kan ge både siffror och beskrivningar med ord",
+      "Observation är en metod som bara ger beskrivningar med ord",
+      "Anteckningarna måste räknas om till siffror för att bli data",
+      "Antalet avbrott avgör vilken kunskapssyn forskaren har"
+    ],
+    "answer": 0,
+    "explanation": "Arbetssättet är observation i båda fallen. Forskaren får både ett antal och en beskrivning. Därför räcker metodens namn inte för att tala om vilken form materialet har.",
+    "source": "Aasberg-2001.pdf",
+    "page": 5,
+    "category": "Åsberg – metod och kunskap",
+    "help": "Forskaren både räknar och antecknar under samma lektion. Vad säger det om observation som sätt att samla in material?"
+  },
+  {
+    "question": "En student diskuterar vad verkligheten är och om den finns oberoende av hur människor uppfattar den. Vilken nivå handlar det om enligt Åsberg?",
+    "options": [
+      "Ontologi",
+      "Epistemologi",
+      "Datainsamlingsmetod",
+      "Dataform"
+    ],
+    "answer": 0,
+    "explanation": "Ontologi handlar om hur vi ser på verkligheten. Det är en annan fråga än hur vi samlar in material eller om materialet består av ord eller siffror.",
+    "source": "Aasberg-2001.pdf",
+    "page": 3,
+    "category": "Åsberg – metod och kunskap",
+    "help": "Studenten funderar på vad som finns och hur verkligheten är. Vilket begrepp passar?"
+  },
+  {
+    "question": "En student diskuterar vad vi kan veta och hur vi kan avgöra om kunskap är välgrundad. Vilken nivå handlar det om enligt Åsberg?",
+    "options": [
+      "Epistemologi",
+      "Ontologi",
+      "Datainsamlingsmetod",
+      "Dataform"
+    ],
+    "answer": 0,
+    "explanation": "Epistemologi är kunskapsteori. Det handlar om vad vi kan veta och på vilka grunder. Ontologi handlar i stället om verklighetens natur.",
+    "source": "Aasberg-2001.pdf",
+    "page": 3,
+    "category": "Åsberg – metod och kunskap",
+    "help": "Studenten undrar hur vi kan veta något och vilka skäl vi har att lita på det. Vilket begrepp handlar det om?"
+  },
+  {
+    "question": "Vad skiljer metodologi från datainsamlingsmetod i Åsbergs uppdelning?",
+    "options": [
+      "Metodologi granskar hur undersökningar byggs upp; datainsamlingsmetod är sättet att samla in material",
+      "Metodologi gäller siffror; datainsamlingsmetod gäller ord",
+      "Metodologi är resultatet; datainsamlingsmetod är forskarens teori",
+      "Metodologi anger vilka som deltar; datainsamlingsmetod anger varför de deltar"
+    ],
+    "answer": 0,
+    "explanation": "Metodologi handlar om hur forskning går till, till exempel hur man prövar en hypotes. En datainsamlingsmetod är ett mer konkret arbetssätt, som intervju eller observation.",
+    "source": "Aasberg-2001.pdf",
+    "page": 3,
+    "category": "Åsberg – metod och kunskap",
+    "help": "Vad är skillnaden mellan att granska hur en studie läggs upp och att välja hur materialet ska samlas in?"
+  },
+  {
+    "question": "En studie vill förstå ett särskilt elevfall i detalj. En annan söker allmänna mönster. Vilken skillnad beskriver detta enligt Åsbergs genomgång?",
+    "options": [
+      "Idiografisk och nomotetisk inriktning",
+      "Numeriska och icke-numeriska data",
+      "Intervju och observation",
+      "Rationalism och empirism"
+    ],
+    "answer": 0,
+    "explanation": "Idiografisk inriktning fokuserar på det enskilda och unika. Nomotetisk inriktning söker allmänna lagbundenheter. Skillnaden gäller vad studien söker kunskap om, inte bara om den använder ord eller siffror.",
+    "source": "Aasberg-2001.pdf",
+    "page": 3,
+    "category": "Åsberg – metod och kunskap",
+    "help": "Den ena studien vill förstå ett visst fall. Den andra letar efter mönster som gäller mer allmänt. Vad kallas skillnaden?"
+  },
+  {
+    "question": "En student skriver: ”Jag använder intervjuer, alltså har jag en viss syn på kunskap.” Vad behöver studenten tänka på utifrån Åsbergs text?",
+    "options": [
+      "Samma sätt att samla in data kan användas inom olika kunskapssyner",
+      "Intervjuer innebär att studien saknar en syn på kunskap",
+      "Kunskapssynen avgörs av hur många som intervjuas",
+      "Alla som använder intervjuer måste ha samma teori"
+    ],
+    "answer": 0,
+    "explanation": "En intervju berättar hur materialet samlas in. Den säger inte ensam vad forskaren anser vara kunskap. Studenten behöver beskriva och motivera sin kunskapssyn också.",
+    "source": "Aasberg-2001.pdf",
+    "page": 4,
+    "category": "Åsberg – metod och kunskap",
+    "help": "Kan man veta hur studenten ser på kunskap bara genom att veta att hen intervjuar?"
+  },
+  {
+    "question": "En student kallar sin studie kvalitativ och menar därför att den har hög kvalitet. Hur stämmer det med Åsbergs kritik?",
+    "options": [
+      "Ordet kvalitativ är inte i sig ett bevis på god forskningskvalitet",
+      "Studier med ord har högre kvalitet än studier med siffror",
+      "Kvaliteten avgörs av om forskaren undviker statistik",
+      "Benämningen räcker om studien också innehåller intervjuer"
+    ],
+    "answer": 0,
+    "explanation": "Åsberg kritiserar att kvalitativ ibland laddas med positiva värden. En benämning visar inte hur väl studien är genomförd. Kvaliteten behöver bedömas genom själva forskningsarbetet.",
+    "source": "Aasberg-2001.pdf",
+    "page": 7,
+    "category": "Åsberg – metod och kunskap",
+    "help": "Studenten tycker att namnet på studien visar att den är bra. Räcker det?"
+  },
+  {
+    "question": "Vilken beskrivning av en analys ligger närmast Åsbergs förslag till tydligare språk?",
+    "options": [
+      "Analys av numeriska data och analys av icke-numeriska data",
+      "Bra analys och mindre bra analys",
+      "Analys med teori och analys utan teori",
+      "Vetenskaplig analys och personlig analys"
+    ],
+    "answer": 0,
+    "explanation": "Beskrivningen talar om vilken sorts material som analyseras: siffror eller exempelvis ord. Den gör inte dataformen till ett namn på hela forskningsansatsen.",
+    "source": "Aasberg-2001.pdf",
+    "page": 7,
+    "category": "Åsberg – metod och kunskap",
+    "help": "Hur kan man tydligt säga vilken sorts material som analyseras utan att sätta en etikett på hela studien?"
+  },
+  {
+    "question": "En studie använder både statistik över skolfrånvaro och elevers berättelser. Hur passar det med Åsbergs syn på data?",
+    "options": [
+      "Siffror och ord kan komplettera varandra i arbetet med att förstå ett problem",
+      "Siffror och ord visar att studien måste ha två motsatta kunskapssyner",
+      "Elevernas berättelser gör statistiken överflödig",
+      "Statistiken gör elevernas berättelser överflödiga"
+    ],
+    "answer": 0,
+    "explanation": "Siffror kan visa hur vanligt något är. Berättelser kan ge andra delar av bilden. Åsberg menar att dataformerna kan komplettera varandra. Hur de används behöver passa studiens fråga.",
+    "source": "Aasberg-2001.pdf",
+    "page": 4,
+    "category": "Åsberg – metod och kunskap",
+    "help": "Studenten använder både antal frånvarodagar och elevernas berättelser. Hur kan de två delarna bidra till studien?"
+  },
+  {
+    "question": "En forskare använder statistik för att visa ojämlik tillgång till stöd i skolan. Hur stämmer det med Åsbergs resonemang?",
+    "options": [
+      "Numeriska data kan användas för att synliggöra orättvisor",
+      "Siffror gör att forskningen inte kan ha ett samhällskritiskt syfte",
+      "Ett samhällskritiskt syfte kräver att bara intervjuer används",
+      "Statistik innebär att forskaren stödjer den rådande ordningen"
+    ],
+    "answer": 0,
+    "explanation": "Åsberg skiljer mellan dataform och forskningens intressen. Siffror kan visa skillnader och orättvisor. Att vilja bidra till förändring är alltså inte knutet till att använda ord.",
+    "source": "Aasberg-2001.pdf",
+    "page": 18,
+    "category": "Åsberg – metod och kunskap",
+    "help": "Kan siffror hjälpa forskaren att visa att elever får olika möjligheter till stöd?"
+  },
+  {
+    "question": "Varför tycker Åsberg att det är problematiskt att samla flera forskningstraditioner under etiketten kvalitativ?",
+    "options": [
+      "Etiketten kan dölja viktiga skillnader i synen på verklighet och kunskap",
+      "Traditionerna använder alltid helt olika sätt att samla in data",
+      "Etiketten gör att forskarna måste använda samma deltagare",
+      "Traditionerna kan inte studera samma samhällsfråga"
+    ],
+    "answer": 0,
+    "explanation": "Två traditioner kan båda använda text men ändå bygga på olika grundidéer. Ett gemensamt namn kan göra att dessa skillnader blir svårare att se.",
+    "source": "Aasberg-2001.pdf",
+    "page": 20,
+    "category": "Åsberg – metod och kunskap",
+    "help": "Två sätt att bedriva forskning får samma namn. Vilka viktiga skillnader kan då hamna i skymundan?"
+  },
+  {
+    "question": "Vad bör en student göra när hen väljer en forskningsansats, enligt Åsbergs slutsats?",
+    "options": [
+      "Granska ansatsens grundidéer och vilken kunskap den kan ge",
+      "Välja den ansats vars namn låter mest övertygande",
+      "Utgå från dataformen och lämna kunskapssynen obeskriven",
+      "Välja en ansats först när resultaten är färdiga"
+    ],
+    "answer": 0,
+    "explanation": "En forskningsansats är ett sätt att närma sig det man vill undersöka. Studenten behöver förstå dess grundidéer och fundera över vad de innebär för studien. En etikett räcker inte.",
+    "source": "Aasberg-2001.pdf",
+    "page": 22,
+    "category": "Åsberg – metod och kunskap",
+    "help": "Vad behöver studenten tänka igenom när hen väljer hur studien ska närma sig sitt ämne?"
+  },
+  {
+    "question": "En student använder metod, perspektiv och forskningsansats som om orden betydde samma sak. Vilket problem lyfter Åsberg fram?",
+    "options": [
+      "Det blir oklart om texten handlar om arbetssätt eller mer grundläggande utgångspunkter",
+      "Studien får för många deltagare",
+      "Materialet blir automatiskt svårare att samla in",
+      "Alla begrepp måste ersättas med ordet intervju"
+    ],
+    "answer": 0,
+    "explanation": "Orden kan syfta på olika delar av forskningen. När de blandas ihop blir det svårt att följa vad studenten menar. Åsberg efterfrågar tydligare skillnader mellan begreppen.",
+    "source": "Aasberg-2001.pdf",
+    "page": 2,
+    "category": "Åsberg – metod och kunskap",
+    "help": "Studenten använder flera olika ord för samma sak. Varför kan det bli svårt att förstå hur studien är tänkt?"
   }
 ]

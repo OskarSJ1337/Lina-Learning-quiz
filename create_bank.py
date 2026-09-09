@@ -47,5 +47,6 @@ for question in questions:
 answer_wording = json.loads(Path('answer_wording.json').read_text(encoding='utf-8'))
 for question in questions:
  question.update(answer_wording[question['question']])
+questions.extend(json.loads(Path('aasberg_questions.json').read_text(encoding='utf-8')))
 Path('questions.json').write_text(json.dumps(questions,ensure_ascii=False,indent=2),encoding='utf-8')
 print(f'Skapade {len(questions)} frågor')

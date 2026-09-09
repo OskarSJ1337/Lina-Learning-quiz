@@ -1,36 +1,25 @@
-# Lina – självtest
+# Linas coola quiz
 
-En svensk skrivbordsapp för Windows med 30 förståelse- och tillämpningsfrågor baserade på projektets tre PDF-filer. Fyra alternativ, grön/röd återkoppling, förklaring, sidhänvisning, Nästa-knapp och poängräknare. Frågor och svar blandas vid varje test. Missade frågor kan repeteras.
+En svensk quizapp för Vetenskaplig metodkurs Speciallärar- och specialpedagogprogrammen. Frågebanken innehåller 98 frågor från fyra PDF-filer, med fyra svarsalternativ, enkla förklaringar och källhänvisningar.
 
 ## Starta
 
-Dubbelklicka på `dist/Lina-Sjalvtest.exe`. Ingen Python-installation, internetanslutning eller API-nyckel behövs. EXE-filen kan flyttas till en annan Windows-dator; frågebanken är inbyggd.
+Dubbelklicka på `dist/Lina-Sjalvtest.exe`. Appen körs lokalt på 64-bitars Windows utan installation, internet eller Python. Skicka bara EXE-filen; frågorna ingår och kursens PDF-filer behövs inte för att spela.
 
-## Gränssnitt
+Startsidan har ett val för alla frågor och ett för varje källa. Åsberg (2001) har 16 frågor om bland annat metod, dataform, kunskapssyn och textens kritik av uppdelningen i kvalitativa och kvantitativa metoder. Författarens ståndpunkter anges i frågorna.
 
-Startsidan har **Starta quiz** för alla frågor samt ett separat alternativ för varje PDF. Antalet frågor visas vid varje val. **Nytt test** behåller vald grupp, även efter repetition av missade frågor. Under testet visas frågan, fyra svar och antal rätt. Efter svaret visas återkoppling, förklaring, en kort källhänvisning och **Nästa**. Texten är större och har tydligare kontrast.
-
-PDF-import visas inte längre i gränssnittet. Alla 82 frågor ingår. Sidhänvisningar räknas från PDF-filens första sida.
+Förenkla frågan visar en lättare formulering. Dag- och nattläge finns. Det går att hoppa över frågor och gå tillbaka. Sidhänvisningar räknas från PDF-filens första sida.
 
 ## Utveckling
 
-Python 3.13 användes för bygget. Tkinter ingår i standardinstallationen för Windows.
+Python 3.13 med Tkinter används.
 
 ```powershell
 python -m pip install -r requirements.txt
-python app.py
+python create_bank.py
 python -m unittest -v
+python app.py
 python build_exe.py
 ```
 
-`questions.json` innehåller frågorna. `create_bank.py` återskapar den filen från de formulerade frågorna. `test_app.py` kontrollerar blandning, facit, låsta svar, poäng och repetition.
-
-## Dela appen
-
-Skicka endast `dist/Lina-Sjalvtest.exe` (cirka 11 MB) till mottagaren. Appen ?r byggd f?r 64-bitars Windows och beh?ver inte installeras. De 82 fr?gorna ing?r; PDF-filer beh?vs bara f?r att importera fler fr?gor. Bygget beh?ller PDF-import och anv?nder optimerad Python-kod utan oanv?nda OpenSSL-bibliotek. Den f?rdiga EXE-filen har testats fr?n en separat tillf?llig mapp, inklusive r?tt/fel, resultat och import av samtliga tre PDF-filer.
-
-Fr?gebanken omfattar nu 82 fr?gor. De 40 tillagda fr?gorna i `additional_questions.py` t?cker bland annat urval, bortfall, enk?ter, m?tningskvalitet, statistik, analys, teorifunktioner och etiska avv?gningar. Alla har fyra alternativ, f?rklaring och h?nvisning till PDF-sida.
-
-Efter granskning av ämnestäckning, överlapp och källtext tillkom 12 frågor om samtycke, indirekt identifiering, tredje person, dubbla roller, dataminimering, barn, falsifierbarhet, teoretiserande, intressekonflikter, rättelser och etiska ramverk.
-
-Läsinställningar: Segoe UI i ursprungliga textstorlekar, fetare frågor och svarsalternativ samt tydligare kontrast i dag- och nattläge. Frågehjälpen använder enklare språk. Inställningarna gäller under den öppna sessionen.
+`aasberg_questions.json` innehåller den nya källans frågor, förenklingar och svarsförklaringar. `create_bank.py` sammanställer hela banken i `questions.json`, som bäddas in vid bygget. Källmaterial i PDF- och HTML-format samt byggfiler ignoreras av Git.

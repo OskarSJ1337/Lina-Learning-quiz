@@ -41,7 +41,7 @@ class QuizTests(unittest.TestCase):
   self.assertFalse(s.answered)
  def test_bank(self):
   validate(self.bank)
-  self.assertEqual(len({q['source'] for q in self.bank}),3)
+  self.assertEqual(len({q['source'] for q in self.bank}),4)
   self.assertEqual(len({q['question'] for q in self.bank}),len(self.bank))
 
 if __name__=='__main__': unittest.main()
