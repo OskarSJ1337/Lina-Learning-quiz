@@ -1,0 +1,69 @@
+name: Bygg Mac-app
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Mac (${{ matrix.arch }})
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - runner: macos-15
+            arch: arm64
+          - runner: macos-15-intel
+            arch: x86_64
+    steps:
+      - name: Hämta koden
+        uses: actions/checkout@v4
+
+      - name: Installera Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+
+      - name: Kontrollera Python och Tkinter
+        env:
+          EXPECTED_ARCH: ${{ matrix.arch }}
+        run: |
+          python -c "import os, platform, tkinter; assert platform.machine() == os.environ['EXPECTED_ARCH']; root = tkinter.Tk(); root.withdraw(); root.destroy()"
+
+      - name: Installera byggverktyget
+        run: python -m pip install pyinstaller==6.22.2
+
+      - name: Testa frågebanken
+        run: python -m unittest -v
+
+      - name: Bygg app och ZIP-fil
+        run: python build_mac.py
+
+      - name: Provkör den paketerade appen
+        run: |
+          python - <<'PY'
+          import json
+          import subprocess
+          import tempfile
+          from pathlib import Path
+          executable = Path('dist/Linas självstudie quiz.app/Contents/MacOS/Linas självstudie quiz').resolve()
+          with tempfile.TemporaryDirectory() as folder:
+              report = Path(folder) / 'report.json'
+              subprocess.run([str(executable), '--self-test', str(report)], cwd=folder, check=True, timeout=60)
+              result = json.loads(report.read_text(encoding='utf-8'))
+              assert result['ok'], result
+              assert result['bank'] == len(json.loads(Path('questions.json').read_text(encoding='utf-8')))
+              print(result)
+          PY
+
+      - name: Spara nedladdningsbar Mac-app
+        uses: actions/upload-artifact@v4
+        with:
+          name: Linas-quiz-Mac-${{ matrix.arch }}
+          path: dist/Linas-quiz-Mac-${{ matrix.arch }}.zip
+          if-no-files-found: error
+          retention-days: 14
