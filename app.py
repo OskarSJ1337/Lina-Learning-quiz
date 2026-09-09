@@ -284,6 +284,8 @@ class App(tk.Tk):
                 self.button(f'Starta quiz – {title} ({len(questions)})',
                             lambda questions=questions: self.start(questions), color=color)
 
+        self.label('Frågorna är genererade med AI och kan innehålla fel. Kontrollera svaren mot kursmaterialet.', 11, MUTED)
+
     def start(self, questions, review=False):
         self.navigation.pack(side='bottom', fill='x', padx=32, pady=(0, 16), before=self.canvas)
         self.back_button.pack(side='right', padx=16)
