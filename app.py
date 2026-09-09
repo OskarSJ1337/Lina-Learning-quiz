@@ -159,15 +159,14 @@ class App(tk.Tk):
             command=self.next_question, bg=ACCENT, fg='white', relief='flat', padx=16, pady=12)
         self.next_button.pack(side='right')
         self.canvas = tk.Canvas(self, bg=BG, highlightthickness=0)
-        scroll = ttk.Scrollbar(self, orient='vertical', command=self.canvas.yview)
-        scroll.pack(side='right', fill='y')
+        self.scrollbar = ttk.Scrollbar(self, orient='vertical', command=self.scroll_view)
         self.canvas.pack(fill='both', expand=True, padx=32, pady=(0, 24))
-        self.canvas.configure(yscrollcommand=scroll.set)
+        self.canvas.configure(yscrollcommand=self.scrollbar.set)
         self.body = tk.Frame(self.canvas, bg=BG)
         self.window = self.canvas.create_window((0, 0), window=self.body, anchor='nw')
-        self.body.bind('<Configure>', lambda e: self.canvas.configure(scrollregion=self.canvas.bbox('all')))
+        self.body.bind('<Configure>', self.sync_scroll)
         self.canvas.bind('<Configure>', self.resize)
-        self.bind('<MouseWheel>', lambda e: self.canvas.yview_scroll(-int(e.delta / 120), 'units'))
+        self.bind('<MouseWheel>', self.mousewheel)
         for n in range(4):
             self.bind(str(n + 1), lambda e, i=n: self.choose(i))
         self.home()
@@ -183,17 +182,46 @@ class App(tk.Tk):
         # Break sentences into shorter reading blocks without changing wording.
         return re.sub(r'(?<=[.!?]) +(?=[A-ZÅÄÖ])', '\n\n', text)
 
+    def sync_scroll(self, event=None, offset=None):
+        viewport = max(1, self.canvas.winfo_height())
+        content = max(1, self.body.winfo_reqheight())
+        extent = max(viewport, content)
+        top = self.canvas.canvasy(0) if offset is None else offset
+        top = max(0, min(top, content - viewport))
+        self.canvas.configure(scrollregion=(0, 0, self.canvas.winfo_width(), extent))
+        self.canvas.yview_moveto(top / extent)
+        if content > viewport:
+            if not self.scrollbar.winfo_manager():
+                self.scrollbar.pack(side='right', fill='y', before=self.canvas)
+        else:
+            self.scrollbar.pack_forget()
+
+    def scroll_view(self, *args):
+        if self.body.winfo_reqheight() > self.canvas.winfo_height():
+            self.canvas.yview(*args)
+        self.sync_scroll()
+
+    def mousewheel(self, event):
+        if self.body.winfo_reqheight() > self.canvas.winfo_height():
+            steps = -int(event.delta / 120)
+            if not steps and event.delta:
+                steps = -1 if event.delta > 0 else 1
+            self.canvas.yview_scroll(steps, 'units')
+        self.sync_scroll()
+        return 'break'
+
     def resize(self, event):
         self.canvas.itemconfigure(self.window, width=event.width)
         for child in self.body.winfo_children():
             if isinstance(child, (tk.Label, tk.Button)):
                 child.configure(wraplength=max(400, min(780, event.width - 48)))
+        self.sync_scroll()
 
     def clear(self):
         self.after_idle(self.apply_theme)
         for child in self.body.winfo_children():
             child.destroy()
-        self.canvas.yview_moveto(0)
+        self.sync_scroll(offset=0)
 
     def label(self, text, size=13, color=INK):
         w = tk.Label(self.body, text=text, bg=BG, fg=color, font=self.reading_font(size),
@@ -280,7 +308,7 @@ class App(tk.Tk):
         self.next_button.configure(text='Visa resultat' if s.index == len(s.questions)-1 else 'Nästa fråga →',
                                    state='normal')
         self.update_idletasks()
-        self.canvas.yview_moveto(0)
+        self.sync_scroll(offset=0)
 
     def toggle_help(self):
         self.help_open = not self.help_open
@@ -388,10 +416,8 @@ class App(tk.Tk):
         self.next_button.configure(state='normal')
         self.apply_theme()
         self.update_idletasks()
-        # Keep the same pixel offset as feedback increases the scroll region.
-        bounds = self.canvas.bbox('all')
-        if bounds and bounds[3] > bounds[1]:
-            self.canvas.yview_moveto((viewport_top - bounds[1]) / (bounds[3] - bounds[1]))
+        # Preserve reading position while feedback expands the content.
+        self.sync_scroll(offset=viewport_top)
 
     def previous_question(self):
         if self.session and self.session.previous():
