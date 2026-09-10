@@ -19,7 +19,10 @@ Routerns regel **extern TCP-port 30420 → 192.168.0.198:80** ger åtkomst via
 Driften använder Kubernetes i namnrymden `media`, Nginx och den befintliga Traefik-routern.
 Quizets standardrutt har låg prioritet så befintliga domänspecifika rutter behålls.
 Deploymenten återstartas automatiskt av Kubernetes. Endast webbens filer och frågebanken publiceras.
-För att publicera ändringar från projektroten med rätt kubectl-konfiguration:
+Argo CD-applikationen `lina-quiz` följer `main` i detta repo och synkar automatiskt
+med prune och self-heal. Publicera webbändringar genom att committa och pusha till `main`.
+Kustomize genererar versionsmärkta ConfigMaps så ändrade filer automatiskt startar en ny pod.
+För att registrera applikationen från projektroten med rätt kubectl-konfiguration:
 
 ```sh
 sh deploy/publish.sh
