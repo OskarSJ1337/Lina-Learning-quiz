@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#51409b">
+  <title>Linas självstudie quiz</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="quiz.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="app">
+    <header><strong>Linas självstudie quiz</strong><div class="tools"><button id="theme">Nattläge</button><button id="home" hidden>Till startsidan</button><span id="score">Rätt: 0</span></div></header>
+    <main id="content" tabindex="-1"><p>Läser in frågorna …</p></main>
+    <nav id="navigation" aria-label="Frågenavigering" hidden><button id="previous">← Föregående fråga</button><div id="progress" aria-label="Alla frågor"></div><button id="next" class="primary">Nästa fråga →</button></nav>
+  </div>
+</body>
+</html>
